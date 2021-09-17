@@ -5,7 +5,7 @@
 	using System.Collections.Generic;
 	using UnityEngine;
 
-	public static class Vector2IntExtensions
+	public static partial class Vector2IntExtensions
 	{
 		#region Fields
 
@@ -20,16 +20,6 @@
 		#endregion
 
 		#region Methods
-		public static Vector2Int ClampXY(this Vector2Int vector, Vector2Int min, Vector2Int max)
-		{
-			return new Vector2Int(vector.x.Clamp(min.x, max.x), vector.y.Clamp(min.y, max.y));
-		}
-
-		public static Vector2Int ClampXY(this Vector2Int vector, RectInt rect)
-		{
-			return vector.ClampXY(rect.min, rect.max);
-		}
-
 		public static Vector2Int DivideBy(this Vector2Int dividend, Vector2Int divisor)
 		{
 			return new Vector2Int(dividend.x / divisor.x, dividend.y / divisor.y);
