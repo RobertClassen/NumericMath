@@ -1,8 +1,8 @@
-namespace System
+namespace WellDefined
 {
 	using System;
 	using System.Collections;
-	using Runtime.Serialization;
+	using System.Runtime.Serialization;
 
 	public class ArgumentLessThanZeroException : ArgumentOutOfRangeException
 	{

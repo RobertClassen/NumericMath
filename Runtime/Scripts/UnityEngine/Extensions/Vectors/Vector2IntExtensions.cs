@@ -1,9 +1,9 @@
-﻿namespace UnityEngine.Extensions
+﻿namespace WellDefined
 {
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using System.Extensions;
+	using UnityEngine;
 
 	public static class Vector2IntExtensions
 	{

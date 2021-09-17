@@ -1,11 +1,11 @@
-﻿namespace UnityEngine.Extensions
+﻿namespace WellDefined
 {
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using System.Extensions;
-	using System.Utilities;
-	using Random = Random;
+	using Core;
+	using UnityEngine;
+	using Random = UnityEngine.Random;
 
 	public static class Vector3Extensions
 	{

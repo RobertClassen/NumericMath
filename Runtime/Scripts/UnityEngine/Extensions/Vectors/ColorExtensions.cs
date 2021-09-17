@@ -1,11 +1,10 @@
-﻿namespace UnityEngine.Extensions
+﻿namespace WellDefined
 {
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using System.Extensions;
-	using System.Utilities;
-	using String = System.Utilities.String;
+	using Core;
+	using UnityEngine;
 
 	public static class ColorExtensions
 	{

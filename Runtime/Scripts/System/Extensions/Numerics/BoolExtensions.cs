@@ -1,8 +1,8 @@
-namespace System.Extensions
+namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Utilities;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
 
 	public static class BoolExtensions
 	{

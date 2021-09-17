@@ -1,9 +1,10 @@
-﻿namespace System.Extensions
+﻿namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Globalization;
-	using Utilities;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using System.Globalization;
+	using Core;
 
 	public static class FloatExtensions
 	{

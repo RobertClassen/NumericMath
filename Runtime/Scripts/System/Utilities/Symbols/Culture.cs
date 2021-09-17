@@ -1,8 +1,9 @@
-﻿namespace System.Utilities
+﻿namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Globalization;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using System.Globalization;
 
 	public static class Culture
 	{

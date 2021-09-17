@@ -1,8 +1,8 @@
-namespace System.Utilities
+namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Linq;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
 
 	public static class HashCode
 	{

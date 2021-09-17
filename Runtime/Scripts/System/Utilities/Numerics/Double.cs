@@ -1,8 +1,9 @@
-﻿namespace System.Utilities
+﻿namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Extensions;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using Core;
 
 	public static class Double
 	{

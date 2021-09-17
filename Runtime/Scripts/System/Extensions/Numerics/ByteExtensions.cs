@@ -1,9 +1,9 @@
-﻿namespace System.Extensions
+﻿namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Utilities;
-	using Byte = Utilities.Byte;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using Core;
 
 	public static class ByteExtensions
 	{

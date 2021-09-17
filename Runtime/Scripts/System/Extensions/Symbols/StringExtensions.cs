@@ -1,14 +1,10 @@
-﻿namespace System.Extensions
+﻿namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Globalization;
-	using Linq;
-	using UnityEngine;
-	using UnityEngine.Extensions;
-	using Utilities;
-	using Byte = Utilities.Byte;
-	using String = System.Utilities.String;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using Byte = WellDefined.Byte;
+	using String = WellDefined.String;
 
 	public static class StringExtensions
 	{

@@ -1,10 +1,10 @@
-﻿namespace System.Extensions
+﻿namespace WellDefined
 {
-	using CodeDom;
-	using Collections;
-	using Collections.Generic;
-	using Reflection;
-	using Utilities;
+	using System.CodeDom;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using System.Reflection;
 
 	public static class TypeExtensions
 	{

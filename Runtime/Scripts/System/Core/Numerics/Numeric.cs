@@ -1,7 +1,8 @@
-﻿namespace System.Utilities
+﻿namespace WellDefined.Core
 {
-	using Collections;
-	using Collections.Generic;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
 
 	public static class Numeric
 	{

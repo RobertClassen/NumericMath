@@ -1,9 +1,9 @@
-namespace System.Utilities
+namespace WellDefined
 {
-	using Collections;
-	using Collections.Generic;
-	using Extensions;
-	using Linq;
+	using System;
+	using System.Collections;
+	using System.Collections.Generic;
+	using System.Linq;
 
 	public static class TypeUtility
 	{

@@ -1,11 +1,9 @@
-namespace System.Tests
+namespace WellDefined.Tests
 {
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using System.Extensions;
 	using System.Linq;
-	using System.Utilities;
 	using NUnit.Framework;
 
 	public class FloatTest
