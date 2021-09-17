@@ -22,9 +22,9 @@ namespace WellDefined
 		#endregion
 
 		#region Methods
-		public static Vector3 Clamp01(this Vector3 vector, bool isClamped = Numeric.IsClampClampedDefault)
+		public static Vector3 Clamp01(this Vector3 vector, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return isClamped ? vector.ClampXYZ(Vector3.zero, Vector3.one) : vector;
+			return isEnabled ? vector.ClampXYZ(Vector3.zero, Vector3.one) : vector;
 		}
 
 		public static Vector3 ClampX(this Vector3 vector, float min, float max)

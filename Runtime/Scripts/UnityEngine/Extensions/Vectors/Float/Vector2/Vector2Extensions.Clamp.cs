@@ -21,9 +21,9 @@ namespace WellDefined
 		#endregion
 
 		#region Methods
-		public static Vector2 Clamp01(this Vector2 vector, bool isClamped = Numeric.IsClampClampedDefault)
+		public static Vector2 Clamp01(this Vector2 vector, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return isClamped ? vector.ClampXY(Vector2.zero, Vector2.one) : vector;
+			return isEnabled ? vector.ClampXY(Vector2.zero, Vector2.one) : vector;
 		}
 
 		public static Vector2 ClampX(this Vector2 vector, float min, float max)

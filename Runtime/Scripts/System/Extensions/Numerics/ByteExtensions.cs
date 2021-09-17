@@ -25,9 +25,9 @@
 			return value <= min ? min : value >= max ? max : value;
 		}
 
-		public static byte Clamp01(this byte value, bool isClamped = Numeric.IsClampClampedDefault)
+		public static byte Clamp01(this byte value, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return isClamped ? value.Clamp(Byte.Zero, Byte.One) : value;
+			return isEnabled ? value.Clamp(Byte.Zero, Byte.One) : value;
 		}
 
 		public static bool IsClamped(this byte value, byte min, byte max, bool isInclusive = Numeric.IsClampedInclusiveDefault)

@@ -41,9 +41,9 @@
 			return value <= min ? min : value >= max ? max : value;
 		}
 
-		public static float Clamp01(this float value, bool isClamped = Numeric.IsClampClampedDefault)
+		public static float Clamp01(this float value, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return isClamped ? value.Clamp(Float.Zero, Float.One) : value;
+			return isEnabled ? value.Clamp(Float.Zero, Float.One) : value;
 		}
 
 		public static float Floor(this float value)

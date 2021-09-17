@@ -35,9 +35,9 @@
 			return value.Clamp(Int.Zero, iCollection.Count - Int.One);
 		}
 
-		public static int Clamp01(this int value, bool isClamped = Numeric.IsClampClampedDefault)
+		public static int Clamp01(this int value, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return isClamped ? value.Clamp(Int.Zero, Int.One) : value;
+			return isEnabled ? value.Clamp(Int.Zero, Int.One) : value;
 		}
 
 		public static bool IsClamped(this int value, int min, int max, bool isInclusive = Numeric.IsClampedInclusiveDefault)

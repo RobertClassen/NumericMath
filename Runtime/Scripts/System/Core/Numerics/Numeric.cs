@@ -7,7 +7,7 @@
 	public static class Numeric
 	{
 		#region Constants
-		public const bool IsClampClampedDefault = true;
+		public const bool IsClampEnabledDefault = true;
 		public const bool IsClampedInclusiveDefault = true;
 		public const bool IsLerpClampedDefault = false;
 		public const int BinaryBase = Int.Two;

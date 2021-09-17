@@ -41,9 +41,9 @@ namespace WellDefined
 			return value <= min ? min : value >= max ? max : value;
 		}
 
-		public static decimal Clamp01(this decimal value, bool isClamped = Numeric.IsClampClampedDefault)
+		public static decimal Clamp01(this decimal value, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return isClamped ? value.Clamp(Decimal.Zero, Decimal.One) : value;
+			return isEnabled ? value.Clamp(Decimal.Zero, Decimal.One) : value;
 		}
 
 		public static decimal Floor(this decimal value)

@@ -34,9 +34,9 @@ namespace WellDefined
 			return value <= min ? min : value >= max ? max : value;
 		}
 
-		public static short Clamp01(this short value, bool isClamped = Numeric.IsClampClampedDefault)
+		public static short Clamp01(this short value, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return isClamped ? value.Clamp(Short.Zero, Short.One) : value;
+			return isEnabled ? value.Clamp(Short.Zero, Short.One) : value;
 		}
 
 		public static bool IsClamped(this short value, short min, short max, bool isInclusive = Numeric.IsClampedInclusiveDefault)
