@@ -1,4 +1,4 @@
-﻿namespace WellDefined
+namespace WellDefined
 {
 	using System;
 	using System.Collections;
@@ -8,21 +8,21 @@
 	public static partial class RectIntExtensions
 	{
 		#region Fields
-
+		
 		#endregion
 
 		#region Properties
-
+		
 		#endregion
 
 		#region Constructors
-
+		
 		#endregion
 
 		#region Methods
-		public static RectInt Expand(this RectInt rect, Vector2Int size)
+		public static Rect Scale(this RectInt rect, Vector2 scale)
 		{
-			return new RectInt(rect.min - size, rect.max + size * Int.Two);
+			return new Rect(rect.position * scale, rect.size * scale);
 		}
 		#endregion
 	}
