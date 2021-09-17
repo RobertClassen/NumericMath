@@ -28,7 +28,7 @@
 		#endregion
 
 		#region Methods
-		public static void Draw(this Rect rect, Color color, float depth = Float.Zero)
+		public static void DrawDebugLines(this Rect rect, Color color, float depth = Float.Zero)
 		{
 			#if UNITY_EDITOR
 			Vector3 topLeft = new Vector3(rect.xMin, rect.yMax, depth);
@@ -39,6 +39,21 @@
 			Debug.DrawLine(bottomLeft, bottomRight, color);
 			Debug.DrawLine(topLeft, bottomLeft, color);
 			Debug.DrawLine(topRight, bottomRight, color);
+			#endif
+		}
+
+		public static void DrawGizmoLines(this Rect rect, Color color, float depth = Float.Zero)
+		{
+			#if UNITY_EDITOR
+			Vector3 topLeft = new Vector3(rect.xMin, rect.yMax, depth);
+			Vector3 topRight = new Vector3(rect.xMax, rect.yMax, depth);
+			Vector3 bottomLeft = new Vector3(rect.xMin, rect.yMin, depth);
+			Vector3 bottomRight = new Vector3(rect.xMax, rect.yMin, depth);
+			Gizmos.color = color;
+			Gizmos.DrawLine(topLeft, topRight);
+			Gizmos.DrawLine(bottomLeft, bottomRight);
+			Gizmos.DrawLine(topLeft, bottomLeft);
+			Gizmos.DrawLine(topRight, bottomRight);
 			#endif
 		}
 
