@@ -1,0 +1,19 @@
+{
+  "name": "com.robert_classen.welldefinedtypes",
+  "version": "1.0.0",
+  "displayName": "WellDefinedTypes",
+  "description": "Named constants, Extension methods, and Utility classes for built-in types.",
+  "keywords": [
+    "System",
+    "UnityEngine",
+	"Constants",
+    "Extensions",
+    "Utilities"
+  ],
+  "author": {
+    "name": "Robert Classen",
+    "email": "Robert.Classen.dev@gmail.com",
+    "url": "https://github.com/RobertClassen"
+  },
+  "type": "library"
+}
