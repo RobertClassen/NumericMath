@@ -63,7 +63,7 @@
 
 		public static float Random(int min, int max, int decimals)
 		{
-			float magnitude = (float)Math.Pow(Int.Ten, decimals);
+			float magnitude = (float)Math.Pow(Numeric.DecimalBase, decimals);
 			return Random(min * (int)magnitude, max * (int)magnitude) / magnitude;
 		}
 
