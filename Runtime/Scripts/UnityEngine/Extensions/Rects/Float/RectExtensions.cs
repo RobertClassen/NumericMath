@@ -31,10 +31,14 @@
 		public static void DrawDebugLines(this Rect rect, Color color, float depth = Float.Zero)
 		{
 			#if UNITY_EDITOR
-			Vector3 topLeft = new Vector3(rect.xMin, rect.yMax, depth);
-			Vector3 topRight = new Vector3(rect.xMax, rect.yMax, depth);
-			Vector3 bottomLeft = new Vector3(rect.xMin, rect.yMin, depth);
-			Vector3 bottomRight = new Vector3(rect.xMax, rect.yMin, depth);
+			float xMin = rect.xMin;
+			float xMax = rect.xMax;
+			float yMin = rect.yMin;
+			float yMax = rect.yMax;
+			Vector3 topLeft = new Vector3(xMin, yMax, depth);
+			Vector3 topRight = new Vector3(xMax, yMax, depth);
+			Vector3 bottomLeft = new Vector3(xMin, yMin, depth);
+			Vector3 bottomRight = new Vector3(xMax, yMin, depth);
 			Debug.DrawLine(topLeft, topRight, color);
 			Debug.DrawLine(bottomLeft, bottomRight, color);
 			Debug.DrawLine(topLeft, bottomLeft, color);
@@ -45,10 +49,14 @@
 		public static void DrawGizmoLines(this Rect rect, Color color, float depth = Float.Zero)
 		{
 			#if UNITY_EDITOR
-			Vector3 topLeft = new Vector3(rect.xMin, rect.yMax, depth);
-			Vector3 topRight = new Vector3(rect.xMax, rect.yMax, depth);
-			Vector3 bottomLeft = new Vector3(rect.xMin, rect.yMin, depth);
-			Vector3 bottomRight = new Vector3(rect.xMax, rect.yMin, depth);
+			float xMin = rect.xMin;
+			float xMax = rect.xMax;
+			float yMin = rect.yMin;
+			float yMax = rect.yMax;
+			Vector3 topLeft = new Vector3(xMin, yMax, depth);
+			Vector3 topRight = new Vector3(xMax, yMax, depth);
+			Vector3 bottomLeft = new Vector3(xMin, yMin, depth);
+			Vector3 bottomRight = new Vector3(xMax, yMin, depth);
 			Gizmos.color = color;
 			Gizmos.DrawLine(topLeft, topRight);
 			Gizmos.DrawLine(bottomLeft, bottomRight);
