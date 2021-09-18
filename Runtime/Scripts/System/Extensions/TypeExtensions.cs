@@ -1,4 +1,4 @@
-﻿namespace WellDefined
+﻿namespace WellDefinedTypes
 {
 	using System.CodeDom;
 	using System;

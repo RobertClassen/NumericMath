@@ -1,4 +1,4 @@
-namespace WellDefined.Tests
+namespace WellDefinedTypes.Tests
 {
 	using System;
 	using System.Collections;

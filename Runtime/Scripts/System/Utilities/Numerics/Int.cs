@@ -1,4 +1,4 @@
-﻿namespace WellDefined
+﻿namespace WellDefinedTypes
 {
 	using System;
 	using System.Collections;

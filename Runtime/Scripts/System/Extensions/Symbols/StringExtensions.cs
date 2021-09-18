@@ -1,10 +1,8 @@
-﻿namespace WellDefined
+﻿namespace WellDefinedTypes
 {
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using Byte = WellDefined.Byte;
-	using String = WellDefined.String;
 
 	public static class StringExtensions
 	{
@@ -26,12 +24,12 @@
 			return text.IndexOf(value) >= Int.Zero;
 		}
 
-		public static int Count(this string text, char charachter)
+		public static int Count(this string text, char character)
 		{
 			int count = 0;
 			foreach(char c in text)
 			{
-				if(c == charachter)
+				if(c == character)
 				{
 					count++;
 				}
