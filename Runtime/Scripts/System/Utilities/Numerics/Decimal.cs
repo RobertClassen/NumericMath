@@ -12,22 +12,10 @@ namespace WellDefined
 
 		public const decimal Zero = Byte.Zero;
 		public const decimal One = Byte.One;
-		public const decimal Two = Byte.Two;
-		public const decimal Three = Byte.Three;
-		public const decimal Four = Byte.Four;
-		public const decimal Five = Byte.Five;
-		public const decimal Six = Byte.Six;
-		public const decimal Seven = Byte.Seven;
-		public const decimal Eight = Byte.Eight;
-		public const decimal Nine = Byte.Nine;
 		public const decimal Ten = Byte.Ten;
 		public const decimal Hundred = Byte.Hundred;
 
-		public const decimal OneHalf = One / Two;
-		public const decimal OneThird = One / Three;
-		public const decimal TwoThird = Two / Three;
-		public const decimal OneQuarter = One / Four;
-		public const decimal ThreeQuarter = Three / Four;
+		public const decimal OneHalf = One / (One + One);
 
 		private static readonly Random random = new Random();
 		#endregion

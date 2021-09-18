@@ -12,22 +12,10 @@
 
 		public const double Zero = Byte.Zero;
 		public const double One = Byte.One;
-		public const double Two = Byte.Two;
-		public const double Three = Byte.Three;
-		public const double Four = Byte.Four;
-		public const double Five = Byte.Five;
-		public const double Six = Byte.Six;
-		public const double Seven = Byte.Seven;
-		public const double Eight = Byte.Eight;
-		public const double Nine = Byte.Nine;
 		public const double Ten = Byte.Ten;
 		public const double Hundred = Byte.Hundred;
 
-		public const double OneHalf = One / Two;
-		public const double OneThird = One / Three;
-		public const double TwoThird = Two / Three;
-		public const double OneQuarter = One / Four;
-		public const double ThreeQuarter = Three / Four;
+		public const double OneHalf = One / (One + One);
 		#endregion
 
 		#region Fields

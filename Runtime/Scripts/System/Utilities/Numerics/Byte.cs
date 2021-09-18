@@ -7,19 +7,11 @@
 	public static class Byte
 	{
 		#region Constants
-		public const int BitCount = sizeof(byte) * Eight;
+		public const int BitCount = sizeof(byte) * 8;
 
 		public const byte Zero = One - One;
 		public const byte One = 1;
-		public const byte Two = One + One;
-		public const byte Three = One + Two;
-		public const byte Four = One + Three;
-		public const byte Five = One + Four;
-		public const byte Six = One + Five;
-		public const byte Seven = One + Six;
-		public const byte Eight = One + Seven;
-		public const byte Nine = One + Eight;
-		public const byte Ten = One + Nine;
+		public const byte Ten = 10;
 		public const byte Hundred = Ten * Ten;
 		#endregion
 

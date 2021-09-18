@@ -8,7 +8,7 @@ namespace WellDefined
 	public static partial class RectExtensions
 	{
 		#region Constants
-		private const float RectSpace = Float.Two;
+		private const float RectSpace = 2f;
 		private const int XMin = Int.Zero;
 		private const int YMin = Int.Zero;
 		#endregion

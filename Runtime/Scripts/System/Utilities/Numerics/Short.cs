@@ -11,14 +11,6 @@
 
 		public const short Zero = Byte.Zero;
 		public const short One = Byte.One;
-		public const short Two = Byte.Two;
-		public const short Three = Byte.Three;
-		public const short Four = Byte.Four;
-		public const short Five = Byte.Five;
-		public const short Six = Byte.Six;
-		public const short Seven = Byte.Seven;
-		public const short Eight = Byte.Eight;
-		public const short Nine = Byte.Nine;
 		public const short Ten = Byte.Ten;
 		public const short Hundred = Byte.Hundred;
 		#endregion

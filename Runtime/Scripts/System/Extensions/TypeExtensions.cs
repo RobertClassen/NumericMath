@@ -59,14 +59,14 @@
 				if(fieldInfo.FieldType.IsArray)
 				{
 					type = fieldInfo.FieldType.GetElementType();
-					i += Int.Two;
+					i += 2;
 					continue;
 				}
 
 				if(fieldInfo.FieldType.IsGenericType)
 				{
 					type = fieldInfo.FieldType.GetGenericArgument();
-					i += Int.Two;
+					i += 2;
 					continue;
 				}
 

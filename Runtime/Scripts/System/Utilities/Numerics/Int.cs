@@ -11,14 +11,6 @@
 
 		public const int Zero = Byte.Zero;
 		public const int One = Byte.One;
-		public const int Two = Byte.Two;
-		public const int Three = Byte.Three;
-		public const int Four = Byte.Four;
-		public const int Five = Byte.Five;
-		public const int Six = Byte.Six;
-		public const int Seven = Byte.Seven;
-		public const int Eight = Byte.Eight;
-		public const int Nine = Byte.Nine;
 		public const int Ten = Byte.Ten;
 		public const int Hundred = Byte.Hundred;
 

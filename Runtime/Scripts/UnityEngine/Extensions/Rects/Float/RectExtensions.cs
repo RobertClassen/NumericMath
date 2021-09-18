@@ -10,6 +10,7 @@
 		#region Constants
 		private const bool IsEnabledDefault = true;
 		private const float IndentationWidth = 15f;
+		private const float ExpansionFactor = 2f;
 		#endregion
 
 		#region Fields
@@ -76,7 +77,7 @@
 			bool isEnabled = IsEnabledDefault)
 		{
 			return isEnabled ? new Rect(rect.x - left, rect.y - down, 
-				rect.width + right * Float.Two, rect.height + up * Float.Two) : rect;
+				rect.width + right * ExpansionFactor, rect.height + up * ExpansionFactor) : rect;
 		}
 
 		public static Rect Indent(this Rect rect, float width, bool isEnabled = IsEnabledDefault)

@@ -12,22 +12,10 @@
 
 		public const float Zero = Byte.Zero;
 		public const float One = Byte.One;
-		public const float Two = Byte.Two;
-		public const float Three = Byte.Three;
-		public const float Four = Byte.Four;
-		public const float Five = Byte.Five;
-		public const float Six = Byte.Six;
-		public const float Seven = Byte.Seven;
-		public const float Eight = Byte.Eight;
-		public const float Nine = Byte.Nine;
 		public const float Ten = Byte.Ten;
 		public const float Hundred = Byte.Hundred;
 
-		public const float OneHalf = One / Two;
-		public const float OneThird = One / Three;
-		public const float TwoThird = Two / Three;
-		public const float OneQuarter = One / Four;
-		public const float ThreeQuarter = Three / Four;
+		public const float OneHalf = One / (One + One);
 
 		private static readonly Random random = new Random();
 		#endregion

@@ -11,14 +11,6 @@
 
 		public const long Zero = Byte.Zero;
 		public const long One = Byte.One;
-		public const long Two = Byte.Two;
-		public const long Three = Byte.Three;
-		public const long Four = Byte.Four;
-		public const long Five = Byte.Five;
-		public const long Six = Byte.Six;
-		public const long Seven = Byte.Seven;
-		public const long Eight = Byte.Eight;
-		public const long Nine = Byte.Nine;
 		public const long Ten = Byte.Ten;
 		public const long Hundred = Byte.Hundred;
 
