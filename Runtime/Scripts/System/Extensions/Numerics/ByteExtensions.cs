@@ -63,6 +63,11 @@
 			return value != Byte.Zero;
 		}
 
+		public static string ToHexString(this byte value)
+		{
+			return value.ToString("X2");
+		}
+
 		public static string ToInvariantString(this byte value, string format = String.Null)
 		{
 			return value.ToString(format, Culture.Invariant);

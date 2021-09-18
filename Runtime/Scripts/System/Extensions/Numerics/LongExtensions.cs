@@ -73,6 +73,11 @@ namespace WellDefined
 			return value != Long.Zero;
 		}
 
+		public static string ToHexString(this long value)
+		{
+			return value.ToString("X16");
+		}
+
 		public static string ToInvariantString(this long value, string format = String.Null)
 		{
 			return value.ToString(format, Culture.Invariant);

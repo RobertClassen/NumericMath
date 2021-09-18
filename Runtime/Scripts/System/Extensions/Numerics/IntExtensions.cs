@@ -83,6 +83,11 @@
 			return value != Int.Zero;
 		}
 
+		public static string ToHexString(this int value)
+		{
+			return value.ToString("X8");
+		}
+
 		public static string ToInvariantString(this int value, string format = String.Null)
 		{
 			return value.ToString(format, Culture.Invariant);

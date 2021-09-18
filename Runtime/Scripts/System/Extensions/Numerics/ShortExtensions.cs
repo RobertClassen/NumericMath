@@ -77,6 +77,11 @@ namespace WellDefined
 			return value != Short.Zero;
 		}
 
+		public static string ToHexString(this short value)
+		{
+			return value.ToString("X4");
+		}
+
 		public static string ToInvariantString(this short value, string format = String.Null)
 		{
 			return value.ToString(format, Culture.Invariant);
