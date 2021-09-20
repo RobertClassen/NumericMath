@@ -1,4 +1,4 @@
-﻿namespace WellDefinedTypes.Core
+﻿namespace WellDefinedValues.Core
 {
 	using System;
 	using System.Collections;

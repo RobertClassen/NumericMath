@@ -1,8 +1,8 @@
 {
-  "name": "com.robert_classen.welldefinedtypes",
+  "name": "com.robert_classen.welldefinedvalues",
   "version": "1.0.0",
-  "displayName": "WellDefinedTypes",
-  "description": "Named constants, Extension methods, and Utility classes for built-in types.",
+  "displayName": "WellDefinedValues",
+  "description": "Named constants, Extension methods, and Utility classes for built-in value-types.",
   "keywords": [
     "System",
     "UnityEngine",

@@ -1,6 +1,6 @@
 {
-    "name": "Unity.WellDefinedTypes",
-    "rootNamespace": "WellDefinedTypes",
+    "name": "RobertClassen.WellDefinedValues",
+    "rootNamespace": "WellDefinedValues",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
