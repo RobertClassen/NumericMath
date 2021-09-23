@@ -41,6 +41,21 @@
 			return Vector3.Cross(vector, other);
 		}
 
+		public static float CrossXY(this Vector3 vector, Vector3 other)
+		{
+			return vector.x * other.y - other.x * vector.y;
+		}
+
+		public static float CrossXZ(this Vector3 vector, Vector3 other)
+		{
+			return vector.x * other.z - other.x * vector.z;
+		}
+
+		public static float CrossYZ(this Vector3 vector, Vector3 other)
+		{
+			return vector.y * other.z - other.y * vector.z;
+		}
+
 		public static float Dot(this Vector3 vector, Vector3 other)
 		{
 			return Vector3.Dot(vector, other);
