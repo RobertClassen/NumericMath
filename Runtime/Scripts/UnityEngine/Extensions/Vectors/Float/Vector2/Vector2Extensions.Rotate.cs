@@ -21,19 +21,19 @@ namespace WellDefinedValues
 		#endregion
 
 		#region Methods
-		public static Vector2 Rotate(this Vector2 point, float angle)
+		public static Vector2 Rotate(this Vector2 point, float degrees)
 		{
-			angle *= Mathf.Deg2Rad;
-			float sin = Mathf.Sin(angle);
-			float cos = Mathf.Cos(angle);
+			float radians = degrees * Mathf.Deg2Rad;
+			float sin = Mathf.Sin(radians);
+			float cos = Mathf.Cos(radians);
 			return new Vector2(
 				point.x * cos - point.y * sin, 
 				point.x * sin + point.y * cos);
 		}
 
-		public static Vector2 Rotate(this Vector2 point, float angle, Vector2 center)
+		public static Vector2 Rotate(this Vector2 point, float degrees, Vector2 center)
 		{
-			return (point - center).Rotate(angle) + center;
+			return (point - center).Rotate(degrees) + center;
 		}
 		#endregion
 	}
