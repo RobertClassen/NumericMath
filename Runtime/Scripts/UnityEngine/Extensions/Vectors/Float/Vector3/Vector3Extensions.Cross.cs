@@ -33,36 +33,39 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Returns the cross product of two vectors (which in 2d is a `float), 
+		/// Returns the cross product of two vectors (which in 2d is the determinant), 
 		/// for the <c>x</c> and <c>y</c> components.
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
 		/// </remarks>
+		[Obsolete("Use 'DeterminantXY' instead.")]
 		public static float CrossXY(this Vector3 vector, Vector3 other)
 		{
 			return vector.x * other.y - other.x * vector.y;
 		}
 
 		/// <summary>
-		/// Returns the cross product of two vectors (which in 2d is a `float), 
+		/// Returns the cross product of two vectors (which in 2d is the determinant), 
 		/// for the <c>x</c> and <c>z</c> components.
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
 		/// </remarks>
+		[Obsolete("Use 'DeterminantXZ' instead.")]
 		public static float CrossXZ(this Vector3 vector, Vector3 other)
 		{
 			return vector.x * other.z - other.x * vector.z;
 		}
 
 		/// <summary>
-		/// Returns the cross product of two vectors (which in 2d is a `float`), 
+		/// Returns the cross product of two vectors (which in 2d is the determinant), 
 		/// for the <c>y</c> and <c>z</c> components.
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
 		/// </remarks>
+		[Obsolete("Use 'DeterminantYZ' instead.")]
 		public static float CrossYZ(this Vector3 vector, Vector3 other)
 		{
 			return vector.y * other.z - other.y * vector.z;
