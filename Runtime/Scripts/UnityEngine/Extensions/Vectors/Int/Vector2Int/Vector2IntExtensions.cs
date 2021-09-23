@@ -20,6 +20,11 @@
 		#endregion
 
 		#region Methods
+		public static Vector2Int Abs(this Vector2Int vector)
+		{
+			return new Vector2Int(vector.x.Abs(), vector.y.Abs());
+		}
+
 		public static Vector2Int DivideBy(this Vector2Int dividend, Vector2Int divisor)
 		{
 			return new Vector2Int(dividend.x / divisor.x, dividend.y / divisor.y);
