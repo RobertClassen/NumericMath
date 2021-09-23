@@ -36,14 +36,14 @@
 			return new Vector3Int(vector.x.CeilToInt(), vector.y.CeilToInt(), vector.z.CeilToInt());
 		}
 
-		public static Vector3 Cross(this Vector3 a, Vector3 b)
+		public static Vector3 Cross(this Vector3 vector, Vector3 other)
 		{
-			return Vector3.Cross(a, b);
+			return Vector3.Cross(vector, other);
 		}
 
-		public static float Dot(this Vector3 a, Vector3 b)
+		public static float Dot(this Vector3 vector, Vector3 other)
 		{
-			return Vector3.Dot(a, b);
+			return Vector3.Dot(vector, other);
 		}
 
 		public static Vector3 Floor(this Vector3 vector)

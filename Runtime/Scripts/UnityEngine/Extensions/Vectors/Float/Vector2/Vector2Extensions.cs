@@ -36,6 +36,11 @@
 			return new Vector2Int(vector.x.CeilToInt(), vector.y.CeilToInt());
 		}
 
+		public static float Cross(this Vector2 vector, Vector2 other)
+		{
+			return vector.x * other.y - other.x * vector.y;
+		}
+
 		public static float Dot(this Vector2 vector, Vector3 other)
 		{
 			return vector.x * other.x + vector.y + other.y;
