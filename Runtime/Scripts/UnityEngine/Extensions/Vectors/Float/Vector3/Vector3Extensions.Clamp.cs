@@ -3,7 +3,6 @@ namespace WellDefinedValues
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using Core;
 	using UnityEngine;
 	using Random = UnityEngine.Random;
 
@@ -22,7 +21,7 @@ namespace WellDefinedValues
 		#endregion
 
 		#region Methods
-		public static Vector3 Clamp01(this Vector3 vector, bool isEnabled = Numeric.IsClampEnabledDefault)
+		public static Vector3 Clamp01(this Vector3 vector, bool isEnabled = Core.Numeric.IsClampEnabledDefault)
 		{
 			return isEnabled ? vector.ClampXYZ(Vector3.zero, Vector3.one) : vector;
 		}
