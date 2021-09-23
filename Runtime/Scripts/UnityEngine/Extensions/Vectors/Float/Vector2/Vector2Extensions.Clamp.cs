@@ -3,7 +3,6 @@ namespace WellDefinedValues
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using Core;
 	using UnityEngine;
 
 	public static partial class Vector2Extensions
@@ -21,7 +20,7 @@ namespace WellDefinedValues
 		#endregion
 
 		#region Methods
-		public static Vector2 Clamp01(this Vector2 vector, bool isEnabled = Numeric.IsClampEnabledDefault)
+		public static Vector2 Clamp01(this Vector2 vector, bool isEnabled = Core.Numeric.IsClampEnabledDefault)
 		{
 			return isEnabled ? vector.ClampXY(Vector2.zero, Vector2.one) : vector;
 		}

@@ -3,7 +3,6 @@ namespace WellDefinedValues
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using Core;
 	using UnityEngine;
 
 	public static partial class Vector2Extensions
