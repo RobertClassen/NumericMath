@@ -11,7 +11,6 @@
 
 		public const short Zero = Byte.Zero;
 		public const short One = Byte.One;
-		public const short Ten = Byte.Ten;
 		public const short Hundred = Byte.Hundred;
 		#endregion
 

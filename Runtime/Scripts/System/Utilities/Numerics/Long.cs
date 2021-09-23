@@ -11,7 +11,6 @@
 
 		public const long Zero = Byte.Zero;
 		public const long One = Byte.One;
-		public const long Ten = Byte.Ten;
 		public const long Hundred = Byte.Hundred;
 
 		private static readonly Random random = new Random();

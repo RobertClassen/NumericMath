@@ -11,7 +11,6 @@
 
 		public const int Zero = Byte.Zero;
 		public const int One = Byte.One;
-		public const int Ten = Byte.Ten;
 		public const int Hundred = Byte.Hundred;
 
 		private static readonly Random random = new Random();

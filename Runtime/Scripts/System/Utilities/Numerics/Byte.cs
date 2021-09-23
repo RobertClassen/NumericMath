@@ -11,8 +11,7 @@
 
 		public const byte Zero = One - One;
 		public const byte One = 1;
-		public const byte Ten = 10;
-		public const byte Hundred = Ten * Ten;
+		public const byte Hundred = 100;
 		#endregion
 
 		#region Fields
