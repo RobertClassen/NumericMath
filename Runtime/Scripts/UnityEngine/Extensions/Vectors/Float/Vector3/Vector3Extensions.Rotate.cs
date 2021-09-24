@@ -21,6 +21,13 @@ namespace WellDefinedValues
 		#endregion
 
 		#region Methods
+		/// <summary>
+		/// Rotates the point in a counter-clockwise direction around the <c>axis</c> 
+		/// (looking along the <c>axis</c>).
+		/// </summary>
+		/// <remarks>
+		/// If possible use one of the other <see cref ="Rotate"/> methods for improved performance.
+		/// </remarks>
 		public static Vector3 Rotate(this Vector3 point, float degrees, Vector3 axis)
 		{
 			if(!axis.IsNormalized())
@@ -48,67 +55,32 @@ namespace WellDefinedValues
 				point.z * (cosZ * axis.z + cos));
 		}
 
-		public static Vector3 Rotate(this Vector3 point, Quaternion quaternion)
-		{
-			return quaternion * point;
-		}
-
+		/// <summary>
+		/// Rotates the point in a counter-clockwise direction around the <c>axis</c> 
+		/// (looking along the <c>axis</c>), around the <c>center</c>.
+		/// </summary>
+		/// <remarks>
+		/// If possible use one of the other <see cref ="Rotate"/> methods for improved performance.
+		/// </remarks>
 		public static Vector3 Rotate(this Vector3 point, float degrees, Vector3 axis, Vector3 center)
 		{
 			return (point - center).Rotate(degrees, axis) + center;
 		}
 
+		/// <summary>
+		/// Rotates the point by the rotation described by the <c>quaternion</c>.
+		/// </summary>
+		public static Vector3 Rotate(this Vector3 point, Quaternion quaternion)
+		{
+			return quaternion * point;
+		}
+
+		/// <summary>
+		/// Rotates the point by the rotation described by the <c>quaternion</c> around the <c>center</c>.
+		/// </summary>
 		public static Vector3 Rotate(this Vector3 point, Quaternion quaternion, Vector3 center)
 		{
 			return (point - center).Rotate(quaternion) + center;
-		}
-
-		public static Vector3 RotateX(this Vector3 point, float degrees)
-		{
-			float radians = degrees * Mathf.Deg2Rad;
-			float sin = Mathf.Sin(radians);
-			float cos = Mathf.Cos(radians);
-			return new Vector3(
-				point.x, 
-				point.y * cos - point.z * sin, 
-				point.y * sin + point.z * cos);
-		}
-
-		public static Vector3 RotateX(this Vector3 point, float degrees, Vector3 center)
-		{
-			return (point - center).RotateX(degrees) + center;
-		}
-
-		public static Vector3 RotateY(this Vector3 point, float degrees)
-		{
-			float radians = degrees * Mathf.Deg2Rad;
-			float sin = Mathf.Sin(radians);
-			float cos = Mathf.Cos(radians);
-			return new Vector3(
-				point.x * cos + point.z * sin, 
-				point.y, 
-				point.x * -sin + point.z * cos);
-		}
-
-		public static Vector3 RotateY(this Vector3 point, float degrees, Vector3 center)
-		{
-			return (point - center).RotateY(degrees) + center;
-		}
-
-		public static Vector3 RotateZ(this Vector3 point, float degrees)
-		{
-			float radians = degrees * Mathf.Deg2Rad;
-			float sin = Mathf.Sin(radians);
-			float cos = Mathf.Cos(radians);
-			return new Vector3(
-				point.x * cos - point.y * sin, 
-				point.x * sin - point.y * cos, 
-				point.z);
-		}
-
-		public static Vector3 RotateZ(this Vector3 point, float degrees, Vector3 center)
-		{
-			return (point - center).RotateZ(degrees) + center;
 		}
 		#endregion
 	}
