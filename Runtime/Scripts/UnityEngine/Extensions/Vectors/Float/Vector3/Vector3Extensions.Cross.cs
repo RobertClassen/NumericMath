@@ -26,7 +26,8 @@ namespace WellDefinedValues
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
 		/// 
-		/// See https://docs.unity3d.com/ScriptReference/Vector3.Cross.html
+		/// See https://docs.unity3d.com/ScriptReference/Vector3.Cross.html  
+		/// See https://en.wikipedia.org/wiki/Cross_product
 		/// </remarks>
 		public static Vector3 Cross(this Vector3 vector, Vector3 other)
 		{
@@ -39,6 +40,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
+		/// 
+		/// See https://en.wikipedia.org/wiki/Cross_product
 		/// </remarks>
 		[Obsolete("Use 'DeterminantXY' instead.")]
 		public static float CrossXY(this Vector3 vector, Vector3 other)
@@ -52,6 +55,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
+		/// 
+		/// See https://en.wikipedia.org/wiki/Cross_product
 		/// </remarks>
 		[Obsolete("Use 'DeterminantXZ' instead.")]
 		public static float CrossXZ(this Vector3 vector, Vector3 other)
@@ -65,6 +70,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
+		/// 
+		/// See https://en.wikipedia.org/wiki/Cross_product
 		/// </remarks>
 		[Obsolete("Use 'DeterminantYZ' instead.")]
 		public static float CrossYZ(this Vector3 vector, Vector3 other)

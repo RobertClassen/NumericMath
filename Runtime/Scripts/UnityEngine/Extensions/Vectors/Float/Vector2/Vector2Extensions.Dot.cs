@@ -27,7 +27,8 @@ namespace WellDefinedValues
 		/// For normalized vectors Dot returns 1 if they point in exactly the same direction, 
 		/// -1 if they point in completely opposite directions and zero if the vectors are perpendicular.
 		/// 
-		/// See https://docs.unity3d.com/ScriptReference/Vector2.Dot.html
+		/// See https://docs.unity3d.com/ScriptReference/Vector2.Dot.html  
+		/// See https://en.wikipedia.org/wiki/Dot_product
 		/// </remarks>
 		public static float Dot(this Vector2 vector, Vector3 other)
 		{

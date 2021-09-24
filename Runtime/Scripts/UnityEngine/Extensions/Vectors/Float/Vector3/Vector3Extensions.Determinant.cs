@@ -26,6 +26,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Determinant(b) == b.Determinant(-a)`.
+		/// 
+		/// See https://en.wikipedia.org/wiki/Determinant
 		/// </remarks>
 		public static float DeterminantXY(this Vector3 vector, Vector3 other)
 		{
@@ -38,6 +40,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Determinant(b) == b.Determinant(-a)`.
+		/// 
+		/// See https://en.wikipedia.org/wiki/Determinant
 		/// </remarks>
 		public static float DeterminantXZ(this Vector3 vector, Vector3 other)
 		{
@@ -50,6 +54,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Determinant(b) == b.Determinant(-a)`.
+		/// 
+		/// See https://en.wikipedia.org/wiki/Determinant
 		/// </remarks>
 		public static float DeterminantYZ(this Vector3 vector, Vector3 other)
 		{

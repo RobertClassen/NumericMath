@@ -25,6 +25,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
+		/// 
+		/// See https://en.wikipedia.org/wiki/Determinant
 		/// </remarks>
 		public static float Determinant(this Vector2 vector, Vector2 other)
 		{
