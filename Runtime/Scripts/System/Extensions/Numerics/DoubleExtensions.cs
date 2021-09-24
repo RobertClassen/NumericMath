@@ -76,6 +76,30 @@
 			return Double.Lerp(a, b, t, IsClamped);
 		}
 
+		/// <summary>
+		/// Returns the larger of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.max
+		/// </remarks>
+		/// <seealso cref="Min"/>
+		public static double Max(this double value, double other)
+		{
+			return Math.Max(value, other);
+		}
+
+		/// <summary>
+		/// Returns the smaller of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.min
+		/// </remarks>
+		/// <seealso cref="Max"/>
+		public static double Min(this double value, double other)
+		{
+			return Math.Min(value, other);
+		}
+
 		public static double Modulo(this double dividend, double divisor)
 		{
 			if(divisor == Double.Zero)

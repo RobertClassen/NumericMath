@@ -39,8 +39,8 @@
 		/// See https://docs.unity3d.com/ScriptReference/Vector3.Angle.html
 		/// </remarks>
 		/// <param name="isSigned">
-		/// If set to <c>true</c> the returned angle is never greater than 180 degrees or smaller than -180 degrees.<br/>
-		/// If set to <c>false</c> the returned angle is never greater than 180 degrees.<br/>
+		/// If set to <c>true</c> the returned angle is never greater than 180° or smaller than -180°.<br/>
+		/// If set to <c>false</c> the returned angle is never greater than 180°.<br/>
 		/// </param>
 		public static float Angle(this Vector3 from, Vector3 to, Vector3 axis, bool isSigned = Core.Numeric.IsAngleSignedDefault)
 		{
@@ -83,6 +83,24 @@
 				t.Lerp(vector.x, other.x, isClamped), 
 				t.Lerp(vector.y, other.y, isClamped), 
 				t.Lerp(vector.z, other.z, isClamped));
+		}
+
+		/// <summary>
+		/// Returns a vector that is made from the largest components of two vectors.
+		/// </summary>
+		/// <seealso cref="Min"/>
+		public static Vector3 Max(this Vector3 vector, Vector3 other)
+		{
+			return new Vector3(vector.x.Max(other.x), vector.y.Max(other.y), vector.z.Max(other.z));
+		}
+
+		/// <summary>
+		/// Returns a vector that is made from the smallest components of two vectors.
+		/// </summary>
+		/// <seealso cref="Max"/>
+		public static Vector3 Min(this Vector3 vector, Vector3 other)
+		{
+			return new Vector3(vector.x.Min(other.x), vector.y.Min(other.y), vector.z.Min(other.z));
 		}
 
 		/// <summary>

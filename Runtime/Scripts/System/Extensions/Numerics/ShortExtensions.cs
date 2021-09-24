@@ -44,6 +44,30 @@ namespace WellDefinedValues
 			return isInclusive ? min <= value && value <= max : min < value && value < max;
 		}
 
+		/// <summary>
+		/// Returns the larger of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.max
+		/// </remarks>
+		/// <seealso cref="Min"/>
+		public static short Max(this short value, short other)
+		{
+			return Math.Max(value, other);
+		}
+
+		/// <summary>
+		/// Returns the smaller of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.min
+		/// </remarks>
+		/// <seealso cref="Max"/>
+		public static short Min(this short value, short other)
+		{
+			return Math.Min(value, other);
+		}
+
 		public static short Modulo(this short dividend, short divisor)
 		{
 			if(divisor == Float.Zero)

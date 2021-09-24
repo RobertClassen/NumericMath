@@ -76,6 +76,30 @@ namespace WellDefinedValues
 			return Decimal.Lerp(a, b, t, IsClamped);
 		}
 
+		/// <summary>
+		/// Returns the larger of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.max
+		/// </remarks>
+		/// <seealso cref="Min"/>
+		public static decimal Max(this decimal value, decimal other)
+		{
+			return Math.Max(value, other);
+		}
+
+		/// <summary>
+		/// Returns the smaller of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.min
+		/// </remarks>
+		/// <seealso cref="Max"/>
+		public static decimal Min(this decimal value, decimal other)
+		{
+			return Math.Min(value, other);
+		}
+
 		public static decimal Modulo(this decimal dividend, decimal divisor)
 		{
 			if(divisor == Decimal.Zero)

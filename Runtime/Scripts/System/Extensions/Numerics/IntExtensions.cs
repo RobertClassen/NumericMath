@@ -50,6 +50,30 @@
 			return value.IsClamped(Int.Zero, iCollection.Count - Int.One);
 		}
 
+		/// <summary>
+		/// Returns the larger of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.max
+		/// </remarks>
+		/// <seealso cref="Min"/>
+		public static int Max(this int value, int other)
+		{
+			return Math.Max(value, other);
+		}
+
+		/// <summary>
+		/// Returns the smaller of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.min
+		/// </remarks>
+		/// <seealso cref="Max"/>
+		public static int Min(this int value, int other)
+		{
+			return Math.Min(value, other);
+		}
+
 		/// <remarks>
 		/// Repeats the sequence from <c>zero</c> to <c>divisor</c> (exclusively), 
 		/// with the direction and <c>sign</c> based on the <c>sign</c> of the <c>divisor</c>.

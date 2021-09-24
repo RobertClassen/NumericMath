@@ -40,6 +40,30 @@ namespace WellDefinedValues
 			return isInclusive ? min <= value && value <= max : min < value && value < max;
 		}
 
+		/// <summary>
+		/// Returns the larger of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.max
+		/// </remarks>
+		/// <seealso cref="Min"/>
+		public static long Max(this long value, long other)
+		{
+			return Math.Max(value, other);
+		}
+
+		/// <summary>
+		/// Returns the smaller of two specified numbers.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.min
+		/// </remarks>
+		/// <seealso cref="Max"/>
+		public static long Min(this long value, long other)
+		{
+			return Math.Min(value, other);
+		}
+
 		public static long Modulo(this long dividend, long divisor)
 		{
 			if(divisor == Long.Zero)
