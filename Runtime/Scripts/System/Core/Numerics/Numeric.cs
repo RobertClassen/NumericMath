@@ -11,6 +11,7 @@
 		public const int DecimalBase = 10;
 		public const int HexBase = 16;
 
+		public const bool IsAngleSignedDefault = true;
 		public const bool IsClampEnabledDefault = true;
 		public const bool IsClampedInclusiveDefault = true;
 		public const bool IsLerpClampedDefault = false;
