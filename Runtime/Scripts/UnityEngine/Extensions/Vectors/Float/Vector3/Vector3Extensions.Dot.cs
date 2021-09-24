@@ -27,6 +27,8 @@ namespace WellDefinedValues
 		/// <remarks>
 		/// For normalized vectors Dot returns 1 if they point in exactly the same direction, 
 		/// -1 if they point in completely opposite directions and zero if the vectors are perpendicular.
+		/// 
+		/// See https://docs.unity3d.com/ScriptReference/Vector3.Dot.html
 		/// </remarks>
 		public static float Dot(this Vector3 vector, Vector3 other)
 		{
@@ -40,6 +42,8 @@ namespace WellDefinedValues
 		/// <remarks>
 		/// For normalized vectors Dot returns 1 if they point in exactly the same direction, 
 		/// -1 if they point in completely opposite directions and zero if the vectors are perpendicular.
+		/// 
+		/// See https://docs.unity3d.com/ScriptReference/Vector2.Dot.html
 		/// </remarks>
 		public static float DotXY(this Vector3 vector, Vector3 other)
 		{
@@ -53,6 +57,8 @@ namespace WellDefinedValues
 		/// <remarks>
 		/// For normalized vectors Dot returns 1 if they point in exactly the same direction, 
 		/// -1 if they point in completely opposite directions and zero if the vectors are perpendicular.
+		/// 
+		/// See https://docs.unity3d.com/ScriptReference/Vector2.Dot.html
 		/// </remarks>
 		public static float DotXZ(this Vector3 vector, Vector3 other)
 		{
@@ -66,6 +72,8 @@ namespace WellDefinedValues
 		/// <remarks>
 		/// For normalized vectors Dot returns 1 if they point in exactly the same direction, 
 		/// -1 if they point in completely opposite directions and zero if the vectors are perpendicular.
+		/// 
+		/// See https://docs.unity3d.com/ScriptReference/Vector2.Dot.html
 		/// </remarks>
 		public static float DotYZ(this Vector3 vector, Vector3 other)
 		{

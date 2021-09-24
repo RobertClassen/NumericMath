@@ -26,6 +26,8 @@ namespace WellDefinedValues
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.
+		/// 
+		/// See https://docs.unity3d.com/ScriptReference/Vector3.Cross.html
 		/// </remarks>
 		public static Vector3 Cross(this Vector3 vector, Vector3 other)
 		{
