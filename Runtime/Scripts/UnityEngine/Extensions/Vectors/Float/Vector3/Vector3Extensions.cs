@@ -47,42 +47,12 @@
 			return isSigned ? Vector3.SignedAngle(from, to, axis) : Vector3.Angle(from, to);
 		}
 
-		public static Vector3 Ceil(this Vector3 vector)
-		{
-			return new Vector3(vector.x.Ceil(), vector.y.Ceil(), vector.z.Ceil());
-		}
-
-		public static Vector3Int CeilToInt(this Vector3 vector)
-		{
-			return new Vector3Int(vector.x.CeilToInt(), vector.y.CeilToInt(), vector.z.CeilToInt());
-		}
-
-		public static Vector3 Floor(this Vector3 vector)
-		{
-			return new Vector3(vector.x.Floor(), vector.y.Floor(), vector.z.Floor());
-		}
-
-		public static Vector3Int FloorToInt(this Vector3 vector)
-		{
-			return new Vector3Int(vector.x.FloorToInt(), vector.y.FloorToInt(), vector.z.FloorToInt());
-		}
-
 		/// <summary>
 		/// Checks if the magnitude of the <c>vector</c> equals <c>1</c>.
 		/// </summary>
 		public static bool IsNormalized(this Vector3 vector)
 		{
 			return Math.Abs(vector.sqrMagnitude - Float.One) < delta;
-		}
-
-		public static Vector3 Round(this Vector3 vector)
-		{
-			return new Vector3(vector.x.Round(), vector.y.Round(), vector.z.Round());
-		}
-
-		public static Vector3Int RoundToInt(this Vector3 vector)
-		{
-			return new Vector3Int(vector.x.RoundToInt(), vector.y.RoundToInt(), vector.z.RoundToInt());
 		}
 
 		/// <summary>
