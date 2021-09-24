@@ -4,7 +4,6 @@ namespace WellDefinedValues
 	using System.Collections;
 	using System.Collections.Generic;
 	using UnityEngine;
-	using Random = UnityEngine.Random;
 
 	public static partial class Vector3Extensions
 	{
