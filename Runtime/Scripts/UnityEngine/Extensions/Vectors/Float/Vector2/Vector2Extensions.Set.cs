@@ -20,6 +20,11 @@ namespace WellDefinedValues
 		#endregion
 
 		#region Methods
+		public static Vector2 SetMagnitude(this Vector2 vector, float magnitude)
+		{
+			return vector.normalized * magnitude;
+		}
+
 		public static Vector2 SetX(this Vector2 vector, float x)
 		{
 			return new Vector2(x, vector.y);
