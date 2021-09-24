@@ -7,6 +7,10 @@
 
 	public static partial class Vector2Extensions
 	{
+		#region Constants
+		private const double delta = 1E-05;
+		#endregion
+
 		#region Fields
 
 		#endregion
@@ -23,6 +27,14 @@
 		public static Vector2 Abs(this Vector2 vector)
 		{
 			return new Vector2(vector.x.Abs(), vector.y.Abs());
+		}
+
+		/// <summary>
+		/// Checks if the magnitude of the <c>vector</c> equals <c>1</c>.
+		/// </summary>
+		public static bool IsNormalized(this Vector2 vector)
+		{
+			return Math.Abs(vector.sqrMagnitude - Float.One) < delta;
 		}
 
 		/// <remarks>

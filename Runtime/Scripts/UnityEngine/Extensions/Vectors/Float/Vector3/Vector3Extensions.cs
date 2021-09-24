@@ -8,6 +8,10 @@
 
 	public static partial class Vector3Extensions
 	{
+		#region Constants
+		private const double delta = 1E-05;
+		#endregion
+
 		#region Fields
 
 		#endregion
@@ -46,9 +50,12 @@
 			return new Vector3Int(vector.x.FloorToInt(), vector.y.FloorToInt(), vector.z.FloorToInt());
 		}
 
+		/// <summary>
+		/// Checks if the magnitude of the <c>vector</c> equals <c>1</c>.
+		/// </summary>
 		public static bool IsNormalized(this Vector3 vector)
 		{
-			return Math.Abs(vector.sqrMagnitude - Float.One) < 1E-05;
+			return Math.Abs(vector.sqrMagnitude - Float.One) < delta;
 		}
 
 		public static Vector3 Modulo(this Vector3 dividend, Vector3 divisor)
