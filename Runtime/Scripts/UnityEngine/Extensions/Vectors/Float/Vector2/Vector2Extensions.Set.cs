@@ -30,6 +30,14 @@ namespace WellDefinedValues
 			return new Vector2(x, vector.y);
 		}
 
+		/// <summary>
+		/// Returns a new vector with both compoenents set to <c>value</c>.
+		/// </summary>
+		public static Vector2 SetXY(this Vector2 vector, float value)
+		{
+			return new Vector2(value, value);
+		}
+
 		public static Vector2 SetY(this Vector2 vector, float y)
 		{
 			return new Vector2(vector.x, y);
