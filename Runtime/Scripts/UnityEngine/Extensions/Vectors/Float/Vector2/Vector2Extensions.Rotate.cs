@@ -36,8 +36,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point in a counter-clockwise direction around the <c>Z axis</c>.
 		/// </summary>
 		public static Vector2 Rotate(this Vector2 point, float degrees)
 		{
@@ -50,8 +49,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction around the <c>center</c>, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point in a counter-clockwise direction around the <c>Z axis</c>, around the <c>center</c>.
 		/// </summary>
 		public static Vector2 Rotate(this Vector2 point, float degrees, Vector2 center)
 		{
@@ -59,8 +57,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point by 90° in a counter-clockwise direction around the <c>Z axis</c>.
 		/// </summary>
 		public static Vector2 Rotate90(this Vector2 point)
 		{
@@ -68,8 +65,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction around the <c>center</c>, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point by 90° in a counter-clockwise direction around the <c>Z axis</c>, around the <c>center</c>.
 		/// </summary>
 		public static Vector2 Rotate90(this Vector2 point, Vector2 center)
 		{
@@ -77,8 +73,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point by 180° in a counter-clockwise direction around the <c>Z axis</c>.
 		/// </summary>
 		public static Vector2 Rotate180(this Vector2 point)
 		{
@@ -86,8 +81,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction around the <c>center</c>, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point by 180° in a counter-clockwise direction around the <c>Z axis</c>, around the <c>center</c>.
 		/// </summary>
 		public static Vector2 Rotate180(this Vector2 point, Vector2 center)
 		{
@@ -95,8 +89,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point by 270° in a counter-clockwise direction around the <c>Z axis</c>.
 		/// </summary>
 		public static Vector2 Rotate270(this Vector2 point)
 		{
@@ -104,8 +97,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Rotate the vector in a counter-clockwise direction around the <c>center</c>, 
-		/// for a 2D coordinate system where the positive Y axis goes up.
+		/// Rotates the point by 270° in a counter-clockwise direction around the <c>Z axis</c>, around the <c>center</c>.
 		/// </summary>
 		public static Vector2 Rotate270(this Vector2 point, Vector2 center)
 		{

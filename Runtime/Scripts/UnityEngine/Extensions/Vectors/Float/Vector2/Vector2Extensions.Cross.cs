@@ -21,7 +21,7 @@ namespace WellDefinedValues
 
 		#region Methods
 		/// <summary>
-		/// Returns the cross product of two vectors (which in 2d is the determinant).
+		/// Returns the cross product of two vectors (which in 2D is the determinant).
 		/// </summary>
 		/// <remarks>
 		/// This operation is anticommutative, i.e. `a.Cross(b) == b.Cross(-a)`.

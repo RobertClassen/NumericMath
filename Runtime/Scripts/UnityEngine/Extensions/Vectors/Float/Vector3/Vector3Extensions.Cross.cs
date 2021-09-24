@@ -35,7 +35,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Returns the cross product of two vectors (which in 2d is the determinant), 
+		/// Returns the cross product of two vectors (which in 2D is the determinant), 
 		/// for the <c>x</c> and <c>y</c> components.
 		/// </summary>
 		/// <remarks>
@@ -48,7 +48,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Returns the cross product of two vectors (which in 2d is the determinant), 
+		/// Returns the cross product of two vectors (which in 2D is the determinant), 
 		/// for the <c>x</c> and <c>z</c> components.
 		/// </summary>
 		/// <remarks>
@@ -61,7 +61,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Returns the cross product of two vectors (which in 2d is the determinant), 
+		/// Returns the cross product of two vectors (which in 2D is the determinant), 
 		/// for the <c>y</c> and <c>z</c> components.
 		/// </summary>
 		/// <remarks>
