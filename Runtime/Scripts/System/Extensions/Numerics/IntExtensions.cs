@@ -51,7 +51,8 @@
 		}
 
 		/// <remarks>
-		/// Returns correct results for all cases.
+		/// Repeats the sequence from <c>zero</c> to <c>divisor</c> (exclusively), 
+		/// with the direction and <c>sign</c> based on the <c>sign</c> of the <c>divisor</c>.
 		/// </remarks>
 		/// <seealso cref="Remainder"/>
 		/// <example>
@@ -88,7 +89,8 @@
 		}
 
 		/// <remarks>
-		/// Only returns correct results if both operands have the same sign.
+		/// Repeats the sequence from <c>zero</c> to <c>divisor</c> (exclusively), 
+		/// with the direction and <c>sign</c> based on the <c>sign</c> of the <c>dividend</c>.
 		/// </remarks>
 		/// <seealso cref="Modulo"/>
 		/// <example>

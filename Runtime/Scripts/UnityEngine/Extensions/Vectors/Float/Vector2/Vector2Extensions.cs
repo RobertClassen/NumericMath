@@ -56,7 +56,8 @@
 		}
 
 		/// <remarks>
-		/// Returns correct results both for positive and negative values.
+		/// Repeats the sequence from <c>zero</c> to <c>divisor</c> (exclusively), 
+		/// with the direction and <c>sign</c> based on the <c>sign</c> of the <c>divisor</c>, component-wise.
 		/// </remarks>
 		/// <seealso cref="Remainder"/>
 		/// <example>
@@ -68,7 +69,8 @@
 		}
 
 		/// <remarks>
-		/// Works for positive values but may return incorrect results for negative values.
+		/// Repeats the sequence from <c>zero</c> to <c>divisor</c> (exclusively), 
+		/// with the direction and <c>sign</c> based on the <c>sign</c> of the <c>dividend</c>, component-wise.
 		/// </remarks>
 		/// <seealso cref="Modulo"/>
 		/// <example>
