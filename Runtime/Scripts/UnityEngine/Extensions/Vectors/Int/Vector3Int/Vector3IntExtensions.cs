@@ -40,6 +40,9 @@ namespace WellDefinedValues
 			return new Vector3Int(dividend.x % divisor.x, dividend.y % divisor.y, dividend.z % divisor.z);
 		}
 
+		/// <summary>
+		/// Performs a component-wise `Sign` operation.
+		/// </summary>
 		public static Vector3Int Sign(this Vector3Int vector)
 		{
 			return new Vector3Int(vector.x.Sign(), vector.y.Sign(), vector.z.Sign());

@@ -115,9 +115,15 @@
 			return Math.Round(value) + Double.OneHalf;
 		}
 
-		public static int Sign(this double value)
+		/// <summary>
+		/// Returns <c>-1d</c>, <c>0d</c>, or <c>1d</c> to indicate the <c>sign</c> of the <c>value</c>.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.sign
+		/// </remarks>
+		public static double Sign(this double value)
 		{
-			return Math.Sign(value);
+			return (double)Math.Sign(value);
 		}
 
 		public static bool ToBool(this double value)

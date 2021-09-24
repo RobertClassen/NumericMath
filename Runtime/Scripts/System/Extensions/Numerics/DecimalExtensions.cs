@@ -115,9 +115,15 @@ namespace WellDefinedValues
 			return Math.Round(value) + Decimal.OneHalf;
 		}
 
-		public static int Sign(this decimal value)
+		/// <summary>
+		/// Returns <c>-1M</c>, <c>0M</c>, or <c>1M</c> to indicate the <c>sign</c> of the <c>value</c>.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.sign
+		/// </remarks>
+		public static decimal Sign(this decimal value)
 		{
-			return Math.Sign(value);
+			return (decimal)Math.Sign(value);
 		}
 
 		public static bool ToBool(this decimal value)

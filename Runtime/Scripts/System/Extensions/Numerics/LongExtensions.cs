@@ -58,9 +58,15 @@ namespace WellDefinedValues
 				remainder + divisor : remainder;
 		}
 
-		public static int Sign(this long value)
+		/// <summary>
+		/// Returns <c>-1L</c>, <c>0L</c>, or <c>1L</c> to indicate the <c>sign</c> of the <c>value</c>.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.microsoft.com/dotnet/api/system.math.sign
+		/// </remarks>
+		public static long Sign(this long value)
 		{
-			return Math.Sign(value);
+			return (long)Math.Sign(value);
 		}
 
 		public static string ToBinaryString(this long value)

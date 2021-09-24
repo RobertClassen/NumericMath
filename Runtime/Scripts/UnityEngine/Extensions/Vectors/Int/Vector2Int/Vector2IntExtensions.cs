@@ -40,6 +40,9 @@
 			return new Vector2Int(dividend.x % divisor.x, dividend.y % divisor.y);
 		}
 
+		/// <summary>
+		/// Performs a component-wise `Sign` operation.
+		/// </summary>
 		public static Vector2Int Sign(this Vector2Int vector)
 		{
 			return new Vector2Int(vector.x.Sign(), vector.y.Sign());

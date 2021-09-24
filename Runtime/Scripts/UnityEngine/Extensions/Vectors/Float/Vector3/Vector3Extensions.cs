@@ -73,6 +73,9 @@
 			return new Vector3Int(vector.x.RoundToInt(), vector.y.RoundToInt(), vector.z.RoundToInt());
 		}
 
+		/// <summary>
+		/// Performs a component-wise `Sign` operation.
+		/// </summary>
 		public static Vector3 Sign(this Vector3 vector)
 		{
 			return new Vector3(vector.x.Sign(), vector.y.Sign(), vector.z.Sign());
