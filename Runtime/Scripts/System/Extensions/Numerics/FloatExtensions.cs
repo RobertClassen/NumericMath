@@ -76,6 +76,25 @@
 			return Float.Lerp(a, b, t, IsClamped);
 		}
 
+		/// <remarks>
+		/// Returns correct results for all cases.
+		/// </remarks>
+		/// <seealso cref="Remainder"/>
+		/// <example>
+		/// <code>
+		/// float modulo = 3f;
+		/// float[] input    = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 3.1f, 4.1f, 5.1f };
+		/// float[] expected = {  1.1f,  2.1f,  0.1f,  1.1f,  2.1f, 0.1f, 1.1f, 2.1f, 0.1f, 1.1f, 2.1f };
+		/// float[] actual   = {  1.1f,  2.1f,  0.1f,  1.1f,  2.1f, 0.1f, 1.1f, 2.1f, 0.1f, 1.1f, 2.1f };
+		/// </code>
+		/// 
+		/// <code>
+		/// float modulo = -3f;
+		/// float[] input    = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f,  0.1f,  1.1f,  2.1f,  3.1f,  4.1f,  5.1f };
+		/// float[] expected = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f };
+		/// float[] actual   = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f };
+		/// </code>
+		/// </example>
 		public static float Modulo(this float dividend, float divisor)
 		{
 			if(divisor == Float.Zero)
@@ -92,6 +111,30 @@
 			// then adding the divisor puts it in the [divisor-1, 0] range.
 			return Float.Zero.IsClamped(remainder, divisor, false) || Float.Zero.IsClamped(divisor, remainder, false) ? 
 				remainder + divisor : remainder;
+		}
+
+		/// <remarks>
+		/// Only returns correct results if both operands have the same sign.
+		/// </remarks>
+		/// <seealso cref="Modulo"/>
+		/// <example>
+		/// <code>
+		/// float modulo = 3f;
+		/// float[] input    = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 3.1f, 4.1f, 5.1f };
+		/// float[] expected = {  1.1f,  2.1f,  0.1f,  1.1f,  2.1f, 0.1f, 1.1f, 2.1f, 0.1f, 1.1f, 2.1f };
+		/// float[] actual   = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 0.1f, 1.1f, 2.1f }; // Wrong for - % +
+		/// </code>
+		/// 
+		/// <code>
+		/// float modulo = -3f;
+		/// float[] input    = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f,  0.1f,  1.1f,  2.1f,  3.1f,  4.1f,  5.1f };
+		/// float[] expected = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f };
+		/// float[] actual   = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f,  0.1f,  1.1f,  2.1f,  0.1f,  1.1f,  2.1f }; // Wrong for + % -
+		/// </code>
+		[Obsolete("Use the '%' operator directly instead.")]
+		public static float Remainder(this float dividend, float divisor)
+		{
+			return dividend % divisor;
 		}
 
 		public static float Remap(this float value, float fromA, float fromB, float toA, float toB, 

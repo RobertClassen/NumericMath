@@ -50,6 +50,25 @@
 			return value.IsClamped(Int.Zero, iCollection.Count - Int.One);
 		}
 
+		/// <remarks>
+		/// Returns correct results for all cases.
+		/// </remarks>
+		/// <seealso cref="Remainder"/>
+		/// <example>
+		/// <code>
+		/// int modulo = 3;
+		/// int[] input    = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+		/// int[] expected = {  1,  2,  0,  1,  2, 0, 1, 2, 0, 1, 2 };
+		/// int[] actual   = {  1,  2,  0,  1,  2, 0, 1, 2, 0, 1, 2 };
+		/// </code>
+		/// 
+		/// <code>
+		/// int modulo = -3;
+		/// int[] input    = { -5, -4, -3, -2, -1, 0,  1,  2, 3,  4,  5 };
+		/// int[] expected = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
+		/// int[] actual   = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
+		/// </code>
+		/// </example>
 		public static int Modulo(this int dividend, int divisor)
 		{
 			if(divisor == Int.Zero)
@@ -66,6 +85,35 @@
 			// then adding the divisor puts it in the [divisor-1, 0] range.
 			return Int.Zero.IsClamped(remainder, divisor, false) || Int.Zero.IsClamped(divisor, remainder, false) ? 
 				remainder + divisor : remainder;
+		}
+
+		/// <remarks>
+		/// Only returns correct results if both operands have the same sign.
+		/// </remarks>
+		/// <seealso cref="Modulo"/>
+		/// <example>
+		/// <code>
+		/// int modulo = 3;
+		/// int[] input    = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+		/// int[] expected = {  1,  2,  0,  1,  2, 0, 1, 2, 0, 1, 2 };
+		/// int[] actual   = { -2, -1,  0, -2, -1, 0, 1, 2, 0, 1, 2 }; // Wrong for - % +
+		/// </code>
+		/// 
+		/// <code>
+		/// int modulo = -3;
+		/// int[] input    = { -5, -4, -3, -2, -1, 0,  1,  2, 3,  4,  5 };
+		/// int[] expected = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
+		/// int[] actual   = { -2, -1,  0, -2, -1, 0,  1,  2, 0,  1,  2 }; // Wrong for + % -
+		/// </code>
+		/// </example>
+		[Obsolete("Use the '%' operator directly instead.")]
+		public static int Remainder(this int dividend, int divisor)
+		{
+			if(divisor == Int.Zero)
+			{
+				throw new DivideByZeroException(nameof(Remainder) + "(0) is undefined.");
+			}
+			return dividend % divisor;
 		}
 
 		public static int Sign(this int value)
