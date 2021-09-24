@@ -104,7 +104,8 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Clamps the <c>x</c> and <c>y</c> components of the <c>vector</c> individually, between zero and one.
+		/// Clamps the <c>x</c> and <c>y</c> components of the <c>vector</c> individually, 
+		/// between <c>0</c> and <c>1</c>.
 		/// </summary>
 		public static Vector2 ClampXY01(this Vector2 vector, bool isEnabled = Core.Numeric.IsClampEnabledDefault)
 		{

@@ -25,6 +25,15 @@ namespace WellDefinedValues
 			return new Vector2(vector.x * x, vector.y);
 		}
 
+		/// <summary>
+		/// Scales both components of the vector.
+		/// </summary>
+		/// <remarks>
+		/// Similar to Vector2.Scale(Vector2 vector, Vector2 factor).  
+		/// Similar to vector.Scale(Vector2 factor), but returns the result instead of <c>void</c>.
+		/// 
+		/// See https://docs.unity3d.com/ScriptReference/Vector2.Scale.html
+		/// </remarks>
 		public static Vector2 ScaleXY(this Vector2 vector, Vector2 factor)
 		{
 			return new Vector2(vector.x * factor.x, vector.y * factor.y);
