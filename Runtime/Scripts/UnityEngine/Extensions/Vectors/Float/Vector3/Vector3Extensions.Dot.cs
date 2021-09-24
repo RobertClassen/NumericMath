@@ -22,7 +22,7 @@ namespace WellDefinedValues
 
 		#region Methods
 		/// <summary>
-		/// Returns the sum of the component-wise multiplication of both vectors.
+		/// Returns the sum of the component-wise multiplications of both vectors.
 		/// </summary>
 		/// <remarks>
 		/// For normalized vectors Dot returns 1 if they point in exactly the same direction, 
@@ -36,7 +36,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Returns the sum of the component-wise multiplication of both vectors, 
+		/// Returns the sum of the component-wise multiplications of both vectors, 
 		/// for the <c>x</c> and <c>y</c> components.
 		/// </summary>
 		/// <remarks>
@@ -51,7 +51,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Returns the sum of the component-wise multiplication of both vectors, 
+		/// Returns the sum of the component-wise multiplications of both vectors, 
 		/// for the <c>x</c> and <c>z</c> components.
 		/// </summary>
 		/// <remarks>
@@ -66,7 +66,7 @@ namespace WellDefinedValues
 		}
 
 		/// <summary>
-		/// Returns the sum of the component-wise multiplication of both vectors, 
+		/// Returns the sum of the component-wise multiplications of both vectors, 
 		/// for the <c>y</c> and <c>z</c> components.
 		/// </summary>
 		/// <remarks>
