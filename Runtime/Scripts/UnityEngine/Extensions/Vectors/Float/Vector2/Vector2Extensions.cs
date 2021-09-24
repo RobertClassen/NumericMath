@@ -48,6 +48,19 @@
 		}
 
 		/// <summary>
+		/// Returns the distance between both vectors.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.unity3d.com/ScriptReference/Vector2.Distance.html
+		/// </remarks>
+		public static float Distance(this Vector2 vector, Vector2 other)
+		{
+			float x = vector.x - other.x;
+			float y = vector.y - other.y;
+			return (float)Math.Sqrt((double)(x * x + y * y));
+		}
+
+		/// <summary>
 		/// Checks if the magnitude of the <c>vector</c> equals <c>1</c>.
 		/// </summary>
 		public static bool IsNormalized(this Vector2 vector)
