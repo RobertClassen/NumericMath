@@ -3,17 +3,11 @@
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
+	using Core;
 	using UnityEngine;
 
 	public static partial class RectExtensions
 	{
-		public const bool IsEnabledDefault = true;
-		public const float ExpansionFactor = 2f;
-		public const float IndentationWidth = 15f;
-		public const float RectSpace = 2f;
-		public const int XMin = Int.Zero;
-		public const int YMin = Int.Zero;
-
 		public static void DrawDebugLines(this Rect rect, Color color, float depth = Float.Zero)
 		{
 			#if UNITY_EDITOR
@@ -51,34 +45,34 @@
 			#endif
 		}
 
-		public static Rect Expand(this Rect rect, float margin, bool isEnabled = IsEnabledDefault)
+		public static Rect Expand(this Rect rect, float margin, bool isEnabled = Function.IsEnabledDefault)
 		{
 			return isEnabled ? rect.Expand(margin, margin, margin, margin) : rect;
 		}
 
-		public static Rect Expand(this Rect rect, float x, float y, bool isEnabled = IsEnabledDefault)
+		public static Rect Expand(this Rect rect, float x, float y, bool isEnabled = Function.IsEnabledDefault)
 		{
 			return isEnabled ? rect.Expand(x, x, y, y) : rect;
 		}
 
 		public static Rect Expand(this Rect rect, float left, float right, float down, float up, 
-			bool isEnabled = IsEnabledDefault)
+			bool isEnabled = Function.IsEnabledDefault)
 		{
 			return isEnabled ? new Rect(rect.x - left, rect.y - down, 
-				rect.width + right * ExpansionFactor, rect.height + up * ExpansionFactor) : rect;
+				rect.width + right * Rectangle.ExpansionFactor, rect.height + up * Rectangle.ExpansionFactor) : rect;
 		}
 
-		public static Rect Indent(this Rect rect, float width, bool isEnabled = IsEnabledDefault)
+		public static Rect Indent(this Rect rect, float width, bool isEnabled = Function.IsEnabledDefault)
 		{
 			return isEnabled ? new Rect(rect.x + width, rect.y, rect.width - width, rect.height) : rect;
 		}
 
-		public static Rect Indent(this Rect rect, int deltaLevel = Int.One, bool isEnabled = IsEnabledDefault)
+		public static Rect Indent(this Rect rect, int deltaLevel = Int.One, bool isEnabled = Function.IsEnabledDefault)
 		{
-			return isEnabled ? rect.Indent(deltaLevel * IndentationWidth) : rect;
+			return isEnabled ? rect.Indent(deltaLevel * Rectangle.IndentationWidth) : rect;
 		}
 
-		public static Rect RoundToMid(this Rect rect, bool isEnabled = IsEnabledDefault)
+		public static Rect RoundToMid(this Rect rect, bool isEnabled = Function.IsEnabledDefault)
 		{
 			if(!isEnabled)
 			{

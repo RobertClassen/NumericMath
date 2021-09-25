@@ -36,7 +36,7 @@
 
 		public static double Random(int min, int max, int decimals)
 		{
-			double magnitude = Math.Pow(Numeric.DecimalBase, decimals);
+			double magnitude = Math.Pow((double)Numeric.Base.Decimal, decimals);
 			return Random(min * (int)magnitude, max * (int)magnitude) / magnitude;
 		}
 

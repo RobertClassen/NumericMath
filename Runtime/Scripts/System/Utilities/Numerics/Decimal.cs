@@ -38,7 +38,7 @@ namespace WellDefinedValues
 
 		public static decimal Random(int min, int max, int decimals)
 		{
-			decimal magnitude = (decimal)Math.Pow(Numeric.DecimalBase, decimals);
+			decimal magnitude = (decimal)Math.Pow((double)Numeric.Base.Decimal, decimals);
 			return Random(min * (int)magnitude, max * (int)magnitude) / magnitude;
 		}
 

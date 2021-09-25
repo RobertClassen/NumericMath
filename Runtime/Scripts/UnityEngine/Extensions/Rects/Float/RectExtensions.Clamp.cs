@@ -3,11 +3,12 @@ namespace WellDefinedValues
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
+	using Core;
 	using UnityEngine;
 
 	public static partial class RectExtensions
 	{
-		public static Rect Clamp(this Rect rect, Rect constrainingRect, bool isEnabled = IsEnabledDefault)
+		public static Rect Clamp(this Rect rect, Rect constrainingRect, bool isEnabled = Function.IsEnabledDefault)
 		{
 			if(!isEnabled)
 			{

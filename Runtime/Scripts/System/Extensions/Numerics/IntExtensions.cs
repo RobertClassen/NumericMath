@@ -155,7 +155,7 @@
 
 		public static string ToBinaryString(this int value)
 		{
-			return Convert.ToString(value, Numeric.BinaryBase);
+			return Convert.ToString(value, (int)Numeric.Base.Binary);
 		}
 
 		public static bool ToBool(this int value)

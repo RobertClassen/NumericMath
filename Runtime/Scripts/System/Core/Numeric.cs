@@ -6,9 +6,13 @@
 
 	public static class Numeric
 	{
-		public const int BinaryBase = 2;
-		public const int DecimalBase = 10;
-		public const int HexBase = 16;
+		public enum Base
+		{
+			Binary = 2,
+			Octal = 8,
+			Decimal = 10,
+			Hex = 16,
+		}
 
 		public const bool IsAngleSignedDefault = true;
 		public const bool IsClampEnabledDefault = true;

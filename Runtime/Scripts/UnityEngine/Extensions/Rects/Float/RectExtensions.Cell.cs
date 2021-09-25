@@ -19,9 +19,9 @@ namespace WellDefinedValues
 		/// <param name="yCount">The number of rows.</param>
 		/// <param name="isEnabled">Returns the original <c>rect</c> if set to <c>false</c>.</param>
 		public static Rect GetCell(this Rect rect, int x, int y, int xCount, int yCount, 
-			bool isEnabled = IsEnabledDefault)
+			bool isEnabled = Function.IsEnabledDefault)
 		{
-			return isEnabled ? rect.GetCell(x, xCount, y, yCount, RectSpace, RectSpace) : rect;
+			return isEnabled ? rect.GetCell(x, xCount, y, yCount, Rectangle.Padding, Rectangle.Padding) : rect;
 		}
 
 		/// <summary>
@@ -36,7 +36,7 @@ namespace WellDefinedValues
 		/// <param name="space">The space between columns and rows.</param>
 		/// <param name="isEnabled">Returns the original <c>rect</c> if set to <c>false</c>.</param>
 		public static Rect GetCell(this Rect rect, int x, int y, int xCount, int yCount, float space, 
-			bool isEnabled = IsEnabledDefault)
+			bool isEnabled = Function.IsEnabledDefault)
 		{
 			return isEnabled ? rect.GetCell(x, xCount, y, yCount, space, space) : rect;
 		}
@@ -54,7 +54,7 @@ namespace WellDefinedValues
 		/// <param name="ySpace">The space between rows.</param>
 		/// <param name="isEnabled">Returns the original <c>rect</c> if set to <c>false</c>.</param>
 		public static Rect GetCell(this Rect rect, int x, int y, int xCount, int yCount, float xSpace, float ySpace, 
-			bool isEnabled = IsEnabledDefault)
+			bool isEnabled = Function.IsEnabledDefault)
 		{
 			if(!isEnabled)
 			{
@@ -77,8 +77,8 @@ namespace WellDefinedValues
 		/// <param name="xCount">The number of columns.</param>
 		/// <param name="xSpace">The space between columns.</param>
 		/// <param name="isEnabled">Returns the original <c>rect</c> if set to <c>false</c>.</param>
-		public static Rect GetColumn(this Rect rect, int x, int xCount, float xSpace = RectSpace, 
-			bool isEnabled = IsEnabledDefault)
+		public static Rect GetColumn(this Rect rect, int x, int xCount, float xSpace = Rectangle.Padding, 
+			bool isEnabled = Function.IsEnabledDefault)
 		{
 			if(!isEnabled)
 			{
@@ -98,8 +98,8 @@ namespace WellDefinedValues
 		/// <param name="yCount">The number of rows.</param>
 		/// <param name="ySpace">The space between rows.</param>
 		/// <param name="isEnabled">Returns the original <c>rect</c> if set to <c>false</c>.</param>
-		public static Rect GetRow(this Rect rect, int y, int yCount, float ySpace = RectSpace, 
-			bool isEnabled = IsEnabledDefault)
+		public static Rect GetRow(this Rect rect, int y, int yCount, float ySpace = Rectangle.Padding, 
+			bool isEnabled = Function.IsEnabledDefault)
 		{
 			if(!isEnabled)
 			{
@@ -113,12 +113,12 @@ namespace WellDefinedValues
 
 		private static void ValidateX(int x, int xCount, out int xMax)
 		{
-			if(xCount <= XMin)
+			if(xCount <= Index.XMin)
 			{
 				throw new ArgumentLessEqualsZeroException(nameof(xCount), xCount);
 			}
 			xMax = xCount - Int.One;
-			if(!x.IsClamped(XMin, xMax))
+			if(!x.IsClamped(Index.XMin, xMax))
 			{
 				throw new ArgumentOutOfRangeException(nameof(x), x, 
 					string.Format("'{0}' must be non-negative and less than '{1}' ({2})", 
@@ -128,12 +128,12 @@ namespace WellDefinedValues
 
 		private static void ValidateY(int y, int yCount, out int yMax)
 		{
-			if(yCount <= XMin)
+			if(yCount <= Index.XMin)
 			{
 				throw new ArgumentLessEqualsZeroException(nameof(yCount), yCount);
 			}
 			yMax = yCount - Int.One;
-			if(!y.IsClamped(XMin, yMax))
+			if(!y.IsClamped(Index.XMin, yMax))
 			{
 				throw new ArgumentOutOfRangeException(nameof(y), y, 
 					string.Format("'{0}' must be non-negative and less than '{1}' ({2})", 

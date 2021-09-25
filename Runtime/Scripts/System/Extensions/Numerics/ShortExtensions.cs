@@ -99,7 +99,7 @@ namespace WellDefinedValues
 
 		public static string ToBinaryString(this short value)
 		{
-			return Convert.ToString(value, Numeric.BinaryBase);
+			return Convert.ToString(value, (int)Numeric.Base.Binary);
 		}
 
 		public static bool ToBool(this short value)
