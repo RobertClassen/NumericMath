@@ -6,9 +6,14 @@ namespace WellDefinedValues
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Abs(this decimal value)
+		public static decimal Ceil(this decimal value)
 		{
-			return Math.Abs(value);
+			return Math.Ceiling(value);
+		}
+
+		public static long CeilToInt(this decimal value)
+		{
+			return (long)value.Ceil();
 		}
 	}
 }
