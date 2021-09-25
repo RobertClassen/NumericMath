@@ -6,9 +6,9 @@ namespace WellDefinedValues
 
 	public static partial class LongExtensions
 	{
-		public static long Abs(this long value)
+		public static bool ToBool(this long value)
 		{
-			return Math.Abs(value);
+			return value != Long.Zero;
 		}
 	}
 }
