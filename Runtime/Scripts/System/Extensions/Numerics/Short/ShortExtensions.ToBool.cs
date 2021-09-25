@@ -6,9 +6,9 @@ namespace WellDefinedValues
 
 	public static partial class ShortExtensions
 	{
-		public static short Abs(this short value)
+		public static string ToHexString(this short value, int minLength = Short.HexLength)
 		{
-			return Math.Abs(value);
+			return value.ToString("X" + minLength);
 		}
 	}
 }
