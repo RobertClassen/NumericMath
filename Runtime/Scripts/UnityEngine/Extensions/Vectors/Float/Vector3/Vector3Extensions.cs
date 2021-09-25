@@ -7,10 +7,6 @@
 
 	public static partial class Vector3Extensions
 	{
-		#region Constants
-		private const double delta = 1E-05;
-		#endregion
-
 		#region Fields
 
 		#endregion
@@ -66,7 +62,7 @@
 		/// </summary>
 		public static bool IsNormalized(this Vector3 vector)
 		{
-			return Math.Abs(vector.sqrMagnitude - Float.One) < delta;
+			return Math.Abs(vector.sqrMagnitude - Float.One) < Core.Numeric.MagnitudeDelta;
 		}
 
 		/// <summary>
