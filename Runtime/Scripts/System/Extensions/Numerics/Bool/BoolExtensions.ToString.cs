@@ -4,13 +4,8 @@ namespace WellDefinedValues
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static class BoolExtensions
+	public static partial class BoolExtensions
 	{
-		public static int ToInt(this bool value)
-		{
-			return value ? Int.One : Int.Zero;
-		}
-
 		public static string ToBinaryString(this bool value)
 		{
 			return value.ToInt().ToString();
