@@ -1,4 +1,4 @@
-﻿namespace WellDefinedValues
+namespace WellDefinedValues
 {
 	using System;
 	using System.Collections;
@@ -6,9 +6,9 @@
 
 	public static partial class StringExtensions
 	{
-		public static bool Contains(this string text, char value)
+		public static bool IsNullOrEmpty(this string text)
 		{
-			return text.IndexOf(value) >= Int.Zero;
+			return string.IsNullOrEmpty(text);
 		}
 	}
 }
