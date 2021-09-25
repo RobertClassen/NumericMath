@@ -88,9 +88,9 @@
 			return (byte)Math.Sign((short)value);
 		}
 
-		public static string ToBinaryString(this byte value)
+		public static string ToBinaryString(this byte value, int minLength = Byte.BitCount)
 		{
-			return Convert.ToString(value, (int)Numeric.Base.Binary);
+			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Char.Zero);
 		}
 
 		public static bool ToBool(this byte value)

@@ -97,9 +97,9 @@ namespace WellDefinedValues
 			return (short)Math.Sign(value);
 		}
 
-		public static string ToBinaryString(this short value)
+		public static string ToBinaryString(this short value, int minLength = Short.BitCount)
 		{
-			return Convert.ToString(value, (int)Numeric.Base.Binary);
+			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Char.Zero);
 		}
 
 		public static bool ToBool(this short value)

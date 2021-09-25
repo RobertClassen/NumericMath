@@ -93,9 +93,9 @@ namespace WellDefinedValues
 			return (long)Math.Sign(value);
 		}
 
-		public static string ToBinaryString(this long value)
+		public static string ToBinaryString(this long value, int minLength = Long.BitCount)
 		{
-			return Convert.ToString(value, (int)Numeric.Base.Binary);
+			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Char.Zero);
 		}
 
 		public static bool ToBool(this long value)

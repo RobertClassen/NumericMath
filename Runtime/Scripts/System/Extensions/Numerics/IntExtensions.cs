@@ -153,9 +153,9 @@
 			return Math.Sign(value);
 		}
 
-		public static string ToBinaryString(this int value)
+		public static string ToBinaryString(this int value, int minLength = Int.BitCount)
 		{
-			return Convert.ToString(value, (int)Numeric.Base.Binary);
+			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Char.Zero);
 		}
 
 		public static bool ToBool(this int value)
