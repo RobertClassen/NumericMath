@@ -8,6 +8,6 @@ namespace WellDefinedValues.Core
 	{
 		public const float ExpansionFactor = 2f;
 		public const float IndentationWidth = 15f;
-		public const float Padding = 2f;
+		public const float SpaceDefault = 2f;
 	}
 }
