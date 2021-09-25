@@ -6,7 +6,6 @@ namespace WellDefinedValues
 
 	public static partial class Long
 	{
-		#region Enums
 		[Flags]
 		public enum Enum : ulong
 		{
@@ -479,22 +478,5 @@ namespace WellDefinedValues
 			Everything = unchecked(~Nothing),
 			#endif
 		}
-		#endregion
-
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
-
-		#endregion
 	}
 }

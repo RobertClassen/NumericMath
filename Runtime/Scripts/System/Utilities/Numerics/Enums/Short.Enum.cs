@@ -6,7 +6,6 @@ namespace WellDefinedValues
 
 	public static partial class Short
 	{
-		#region Enums
 		[Flags]
 		public enum Enum : ushort
 		{
@@ -143,22 +142,5 @@ namespace WellDefinedValues
 			Everything = unchecked((ushort)~Nothing),
 			#endif
 		}
-		#endregion
-
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
-
-		#endregion
 	}
 }

@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Returns the cross product of two vectors (which in 3d is a perpendicular vector).
 		/// </summary>
@@ -78,6 +65,5 @@ namespace WellDefinedValues
 		{
 			return vector.y * other.z - other.y * vector.z;
 		}
-		#endregion
 	}
 }

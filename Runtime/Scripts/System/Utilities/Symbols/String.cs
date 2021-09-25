@@ -6,7 +6,6 @@ namespace WellDefinedValues
 
 	public static class String
 	{
-		#region Fields
 		/// <summary>
 		/// Null
 		/// </summary>
@@ -97,18 +96,5 @@ namespace WellDefinedValues
 		public const string Pipe = "|";
 		public const string ClosingBrace = "}";
 		public const string Tilde = "~";
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
-		
-		#endregion
 	}
 }

@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Rotates the point in a counter-clockwise direction around the <c>axis</c> 
 		/// (looking along the <c>axis</c>).
@@ -81,6 +68,5 @@ namespace WellDefinedValues
 		{
 			return (point - center).Rotate(quaternion) + center;
 		}
-		#endregion
 	}
 }

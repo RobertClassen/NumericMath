@@ -6,7 +6,6 @@ namespace WellDefinedValues
 
 	public static class Char
 	{
-		#region Constants
 		/// <summary>
 		/// <c>'\0'</c>
 		/// </summary>
@@ -97,22 +96,5 @@ namespace WellDefinedValues
 		public const char Pipe = '|';
 		public const char ClosingBrace = '}';
 		public const char Tilde = '~';
-		#endregion
-
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
-		
-		#endregion
 	}
 }

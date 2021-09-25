@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Clamps the magnitude of the <c>vector</c> between <c>min</c> and <c>max</c>.
 		/// </summary>
@@ -119,6 +106,5 @@ namespace WellDefinedValues
 		{
 			return new Vector2(vector.x, vector.y.Clamp(min, max));
 		}
-		#endregion
 	}
 }

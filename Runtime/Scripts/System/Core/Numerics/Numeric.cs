@@ -6,7 +6,6 @@
 
 	public static class Numeric
 	{
-		#region Constants
 		public const int BinaryBase = 2;
 		public const int DecimalBase = 10;
 		public const int HexBase = 16;
@@ -17,22 +16,5 @@
 		public const bool IsLerpClampedDefault = false;
 
 		public const float MagnitudeDelta = 0.00001f;
-		#endregion
-
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
-
-		#endregion
 	}
 }

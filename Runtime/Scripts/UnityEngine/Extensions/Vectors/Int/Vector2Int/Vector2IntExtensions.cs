@@ -7,19 +7,6 @@
 
 	public static partial class Vector2IntExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Vector2Int Abs(this Vector2Int vector)
 		{
 			return new Vector2Int(vector.x.Abs(), vector.y.Abs());
@@ -52,6 +39,5 @@
 		{
 			return new RectInt(position, size);
 		}
-		#endregion
 	}
 }

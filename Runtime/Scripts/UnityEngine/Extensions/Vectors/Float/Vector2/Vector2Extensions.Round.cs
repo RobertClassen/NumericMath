@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Rounds both components of the vector.
 		/// </summary>
@@ -35,6 +22,5 @@ namespace WellDefinedValues
 		{
 			return new Vector2Int(vector.x.RoundToInt(), vector.y.RoundToInt());
 		}
-		#endregion
 	}
 }

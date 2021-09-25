@@ -10,14 +10,6 @@ namespace WellDefinedValues
 		public const string DefaultMessage = "Argument must be greater than or equal to zero";
 		#endregion
 
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
 		#region Constructors
 		public ArgumentLessThanZeroException()
 		{
@@ -47,10 +39,6 @@ namespace WellDefinedValues
 			base(paramName, message)
 		{
 		}
-		#endregion
-
-		#region Methods
-		
 		#endregion
 	}
 }

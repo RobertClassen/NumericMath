@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Reflects the vector off the plane defined by the <c>normal</c>.
 		/// </summary>
@@ -86,6 +73,5 @@ namespace WellDefinedValues
 		{
 			return new Vector3(vector.x, vector.y, -vector.z);
 		}
-		#endregion
 	}
 }

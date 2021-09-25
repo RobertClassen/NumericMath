@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Returns the signed magnitude of the area of the parallelogram 
 		/// described by the <c>x</c> and <c>y</c> components of the vectors.
@@ -61,6 +48,5 @@ namespace WellDefinedValues
 		{
 			return vector.y * other.z - other.y * vector.z;
 		}
-		#endregion
 	}
 }

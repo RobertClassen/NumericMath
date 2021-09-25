@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2IntExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static Vector2Int ClampXY(this Vector2Int vector, Vector2Int min, Vector2Int max)
 		{
 			return new Vector2Int(vector.x.Clamp(min.x, max.x), vector.y.Clamp(min.y, max.y));
@@ -29,6 +16,5 @@ namespace WellDefinedValues
 		{
 			return vector.ClampXY(rect.min, rect.max);
 		}
-		#endregion
 	}
 }

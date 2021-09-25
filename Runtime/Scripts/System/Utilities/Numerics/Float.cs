@@ -19,18 +19,6 @@
 		private static readonly Random random = new Random();
 		#endregion
 
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
 		#region Methods
 		public static float InverseLerp(float a, float b, float value, bool isClamped = Numeric.IsLerpClampedDefault)
 		{

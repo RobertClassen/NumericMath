@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3IntExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static Vector3Int ClampX(this Vector3Int vector, int min, int max)
 		{
 			return new Vector3Int(vector.x.Clamp(min, max), vector.y, vector.z);
@@ -54,6 +41,5 @@ namespace WellDefinedValues
 		{
 			return new Vector3Int(vector.x, vector.y, vector.z.Clamp(min, max));
 		}
-		#endregion
 	}
 }

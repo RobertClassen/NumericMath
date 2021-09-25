@@ -3,29 +3,11 @@ namespace WellDefinedValues
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
+	using Core;
 	using UnityEngine;
 
 	public static partial class RectExtensions
 	{
-		#region Constants
-		private const float RectSpace = 2f;
-		private const int XMin = Int.Zero;
-		private const int YMin = Int.Zero;
-		#endregion
-
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Divides the <c>rect</c> into <c>xCount</c> columns and <c>yCount</c> rows 
 		/// and returns the <c>Rect</c> for the cell at column <c>x</c>, row <c>y</c>.
@@ -158,6 +140,5 @@ namespace WellDefinedValues
 						nameof(y), nameof(yCount), yCount));
 			}
 		}
-		#endregion
 	}
 }

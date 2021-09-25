@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3IntExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static Vector3Int Abs(this Vector3Int vector)
 		{
 			return new Vector3Int(vector.x.Abs(), vector.y.Abs(), vector.z.Abs());
@@ -47,6 +34,5 @@ namespace WellDefinedValues
 		{
 			return new Vector3Int(vector.x.Sign(), vector.y.Sign(), vector.z.Sign());
 		}
-		#endregion
 	}
 }

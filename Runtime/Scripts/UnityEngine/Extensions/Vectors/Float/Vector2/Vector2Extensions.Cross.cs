@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Returns the cross product of two vectors (which in 2D is the determinant).
 		/// </summary>
@@ -33,6 +20,5 @@ namespace WellDefinedValues
 		{
 			return vector.x * other.y - other.x * vector.y;
 		}
-		#endregion
 	}
 }

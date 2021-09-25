@@ -7,19 +7,6 @@
 
 	public static class Vector4Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Vector4 InvertUVRectX(this Vector4 vector)
 		{
 			vector.z = Float.One - vector.z - vector.x;
@@ -40,6 +27,5 @@
 				vector.x * scale.x, 
 				vector.y * scale.y);
 		}
-		#endregion
 	}
 }

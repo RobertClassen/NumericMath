@@ -14,18 +14,6 @@
 		public const short Hundred = Byte.Hundred;
 		#endregion
 
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
 		#region Methods
 		public static short Random(short min, short max)
 		{

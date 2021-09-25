@@ -7,25 +7,13 @@
 
 	public static partial class RectExtensions
 	{
-		#region Constants
-		private const bool IsEnabledDefault = true;
-		private const float IndentationWidth = 15f;
-		private const float ExpansionFactor = 2f;
-		#endregion
+		public const bool IsEnabledDefault = true;
+		public const float ExpansionFactor = 2f;
+		public const float IndentationWidth = 15f;
+		public const float RectSpace = 2f;
+		public const int XMin = Int.Zero;
+		public const int YMin = Int.Zero;
 
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static void DrawDebugLines(this Rect rect, Color color, float depth = Float.Zero)
 		{
 			#if UNITY_EDITOR
@@ -102,6 +90,5 @@
 			rect.yMax = rect.yMax.RoundToMid();
 			return rect;
 		}
-		#endregion
 	}
 }

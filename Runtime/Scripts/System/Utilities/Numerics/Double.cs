@@ -17,18 +17,6 @@
 		public const double OneHalf = One / (One + One);
 		#endregion
 
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
 		#region Methods
 		public static double InverseLerp(double a, double b, double value, bool isClamped = Numeric.IsLerpClampedDefault)
 		{

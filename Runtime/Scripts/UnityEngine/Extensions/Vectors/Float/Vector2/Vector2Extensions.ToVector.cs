@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static Rect ToRect(this Vector2 size, Vector2 position = default(Vector2))
 		{
 			return new Rect(position, size);
@@ -44,6 +31,5 @@ namespace WellDefinedValues
 		{
 			return new Vector2Int((int)vector.x, (int)vector.y);
 		}
-		#endregion
 	}
 }

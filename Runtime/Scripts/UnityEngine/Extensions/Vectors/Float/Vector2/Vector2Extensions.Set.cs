@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Vector2 SetMagnitude(this Vector2 vector, float magnitude)
 		{
 			return vector.normalized * magnitude;
@@ -42,6 +29,5 @@ namespace WellDefinedValues
 		{
 			return new Vector2(vector.x, y);
 		}
-		#endregion
 	}
 }

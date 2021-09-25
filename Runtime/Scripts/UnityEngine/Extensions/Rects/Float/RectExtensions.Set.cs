@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class RectExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static Rect SetHeight(this Rect rect, float height, bool isEnabled = IsEnabledDefault)
 		{
 			return isEnabled ? rect.SetSize(rect.width, height) : rect;
@@ -74,6 +61,5 @@ namespace WellDefinedValues
 		{
 			return isEnabled ? new Rect(rect.x, y, rect.width, rect.height + rect.y - y) : rect;
 		}
-		#endregion
 	}
 }

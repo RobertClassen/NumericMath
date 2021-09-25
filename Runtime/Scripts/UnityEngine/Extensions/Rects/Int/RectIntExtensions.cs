@@ -7,19 +7,6 @@
 
 	public static partial class RectIntExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static void DrawDebugLines(this RectInt rect, Color color, float depth = Float.Zero)
 		{
 			#if UNITY_EDITOR
@@ -61,6 +48,5 @@
 		{
 			return new RectInt(rect.min - size, rect.max + size * 2);
 		}
-		#endregion
 	}
 }

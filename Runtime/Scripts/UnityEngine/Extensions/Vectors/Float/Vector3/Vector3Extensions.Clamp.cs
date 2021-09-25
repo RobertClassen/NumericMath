@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Vector3 Clamp01(this Vector3 vector, bool isEnabled = Core.Numeric.IsClampEnabledDefault)
 		{
 			return isEnabled ? vector.ClampXYZ(Vector3.zero, Vector3.one) : vector;
@@ -74,6 +61,5 @@ namespace WellDefinedValues
 		{
 			return new Vector3(vector.x, vector.y, vector.z.Clamp(min, max));
 		}
-		#endregion
 	}
 }

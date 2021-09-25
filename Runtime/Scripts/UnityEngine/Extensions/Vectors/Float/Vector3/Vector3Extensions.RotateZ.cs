@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Rotates the point in a counter-clockwise direction around the <c>Z axis</c> 
 		/// (looking along the <c>Z axis</c>).
@@ -97,6 +84,5 @@ namespace WellDefinedValues
 		{
 			return (point - center).RotateZ270() + center;
 		}
-		#endregion
 	}
 }

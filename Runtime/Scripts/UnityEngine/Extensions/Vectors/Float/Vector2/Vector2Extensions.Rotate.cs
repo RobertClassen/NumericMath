@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Returns the 2D vector perpendicular to this 2D vector.
 		/// </summary>
@@ -103,6 +90,5 @@ namespace WellDefinedValues
 		{
 			return (point - center).Rotate270() + center;
 		}
-		#endregion
 	}
 }

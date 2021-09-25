@@ -7,19 +7,6 @@
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Vector3 Abs(this Vector3 vector)
 		{
 			return new Vector3(vector.x.Abs(), vector.y.Abs(), vector.z.Abs());
@@ -143,6 +130,5 @@
 		{
 			return Vector3.SmoothDamp(point, target, ref currentVelocity, smoothTime, maxSpeed, deltaTime);
 		}
-		#endregion
 	}
 }

@@ -6,7 +6,6 @@ namespace WellDefinedValues
 
 	public static partial class Byte
 	{
-		#region Enums
 		[Flags]
 		public enum Enum : byte
 		{
@@ -87,22 +86,5 @@ namespace WellDefinedValues
 			Everything = unchecked((byte)~Nothing),
 			#endif
 		}
-		#endregion
-
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
-
-		#endregion
 	}
 }

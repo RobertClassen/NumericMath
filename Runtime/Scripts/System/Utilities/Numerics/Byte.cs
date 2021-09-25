@@ -14,18 +14,6 @@
 		public const byte Hundred = 100;
 		#endregion
 
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
 		#region Methods
 		public static byte Random(byte min, byte max)
 		{

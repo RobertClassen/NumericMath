@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Vector2Int ToVector2IntXY(this Vector3 vector)
 		{
 			return new Vector2Int((int)vector.x, (int)vector.y);
@@ -54,6 +41,5 @@ namespace WellDefinedValues
 		{
 			return new Vector3Int((int)vector.x, (int)vector.y, (int)vector.z);
 		}
-		#endregion
 	}
 }

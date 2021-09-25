@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <remarks>
 		/// Repeats the sequence from <c>zero</c> to <c>divisor</c> (exclusively), 
 		/// with the direction and <c>sign</c> based on the <c>sign</c> of the <c>divisor</c>, component-wise.
@@ -45,6 +32,5 @@ namespace WellDefinedValues
 		{
 			return new Vector2(dividend.x % divisor.x, dividend.y % divisor.y);
 		}
-		#endregion
 	}
 }

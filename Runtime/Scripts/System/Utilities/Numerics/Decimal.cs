@@ -19,18 +19,6 @@ namespace WellDefinedValues
 		private static readonly Random random = new Random();
 		#endregion
 
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
 		#region Methods
 		public static decimal InverseLerp(decimal a, decimal b, decimal value, bool isClamped = Numeric.IsLerpClampedDefault)
 		{

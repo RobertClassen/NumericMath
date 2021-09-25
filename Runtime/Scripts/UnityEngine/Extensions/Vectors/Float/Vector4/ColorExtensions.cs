@@ -3,24 +3,10 @@
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
-	using Core;
 	using UnityEngine;
 
 	public static class ColorExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Color Clamp(this Color color, Color min, Color max)
 		{
 			return new Color(
@@ -30,7 +16,7 @@
 				color.a.Clamp(min.a, max.a));
 		}
 
-		public static Color Clamp01(this Color color, bool isEnabled = Numeric.IsClampEnabledDefault)
+		public static Color Clamp01(this Color color, bool isEnabled = Core.Numeric.IsClampEnabledDefault)
 		{
 			return isEnabled ? new Color(
 				color.r.Clamp01(), 
@@ -61,6 +47,5 @@
 		{
 			return String.Hashtag + ColorUtility.ToHtmlStringRGBA(color);
 		}
-		#endregion
 	}
 }

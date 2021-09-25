@@ -7,19 +7,6 @@
 
 	public static partial class Vector2Extensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static Vector2 Abs(this Vector2 vector)
 		{
 			return new Vector2(vector.x.Abs(), vector.y.Abs());
@@ -141,6 +128,5 @@
 		{
 			return Vector2.SmoothDamp(point, target, ref currentVelocity, smoothTime, maxSpeed, deltaTime);
 		}
-		#endregion
 	}
 }

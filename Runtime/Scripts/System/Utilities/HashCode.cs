@@ -11,18 +11,6 @@ namespace WellDefinedValues
 		private const int factor = 9176;
 		#endregion
 
-		#region Fields
-
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
 		#region Methods
 		public static int Combine(int value0, int value1)
 		{

@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class RectExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static Rect Clamp(this Rect rect, Rect constrainingRect, bool isEnabled = IsEnabledDefault)
 		{
 			if(!isEnabled)
@@ -32,6 +19,5 @@ namespace WellDefinedValues
 			rect.yMax = rect.yMax.Clamp(constrainingRect.yMin, constrainingRect.yMax);
 			return rect;
 		}
-		#endregion
 	}
 }

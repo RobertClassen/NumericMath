@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Vector3Extensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Returns the sum of the component-wise multiplications of both vectors.
 		/// </summary>
@@ -82,6 +69,5 @@ namespace WellDefinedValues
 		{
 			return vector.y * other.y + vector.z + other.z;
 		}
-		#endregion
 	}
 }
