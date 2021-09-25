@@ -7,7 +7,8 @@
 	public static partial class Byte
 	{
 		#region Constants
-		public const int BitCount = sizeof(byte) * 8;
+		public const byte BitCount = sizeof(byte) * 8;
+		public const int HexLength = BitCount >> (One + One);
 
 		public const byte Zero = One - One;
 		public const byte One = 1;

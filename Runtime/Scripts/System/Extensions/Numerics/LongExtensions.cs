@@ -103,9 +103,9 @@ namespace WellDefinedValues
 			return value != Long.Zero;
 		}
 
-		public static string ToHexString(this long value)
+		public static string ToHexString(this long value, int minLength = Long.HexLength)
 		{
-			return value.ToString("X16");
+			return value.ToString("X" + minLength);
 		}
 
 		public static string ToInvariantString(this long value, string format = String.Null)

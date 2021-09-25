@@ -8,6 +8,7 @@
 	{
 		#region Constants
 		public const byte BitCount = sizeof(long) * Byte.BitCount;
+		public const int HexLength = BitCount >> (int)(One + One);
 
 		public const long Zero = Byte.Zero;
 		public const long One = Byte.One;

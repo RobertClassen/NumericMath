@@ -98,9 +98,9 @@
 			return value != Byte.Zero;
 		}
 
-		public static string ToHexString(this byte value)
+		public static string ToHexString(this byte value, int minLength = Byte.HexLength)
 		{
-			return value.ToString("X2");
+			return value.ToString("X" + minLength);
 		}
 
 		public static string ToInvariantString(this byte value, string format = String.Null)

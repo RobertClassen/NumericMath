@@ -163,9 +163,9 @@
 			return value != Int.Zero;
 		}
 
-		public static string ToHexString(this int value)
+		public static string ToHexString(this int value, int minLength = Int.HexLength)
 		{
-			return value.ToString("X8");
+			return value.ToString("X" + minLength);
 		}
 
 		public static string ToInvariantString(this int value, string format = String.Null)
