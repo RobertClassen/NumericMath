@@ -7,8 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Decimal
 	{
-		private static readonly Random random = new Random();
-
 		public static decimal Random(int min, int max)
 		{
 			return Int.Random(min, max);

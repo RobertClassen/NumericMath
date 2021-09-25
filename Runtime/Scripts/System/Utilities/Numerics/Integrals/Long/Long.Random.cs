@@ -3,14 +3,13 @@ namespace WellDefinedValues
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
+	using Core;
 
 	public static partial class Long
 	{
-		private static readonly Random random = new Random();
-
 		public static int Random(int min, int max)
 		{
-			return random.Next(min, max);
+			return Numeric.Random.Next(min, max);
 		}
 	}
 }

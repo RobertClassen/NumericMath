@@ -20,5 +20,7 @@
 		public const bool IsLerpClampedDefault = false;
 
 		public const float MagnitudeDelta = 0.00001f;
+
+		public static readonly Random Random = new Random();
 	}
 }

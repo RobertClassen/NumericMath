@@ -7,8 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class Float
 	{
-		private static readonly Random random = new Random();
-
 		public static float Random(int min, int max)
 		{
 			return Int.Random(min, max);
