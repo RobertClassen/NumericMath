@@ -6,19 +6,6 @@
 
 	public static class StringExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static bool Contains(this string text, char value)
 		{
 			return text.IndexOf(value) >= Int.Zero;
@@ -80,6 +67,5 @@
 			}
 			return text.Substring(startIndex, endIndex++ - startIndex);
 		}
-		#endregion
 	}
 }

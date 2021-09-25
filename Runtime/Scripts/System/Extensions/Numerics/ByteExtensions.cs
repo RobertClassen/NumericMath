@@ -7,19 +7,6 @@
 
 	public static class ByteExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static byte Clamp(this byte value, byte min, byte max)
 		{
 			return value <= min ? min : value >= max ? max : value;
@@ -107,6 +94,5 @@
 		{
 			return value.ToString(format, Culture.Invariant);
 		}
-		#endregion
 	}
 }

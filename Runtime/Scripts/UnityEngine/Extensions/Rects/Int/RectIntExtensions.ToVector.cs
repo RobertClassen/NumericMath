@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static partial class RectIntExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		/// <summary>
 		/// Calculates the position and size of the <c>rect</c> relative to the specified <c>textureSize</c> 
 		/// and converts them to a <c>Vector4</c> which can be passed to a shader to be used as uvRect.
@@ -44,6 +31,5 @@ namespace WellDefinedValues
 			}
 			return uvRects;
 		}
-		#endregion
 	}
 }

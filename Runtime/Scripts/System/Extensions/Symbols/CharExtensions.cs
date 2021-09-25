@@ -6,19 +6,6 @@ namespace WellDefinedValues
 
 	public static class CharExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static bool IsClamped(this char value, char min, char max, bool isInclusive = true)
 		{
 			return isInclusive ? min <= value && value <= max : min < value && value < max;
@@ -62,6 +49,5 @@ namespace WellDefinedValues
 		{
 			return char.ToUpperInvariant(c);
 		}
-		#endregion
 	}
 }

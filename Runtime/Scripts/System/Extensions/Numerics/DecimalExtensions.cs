@@ -8,19 +8,6 @@ namespace WellDefinedValues
 
 	public static class DecimalExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static decimal Abs(this decimal value)
 		{
 			return Math.Abs(value);
@@ -164,6 +151,5 @@ namespace WellDefinedValues
 		{
 			return (value * Decimal.Hundred).ToString(cultureInfo ?? Culture.Invariant) + String.Percent;
 		}
-		#endregion
 	}
 }

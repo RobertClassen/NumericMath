@@ -7,19 +7,6 @@
 
 	public static class IntExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static int Abs(this int value)
 		{
 			return Math.Abs(value);
@@ -172,6 +159,5 @@
 		{
 			return value.ToString(format, Culture.Invariant);
 		}
-		#endregion
 	}
 }

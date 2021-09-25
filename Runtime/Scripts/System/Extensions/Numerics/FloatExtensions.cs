@@ -8,19 +8,6 @@
 
 	public static class FloatExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static float Abs(this float value)
 		{
 			return Math.Abs(value);
@@ -210,6 +197,5 @@
 		{
 			return (value * Float.Hundred).ToString(cultureInfo ?? Culture.Invariant) + String.Percent;
 		}
-		#endregion
 	}
 }

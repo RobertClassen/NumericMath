@@ -8,19 +8,6 @@
 
 	public static class DoubleExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static double Abs(this double value)
 		{
 			return Math.Abs(value);
@@ -164,6 +151,5 @@
 		{
 			return (value * Double.Hundred).ToString(cultureInfo ?? Culture.Invariant) + String.Percent;
 		}
-		#endregion
 	}
 }

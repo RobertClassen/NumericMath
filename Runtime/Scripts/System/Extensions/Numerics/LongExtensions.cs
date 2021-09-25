@@ -7,19 +7,6 @@ namespace WellDefinedValues
 
 	public static class LongExtensions
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static long Abs(this long value)
 		{
 			return Math.Abs(value);
@@ -112,6 +99,5 @@ namespace WellDefinedValues
 		{
 			return value.ToString(format, Culture.Invariant);
 		}
-		#endregion
 	}
 }

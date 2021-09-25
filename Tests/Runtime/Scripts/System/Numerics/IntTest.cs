@@ -8,19 +8,6 @@ namespace WellDefinedValues.Tests
 
 	public class IntTest
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		[Test]
 		public void Sequence_Is_Correct_Length()
 		{
@@ -104,6 +91,5 @@ namespace WellDefinedValues.Tests
 
 			Assert.AreEqual(expected, actual, string.Join(" ", expected) + "\n" + string.Join(" ", actual));
 		}
-		#endregion
 	}
 }

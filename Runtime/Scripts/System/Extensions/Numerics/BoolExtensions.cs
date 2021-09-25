@@ -6,19 +6,6 @@ namespace WellDefinedValues
 
 	public static class BoolExtensions
 	{
-		#region Fields
-		
-		#endregion
-
-		#region Properties
-		
-		#endregion
-
-		#region Constructors
-		
-		#endregion
-
-		#region Methods
 		public static int ToInt(this bool value)
 		{
 			return value ? Int.One : Int.Zero;
@@ -33,6 +20,5 @@ namespace WellDefinedValues
 		{
 			return value.ToString(Culture.Invariant);
 		}
-		#endregion
 	}
 }

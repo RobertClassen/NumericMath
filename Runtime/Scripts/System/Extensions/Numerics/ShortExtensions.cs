@@ -7,23 +7,6 @@ namespace WellDefinedValues
 
 	public static class ShortExtensions
 	{
-		#region Constants
-
-		#endregion
-
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		public static short Abs(this short value)
 		{
 			return Math.Abs(value);
@@ -116,6 +99,5 @@ namespace WellDefinedValues
 		{
 			return value.ToString(format, Culture.Invariant);
 		}
-		#endregion
 	}
 }

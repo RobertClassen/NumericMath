@@ -8,19 +8,6 @@ namespace WellDefinedValues.Tests
 
 	public class FloatTest
 	{
-		#region Fields
-
-		#endregion
-
-		#region Properties
-
-		#endregion
-
-		#region Constructors
-
-		#endregion
-
-		#region Methods
 		[Test]
 		public void Sequence_Is_Correct_Length()
 		{
@@ -120,6 +107,5 @@ namespace WellDefinedValues.Tests
 				Assert.AreEqual(expected[i], actual[i], 0.00001f, i + ": " + expected[i] + " != " + actual[i]);
 			}
 		}
-		#endregion
 	}
 }
