@@ -29,6 +29,10 @@ namespace WellDefinedValues
 		[Obsolete("Use the '%' operator directly instead.")]
 		public static float Remainder(this float dividend, float divisor)
 		{
+			if(divisor == Float.Zero)
+			{
+				throw new DivideByZeroException(nameof(Remainder) + "(0) is undefined.");
+			}
 			return dividend % divisor;
 		}
 	}

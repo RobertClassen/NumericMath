@@ -6,9 +6,29 @@ namespace WellDefinedValues
 
 	public static partial class ShortExtensions
 	{
+		/// <remarks>
+		/// Repeats the sequence from <c>zero</c> to <c>divisor</c> (exclusively), 
+		/// with the direction and <c>sign</c> based on the <c>sign</c> of the <c>divisor</c>.
+		/// </remarks>
+		/// <seealso cref="Remainder"/>
+		/// <example>
+		/// <code>
+		/// short modulo = 3;
+		/// short[] input    = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+		/// short[] expected = {  1,  2,  0,  1,  2, 0, 1, 2, 0, 1, 2 };
+		/// short[] actual   = {  1,  2,  0,  1,  2, 0, 1, 2, 0, 1, 2 };
+		/// </code>
+		/// 
+		/// <code>
+		/// short modulo = -3;
+		/// short[] input    = { -5, -4, -3, -2, -1, 0,  1,  2, 3,  4,  5 };
+		/// short[] expected = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
+		/// short[] actual   = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
+		/// </code>
+		/// </example>
 		public static short Modulo(this short dividend, short divisor)
 		{
-			if(divisor == Float.Zero)
+			if(divisor == Short.Zero)
 			{
 				throw new DivideByZeroException(nameof(Modulo) + "(0) is undefined.");
 			}
