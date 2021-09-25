@@ -1,4 +1,4 @@
-﻿namespace WellDefinedValues
+namespace WellDefinedValues
 {
 	using System;
 	using System.Collections;
@@ -6,9 +6,9 @@
 
 	public static partial class IntExtensions
 	{
-		public static int Abs(this int value)
+		public static bool ToBool(this int value)
 		{
-			return Math.Abs(value);
+			return value != Int.Zero;
 		}
 	}
 }
