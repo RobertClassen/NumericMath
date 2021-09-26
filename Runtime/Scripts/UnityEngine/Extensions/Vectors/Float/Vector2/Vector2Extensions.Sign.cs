@@ -7,9 +7,12 @@ namespace WellDefinedValues
 
 	public static partial class Vector2Extensions
 	{
-		public static Vector2Int ToVector2Int(this Vector2 vector)
+		/// <summary>
+		/// Performs a component-wise `Sign` operation.
+		/// </summary>
+		public static Vector2 Sign(this Vector2 vector)
 		{
-			return new Vector2Int((int)vector.x, (int)vector.y);
+			return new Vector2(vector.x.Sign(), vector.y.Sign());
 		}
 	}
 }
