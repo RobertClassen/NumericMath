@@ -7,9 +7,9 @@ namespace WellDefinedValues
 
 	public static partial class DoubleExtensions
 	{
-		public static double Lerp(this double t, double a, double b, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static double InverseLerp(this double t, double a, double b, bool isClamped = Numeric.IsLerpClampedDefault)
 		{
-			return Double.Lerp(a, b, t, isClamped);
+			return Double.InverseLerp(a, b, t, isClamped);
 		}
 	}
 }

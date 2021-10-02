@@ -7,9 +7,9 @@ namespace WellDefinedValues
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Lerp(this decimal t, decimal a, decimal b, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static decimal InverseLerp(this decimal t, decimal a, decimal b, bool isClamped = Numeric.IsLerpClampedDefault)
 		{
-			return Decimal.Lerp(a, b, t, isClamped);
+			return Decimal.InverseLerp(a, b, t, isClamped);
 		}
 	}
 }
