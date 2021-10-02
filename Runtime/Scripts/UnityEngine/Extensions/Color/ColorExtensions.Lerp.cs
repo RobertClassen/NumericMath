@@ -17,9 +17,9 @@ namespace WellDefinedValues
 		/// See https://docs.unity3d.com/ScriptReference/Color.Lerp.html  
 		/// See https://docs.unity3d.com/ScriptReference/Color.LerpUnclamped.html
 		/// </remarks>
-		public static Color Lerp(this Color a, Color b, float t, bool IsClamped = Numeric.IsLerpClampedDefault)
+		public static Color Lerp(this Color a, Color b, float t, bool isClamped = Numeric.IsLerpClampedDefault)
 		{
-			return IsClamped ? Color.Lerp(a, b, t) : Color.LerpUnclamped(a, b, t);
+			return isClamped ? Color.Lerp(a, b, t) : Color.LerpUnclamped(a, b, t);
 		}
 	}
 }
