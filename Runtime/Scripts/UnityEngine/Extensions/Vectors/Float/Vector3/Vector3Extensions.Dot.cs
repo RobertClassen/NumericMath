@@ -35,7 +35,7 @@ namespace WellDefinedValues
 		/// </remarks>
 		public static float DotXY(this Vector3 vector, Vector3 other)
 		{
-			return vector.x * other.x + vector.y + other.y;
+			return vector.x * other.x + vector.y * other.y;
 		}
 
 		/// <summary>
@@ -51,7 +51,7 @@ namespace WellDefinedValues
 		/// </remarks>
 		public static float DotXZ(this Vector3 vector, Vector3 other)
 		{
-			return vector.x * other.x + vector.z + other.z;
+			return vector.x * other.x + vector.z * other.z;
 		}
 
 		/// <summary>
@@ -67,7 +67,7 @@ namespace WellDefinedValues
 		/// </remarks>
 		public static float DotYZ(this Vector3 vector, Vector3 other)
 		{
-			return vector.y * other.y + vector.z + other.z;
+			return vector.y * other.y + vector.z * other.z;
 		}
 	}
 }

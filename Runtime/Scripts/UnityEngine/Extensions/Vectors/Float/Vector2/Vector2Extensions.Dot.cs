@@ -19,7 +19,7 @@ namespace WellDefinedValues
 		/// </remarks>
 		public static float Dot(this Vector2 vector, Vector3 other)
 		{
-			return vector.x * other.x + vector.y + other.y;
+			return vector.x * other.x + vector.y * other.y;
 		}
 	}
 }
