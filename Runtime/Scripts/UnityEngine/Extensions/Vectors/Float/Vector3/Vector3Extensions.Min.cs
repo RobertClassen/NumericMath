@@ -10,6 +10,9 @@ namespace WellDefinedValues
 		/// <summary>
 		/// Returns a vector that is made from the smallest components of two vectors.
 		/// </summary>
+		/// <remarks>
+		/// See https://docs.unity3d.com/ScriptReference/Vector3.Min.html
+		/// </remarks>
 		/// <seealso cref="Max"/>
 		public static Vector3 Min(this Vector3 vector, Vector3 other)
 		{

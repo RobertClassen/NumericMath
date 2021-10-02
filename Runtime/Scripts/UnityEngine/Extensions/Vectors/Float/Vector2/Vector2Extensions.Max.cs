@@ -10,6 +10,9 @@ namespace WellDefinedValues
 		/// <summary>
 		/// Returns a vector that is made from the largest components of two vectors.
 		/// </summary>
+		/// <remarks>
+		/// See https://docs.unity3d.com/ScriptReference/Vector2.Max.html
+		/// </remarks>
 		/// <seealso cref="Min"/>
 		public static Vector2 Max(this Vector2 vector, Vector2 other)
 		{
