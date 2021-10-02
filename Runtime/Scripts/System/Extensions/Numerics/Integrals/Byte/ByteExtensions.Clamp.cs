@@ -16,10 +16,5 @@ namespace WellDefinedValues
 		{
 			return isEnabled ? value.Clamp(Byte.Zero, Byte.One) : value;
 		}
-
-		public static bool IsClamped(this byte value, byte min, byte max, bool isInclusive = Numeric.IsClampedInclusiveDefault)
-		{
-			return isInclusive ? min <= value && value <= max : min < value && value < max;
-		}
 	}
 }

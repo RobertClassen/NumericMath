@@ -16,10 +16,5 @@ namespace WellDefinedValues
 		{
 			return isEnabled ? value.Clamp(Long.Zero, Long.One) : value;
 		}
-
-		public static bool IsClamped(this long value, long min, long max, bool isInclusive = Numeric.IsClampedInclusiveDefault)
-		{
-			return isInclusive ? min <= value && value <= max : min < value && value < max;
-		}
 	}
 }

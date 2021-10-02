@@ -16,15 +16,5 @@ namespace WellDefinedValues
 		{
 			return isEnabled ? value.Clamp(Decimal.Zero, Decimal.One) : value;
 		}
-
-		public static bool IsClamped(this decimal value, decimal min, decimal max, bool isInclusive = Numeric.IsClampedInclusiveDefault)
-		{
-			return isInclusive ? min <= value && value <= max : min < value && value < max;
-		}
-
-		public static bool IsClamped01(this decimal value, bool isInclusive = Numeric.IsClampedInclusiveDefault)
-		{
-			return value.IsClamped(Decimal.Zero, Decimal.One, isInclusive);
-		}
 	}
 }
