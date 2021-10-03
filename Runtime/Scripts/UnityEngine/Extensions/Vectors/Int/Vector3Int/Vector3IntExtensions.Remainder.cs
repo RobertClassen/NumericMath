@@ -7,9 +7,9 @@ namespace WellDefinedValues
 
 	public static partial class Vector3IntExtensions
 	{
-		public static Vector3Int Abs(this Vector3Int vector)
+		public static Vector3Int Remainder(this Vector3Int dividend, Vector3Int divisor)
 		{
-			return new Vector3Int(vector.x.Abs(), vector.y.Abs(), vector.z.Abs());
+			return new Vector3Int(dividend.x % divisor.x, dividend.y % divisor.y, dividend.z % divisor.z);
 		}
 	}
 }
