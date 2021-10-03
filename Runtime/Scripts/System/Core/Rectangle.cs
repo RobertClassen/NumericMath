@@ -4,7 +4,7 @@ namespace WellDefinedValues.Core
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static class Rectangle
+	internal static class Rectangle
 	{
 		public const float ExpansionFactor = 2f;
 		public const float IndentationWidth = 15f;

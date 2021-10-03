@@ -4,7 +4,7 @@ namespace WellDefinedValues.Core
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static class Function
+	internal static class Function
 	{
 		public const bool IsEnabledDefault = true;
 	}
