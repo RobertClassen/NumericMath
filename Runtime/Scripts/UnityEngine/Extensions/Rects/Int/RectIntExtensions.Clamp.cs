@@ -7,6 +7,12 @@ namespace WellDefinedValues
 
 	public static partial class RectIntExtensions
 	{
+		/// <summary>
+		/// Clamps the rect to the <c>min</c> and <c>max</c> values of the <c>constrainingRect</c>.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.unity3d.com/ScriptReference/RectInt.ClampToBounds.html
+		/// </remarks>
 		public static RectInt Clamp(this RectInt rect, RectInt constrainingRect)
 		{
 			rect.xMin = rect.xMin.Clamp(constrainingRect.xMin, constrainingRect.xMax);
