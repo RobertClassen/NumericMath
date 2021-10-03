@@ -43,10 +43,5 @@
 			Gizmos.DrawLine(topRight, bottomRight);
 			#endif
 		}
-
-		public static RectInt Expand(this RectInt rect, Vector2Int size)
-		{
-			return new RectInt(rect.min - size, rect.max + size * 2);
-		}
 	}
 }
