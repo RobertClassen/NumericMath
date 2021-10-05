@@ -45,5 +45,16 @@ namespace WellDefinedValues
 			to.Normalize();
 			return from.Dot(to) > -Float.One + Numeric.MagnitudeDelta ? from.Angle(to, from.Cross(to), isSigned) : 180f;
 		}
+
+		/// <summary>
+		/// Creates a <c>Quaternion</c> which rotates <c>angle</c> degrees around <c>axis</c>.
+		/// </summary>
+		/// <remarks>
+		/// See https://docs.unity3d.com/ScriptReference/Quaternion.AngleAxis.html
+		/// </remarks>
+		public static Quaternion AngleAxis(this Vector3 axis, float angle)
+		{
+			return Quaternion.AngleAxis(angle, axis);
+		}
 	}
 }
