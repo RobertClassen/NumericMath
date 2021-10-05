@@ -8,6 +8,19 @@ namespace WellDefinedValues
 
 	public static partial class RectExtensions
 	{
+		/// <summary>
+		/// Sets the bounds of the rect to the <c>min</c> and <c>max</c> values.
+		/// </summary>
+		public static Rect Set(this Rect rect, Vector2 min, Vector2 max, bool isEnabled = Function.IsEnabledDefault)
+		{
+			if(isEnabled)
+			{
+				rect.min = min;
+				rect.max = max;
+			}
+			return rect;
+		}
+
 		public static Rect SetHeight(this Rect rect, float height, bool isEnabled = Function.IsEnabledDefault)
 		{
 			return isEnabled ? rect.SetSize(rect.width, height) : rect;
@@ -16,6 +29,24 @@ namespace WellDefinedValues
 		public static Rect SetIndentation(this Rect rect, int indentationLevel, bool isEnabled = Function.IsEnabledDefault)
 		{
 			return isEnabled ? rect.SetXMin(indentationLevel * Rectangle.IndentationWidth) : rect;
+		}
+
+		public static Rect SetMax(this Rect rect, Vector2 max, bool isEnabled = Function.IsEnabledDefault)
+		{
+			if(isEnabled)
+			{
+				rect.max = max;
+			}
+			return rect;
+		}
+
+		public static Rect SetMin(this Rect rect, Vector2 min, bool isEnabled = Function.IsEnabledDefault)
+		{
+			if(isEnabled)
+			{
+				rect.min = min;
+			}
+			return rect;
 		}
 
 		public static Rect SetSize(this Rect rect, Vector2 size, bool isEnabled = Function.IsEnabledDefault)
