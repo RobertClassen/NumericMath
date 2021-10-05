@@ -11,5 +11,15 @@ namespace WellDefinedValues
 		{
 			return isInclusive ? min <= value && value <= max : min < value && value < max;
 		}
+
+		public static bool IsEven(this short value)
+		{
+			return value % (short)Numeric.Base.Binary == Int.Zero;
+		}
+
+		public static bool IsOdd(this short value)
+		{
+			return value % (short)Numeric.Base.Binary != Int.Zero;
+		}
 	}
 }

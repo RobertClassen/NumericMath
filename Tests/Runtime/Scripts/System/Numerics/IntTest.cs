@@ -91,5 +91,24 @@ namespace WellDefinedValues.Tests
 
 			Assert.AreEqual(expected, actual, string.Join(" ", expected) + "\n" + string.Join(" ", actual));
 		}
+
+		[Test]
+		public void Numbers_Are_Even()
+		{
+			Assert.IsTrue((-4).IsEven());
+			Assert.IsTrue((-2).IsEven());
+			Assert.IsTrue(0.IsEven());
+			Assert.IsTrue(2.IsEven());
+			Assert.IsTrue(4.IsEven());
+		}
+
+		[Test]
+		public void Numbers_Are_Odd()
+		{
+			Assert.IsTrue((-3).IsOdd());
+			Assert.IsTrue((-1).IsOdd());
+			Assert.IsTrue(1.IsOdd());
+			Assert.IsTrue(3.IsOdd());
+		}
 	}
 }

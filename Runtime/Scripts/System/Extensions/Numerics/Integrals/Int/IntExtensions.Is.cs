@@ -16,5 +16,15 @@ namespace WellDefinedValues
 		{
 			return value.IsClamped(Int.Zero, iCollection.Count - Int.One);
 		}
+
+		public static bool IsEven(this int value)
+		{
+			return value % (int)Numeric.Base.Binary == Int.Zero;
+		}
+
+		public static bool IsOdd(this int value)
+		{
+			return value % (int)Numeric.Base.Binary != Int.Zero;
+		}
 	}
 }
