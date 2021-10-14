@@ -10,7 +10,7 @@ namespace WellDefinedValues
 		public static double Remap(this double value, double fromA, double fromB, double toA, double toB, 
 			bool isClamped = Numeric.IsLerpClampedDefault)
 		{
-			return Double.Remap(fromA, fromB, toA, toB, value, isClamped);
+			return toA.Lerp(toB, value.InverseLerp(fromA, fromB, isClamped), isClamped);
 		}
 	}
 }

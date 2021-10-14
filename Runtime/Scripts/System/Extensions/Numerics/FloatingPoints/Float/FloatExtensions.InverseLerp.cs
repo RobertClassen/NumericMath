@@ -7,9 +7,9 @@ namespace WellDefinedValues
 
 	public static partial class FloatExtensions
 	{
-		public static float InverseLerp(this float t, float a, float b, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static float InverseLerp(this float value, float a, float b, bool isClamped = Numeric.IsLerpClampedDefault)
 		{
-			return Float.InverseLerp(a, b, t, isClamped);
+			return Math.Abs(a - b) > float.Epsilon ? ((value - a) / (b - a)).Clamp01(isClamped) : Float.Zero;
 		}
 	}
 }

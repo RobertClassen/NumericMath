@@ -10,7 +10,7 @@ namespace WellDefinedValues
 		public static decimal Remap(this decimal value, decimal fromA, decimal fromB, decimal toA, decimal toB, 
 			bool isClamped = Numeric.IsLerpClampedDefault)
 		{
-			return Decimal.Remap(fromA, fromB, toA, toB, value, isClamped);
+			return toA.Lerp(toB, value.InverseLerp(fromA, fromB, isClamped), isClamped);
 		}
 	}
 }
