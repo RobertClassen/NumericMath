@@ -4,7 +4,7 @@
 	using System.Collections;
 	using System.Collections.Generic;
 
-	internal static class Numeric
+	public static class Numeric
 	{
 		public enum Base
 		{
