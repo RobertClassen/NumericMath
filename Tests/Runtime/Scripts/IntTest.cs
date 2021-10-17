@@ -1,4 +1,4 @@
-namespace WellDefinedValues.Tests
+namespace WellDefinedNumerics
 {
 	using System;
 	using System.Collections;
