@@ -9,7 +9,7 @@ namespace WellDefinedValues
 	{
 		public static string ToBinaryString(this int value, int minLength = Int.BitCount)
 		{
-			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Char.Zero);
+			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
 		}
 
 		public static string ToHexString(this int value, int minLength = Int.HexLength)
@@ -17,7 +17,7 @@ namespace WellDefinedValues
 			return value.ToString("X" + minLength);
 		}
 
-		public static string ToInvariantString(this int value, string format = String.Null)
+		public static string ToInvariantString(this int value, string format = null)
 		{
 			return value.ToString(format, Culture.Invariant);
 		}

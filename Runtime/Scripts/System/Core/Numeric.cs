@@ -21,6 +21,9 @@
 
 		public const float MagnitudeDelta = 0.00001f;
 
+		public const char Percent = '%';
+		public const char Zero = '0';
+
 		public static readonly Random Random = new Random();
 	}
 }
