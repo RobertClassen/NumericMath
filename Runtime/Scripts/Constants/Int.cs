@@ -4,7 +4,7 @@
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Int
+	public static class Int
 	{
 		public const byte BitCount = sizeof(int) * Byte.BitCount;
 		public const int HexLength = BitCount >> (One + One);

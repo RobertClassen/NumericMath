@@ -4,7 +4,7 @@ namespace WellDefinedNumerics
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Decimal
+	public static class Decimal
 	{
 		public const byte BitCount = (byte)(sizeof(decimal) * Byte.BitCount);
 

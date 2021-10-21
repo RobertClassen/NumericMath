@@ -4,7 +4,7 @@
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Double
+	public static class Double
 	{
 		public const byte BitCount = sizeof(double) * Byte.BitCount;
 

@@ -4,7 +4,7 @@
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Float
+	public static class Float
 	{
 		public const byte BitCount = sizeof(float) * Byte.BitCount;
 
