@@ -23,7 +23,5 @@
 
 		public const char Percent = '%';
 		public const char Zero = '0';
-
-		public static readonly Random Random = new Random();
 	}
 }
