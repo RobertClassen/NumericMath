@@ -1,5 +1,5 @@
 {
-  "name": "com.robert_classen.welldefinedvalues",
+  "name": "com.robert_classen.welldefinednumerics",
   "version": "1.0.0",
   "displayName": "WellDefinedValues",
   "description": "Named constants, Extension methods, and Utility classes for built-in value-types.",
