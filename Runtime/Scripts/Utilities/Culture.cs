@@ -1,4 +1,4 @@
-﻿namespace WellDefinedNumerics
+﻿namespace WellDefinedNumerics.Core
 {
 	using System;
 	using System.Collections;
