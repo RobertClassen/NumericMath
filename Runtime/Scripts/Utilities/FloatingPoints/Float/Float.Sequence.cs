@@ -4,9 +4,9 @@ namespace WellDefinedNumerics
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Float
+	public static partial class FloatExtensions
 	{
-		public static IEnumerable<float> Sequence(float start, float increment, int count)
+		public static IEnumerable<float> Sequence(this float increment, int count, float start = Float.Zero)
 		{
 			if(count < Int.Zero)
 			{

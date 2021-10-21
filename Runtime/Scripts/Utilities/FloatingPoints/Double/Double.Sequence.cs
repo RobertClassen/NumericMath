@@ -4,9 +4,9 @@ namespace WellDefinedNumerics
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Double
+	public static partial class DoubleExtensions
 	{
-		public static IEnumerable<double> Sequence(double start, double increment, int count)
+		public static IEnumerable<double> Sequence(this double increment, int count, double start = Double.Zero)
 		{
 			if(count < Int.Zero)
 			{

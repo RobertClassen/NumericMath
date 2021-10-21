@@ -13,7 +13,7 @@ namespace WellDefinedNumerics
 		{
 			const int count = 6;
 
-			int[] sequence = Int.Sequence(0, 1, count).ToArray();
+			int[] sequence = 1.Sequence(count, 0).ToArray();
 
 			Assert.AreEqual(count, sequence.Length);
 		}
@@ -23,7 +23,7 @@ namespace WellDefinedNumerics
 		{
 			const int count = -6;
 
-			Assert.Throws<ArgumentLessThanZeroException>(() => Int.Sequence(0, 1, count).ToArray());
+			Assert.Throws<ArgumentLessThanZeroException>(() => 1.Sequence(count).ToArray());
 		}
 
 		[Test]

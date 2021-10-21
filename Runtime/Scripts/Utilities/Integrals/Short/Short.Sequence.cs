@@ -4,9 +4,9 @@ namespace WellDefinedNumerics
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Short
+	public static partial class ShortExtensions
 	{
-		public static IEnumerable<short> Sequence(short start, short increment, int count)
+		public static IEnumerable<short> Sequence(this short increment, int count, short start = Short.Zero)
 		{
 			if(count < Int.Zero)
 			{

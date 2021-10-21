@@ -4,9 +4,9 @@ namespace WellDefinedNumerics
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Byte
+	public static partial class ByteExtensions
 	{
-		public static IEnumerable<byte> Sequence(byte start, byte increment, int count)
+		public static IEnumerable<byte> Sequence(this byte increment, int count, byte start = Byte.Zero)
 		{
 			if(count < Int.Zero)
 			{

@@ -4,9 +4,9 @@ namespace WellDefinedNumerics
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Long
+	public static partial class LongExtensions
 	{
-		public static IEnumerable<long> Sequence(long start, long increment, int count)
+		public static IEnumerable<long> Sequence(this long increment, int count, long start = Long.Zero)
 		{
 			if(count < Int.Zero)
 			{

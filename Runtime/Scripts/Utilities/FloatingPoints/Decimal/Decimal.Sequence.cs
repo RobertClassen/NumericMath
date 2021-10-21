@@ -4,9 +4,9 @@ namespace WellDefinedNumerics
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class Decimal
+	public static partial class DecimalExtensions
 	{
-		public static IEnumerable<decimal> Sequence(decimal start, decimal increment, int count)
+		public static IEnumerable<decimal> Sequence(this decimal increment, int count, decimal start = Decimal.Zero)
 		{
 			if(count < Int.Zero)
 			{
