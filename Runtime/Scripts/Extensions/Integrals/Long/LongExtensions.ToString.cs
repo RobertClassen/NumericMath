@@ -14,7 +14,7 @@ namespace WellDefinedNumerics
 
 		public static string ToHexString(this long value, int minLength = Long.HexLength)
 		{
-			return value.ToString("X" + minLength);
+			return value.ToString(Format.Hexadecmimal + minLength);
 		}
 
 		public static string ToInvariantString(this long value, string format = null)

@@ -14,7 +14,7 @@
 
 		public static string ToHexString(this byte value, int minLength = Byte.HexLength)
 		{
-			return value.ToString("X" + minLength);
+			return value.ToString(Format.Hexadecmimal + minLength);
 		}
 
 		public static string ToInvariantString(this byte value, string format = null)
