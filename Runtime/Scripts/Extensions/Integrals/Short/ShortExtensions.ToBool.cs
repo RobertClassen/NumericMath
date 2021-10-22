@@ -7,9 +7,9 @@ namespace WellDefinedNumerics
 
 	public static partial class ShortExtensions
 	{
-		public static string ToHexString(this short value, int minLength = Short.HexLength)
+		public static bool ToBool(this short value)
 		{
-			return value.ToString(Format.Hexadecmimal + minLength);
+			return value != Short.Zero;
 		}
 	}
 }

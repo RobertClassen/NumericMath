@@ -12,9 +12,9 @@ namespace WellDefinedNumerics
 			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
 		}
 
-		public static bool ToBool(this short value)
+		public static string ToHexString(this short value, int minLength = Short.HexLength)
 		{
-			return value != Short.Zero;
+			return value.ToString(Format.Hexadecmimal + minLength);
 		}
 
 		public static string ToInvariantString(this short value, string format = null)
