@@ -7,6 +7,6 @@ namespace WellDefinedNumerics.Core
 	public static class Format
 	{
 		public const string Hexadecmimal = "#";
-		public const string Percent = "%";
+		public const string Percent = "P";
 	}
 }
