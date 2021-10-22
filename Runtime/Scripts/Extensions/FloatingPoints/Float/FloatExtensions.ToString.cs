@@ -13,9 +13,9 @@ namespace WellDefinedNumerics
 			return value.ToString(format, Culture.Invariant);
 		}
 
-		public static string ToPercentString(this float value, CultureInfo cultureInfo = null)
+		public static string ToPercentString(this float value, int decimals = 2, CultureInfo cultureInfo = null)
 		{
-			return value.ToString(Format.Percent, cultureInfo ?? Culture.Invariant);
+			return value.ToString(Format.Percent + decimals, cultureInfo ?? Culture.Invariant);
 		}
 	}
 }
