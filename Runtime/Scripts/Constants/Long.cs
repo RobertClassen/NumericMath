@@ -11,6 +11,5 @@
 
 		public const long Zero = Byte.Zero;
 		public const long One = Byte.One;
-		public const long Hundred = Byte.Hundred;
 	}
 }

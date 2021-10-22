@@ -18,7 +18,6 @@
 		public const bool IsClampedInclusiveDefault = true;
 		public const bool IsLerpClampedDefault = false;
 
-		public const char Percent = '%';
 		public const char Zero = '0';
 	}
 }

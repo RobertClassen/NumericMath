@@ -15,7 +15,7 @@ namespace WellDefinedNumerics
 
 		public static string ToPercentString(this double value, CultureInfo cultureInfo = null)
 		{
-			return (value * Double.Hundred).ToString(cultureInfo ?? Culture.Invariant) + Numeric.Percent;
+			return value.ToString(Format.Percent, cultureInfo ?? Culture.Invariant);
 		}
 	}
 }

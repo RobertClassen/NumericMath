@@ -10,7 +10,6 @@
 
 		public const double Zero = Byte.Zero;
 		public const double One = Byte.One;
-		public const double Hundred = Byte.Hundred;
 
 		public const double OneHalf = One / (One + One);
 	}

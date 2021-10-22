@@ -10,7 +10,6 @@
 
 		public const float Zero = Byte.Zero;
 		public const float One = Byte.One;
-		public const float Hundred = Byte.Hundred;
 
 		public const float OneHalf = One / (One + One);
 	}

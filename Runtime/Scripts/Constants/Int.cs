@@ -11,6 +11,5 @@
 
 		public const int Zero = Byte.Zero;
 		public const int One = Byte.One;
-		public const int Hundred = Byte.Hundred;
 	}
 }
