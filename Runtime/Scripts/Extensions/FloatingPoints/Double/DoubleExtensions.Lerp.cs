@@ -7,7 +7,8 @@ namespace WellDefinedNumerics
 
 	public static partial class DoubleExtensions
 	{
-		public static double Lerp(this  double a, double b, double t, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static double Lerp(this double a, double b, double t = Double.OneHalf, 
+			bool isClamped = Numeric.IsLerpClampedDefault)
 		{
 			return a + (b - a) * t.Clamp01(isClamped);
 		}

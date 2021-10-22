@@ -7,7 +7,8 @@ namespace WellDefinedNumerics
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Lerp(this decimal a, decimal b, decimal t, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static decimal Lerp(this decimal a, decimal b, decimal t = Decimal.OneHalf, 
+			bool isClamped = Numeric.IsLerpClampedDefault)
 		{
 			return a + (b - a) * t.Clamp01(isClamped);
 		}

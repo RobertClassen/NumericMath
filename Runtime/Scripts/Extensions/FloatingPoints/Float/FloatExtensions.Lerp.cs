@@ -7,7 +7,8 @@ namespace WellDefinedNumerics
 
 	public static partial class FloatExtensions
 	{
-		public static float Lerp(this float a, float b, float t, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static float Lerp(this float a, float b, float t = Float.OneHalf, 
+			bool isClamped = Numeric.IsLerpClampedDefault)
 		{
 			return a + (b - a) * t.Clamp01(isClamped);
 		}
