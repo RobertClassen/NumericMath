@@ -6,7 +6,7 @@
 
 	public static class Double
 	{
-		public const byte BitCount = sizeof(double) * Byte.BitCount;
+		public const byte BinaryLength = sizeof(double) * Byte.BinaryLength;
 
 		public const double Zero = Byte.Zero;
 		public const double One = Byte.One;

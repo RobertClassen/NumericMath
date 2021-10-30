@@ -6,7 +6,7 @@
 
 	public static class Numeric
 	{
-		public enum Base
+		public enum Base : byte
 		{
 			Binary = 2,
 			Octal = 8,

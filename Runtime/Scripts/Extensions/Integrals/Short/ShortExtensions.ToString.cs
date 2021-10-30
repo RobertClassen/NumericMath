@@ -7,7 +7,7 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static string ToBinaryString(this short value, int minLength = Short.BitCount)
+		public static string ToBinaryString(this short value, int minLength = Short.BinaryLength)
 		{
 			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
 		}

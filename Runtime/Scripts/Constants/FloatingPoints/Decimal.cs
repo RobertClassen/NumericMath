@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static class Decimal
 	{
-		public const byte BitCount = (byte)(sizeof(decimal) * Byte.BitCount);
+		public const byte BinaryLength = (byte)(sizeof(decimal) * Byte.BinaryLength);
 
 		public const decimal Zero = Byte.Zero;
 		public const decimal One = Byte.One;

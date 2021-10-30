@@ -6,7 +6,7 @@
 
 	public static class Float
 	{
-		public const byte BitCount = sizeof(float) * Byte.BitCount;
+		public const byte BinaryLength = sizeof(float) * Byte.BinaryLength;
 
 		public const float Zero = Byte.Zero;
 		public const float One = Byte.One;

@@ -7,7 +7,7 @@
 
 	public static partial class ByteExtensions
 	{
-		public static string ToBinaryString(this byte value, int minLength = Byte.BitCount)
+		public static string ToBinaryString(this byte value, int minLength = Byte.BinaryLength)
 		{
 			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
 		}
