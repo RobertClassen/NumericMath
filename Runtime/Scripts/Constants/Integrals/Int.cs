@@ -1,4 +1,4 @@
-﻿namespace WellDefinedNumerics
+﻿namespace NumericMath
 {
 	using System;
 	using System.Collections;
