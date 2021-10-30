@@ -1,15 +1,8 @@
 {
-  "name": "com.robert_classen.welldefinednumerics",
+  "name": "com.robert_classen.numericmath",
   "version": "1.0.0",
-  "displayName": "WellDefinedValues",
-  "description": "Named constants, Extension methods, and Utility classes for built-in value-types.",
-  "keywords": [
-    "System",
-    "UnityEngine",
-	"Constants",
-    "Extensions",
-    "Utilities"
-  ],
+  "displayName": "NumericMath",
+  "description": "Extension methods for built-in numeric value-types.",
   "author": {
     "name": "Robert Classen",
     "email": "Robert.Classen.dev@gmail.com",
