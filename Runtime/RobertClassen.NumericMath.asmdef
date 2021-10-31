@@ -1,6 +1,6 @@
 {
-    "name": "RobertClassen.WellDefinedValues",
-    "rootNamespace": "WellDefinedValues",
+    "name": "RobertClassen.NumericMath",
+    "rootNamespace": "NumericMath",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
