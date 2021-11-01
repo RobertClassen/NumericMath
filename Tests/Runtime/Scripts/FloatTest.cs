@@ -8,6 +8,8 @@ namespace NumericMath
 
 	public class FloatTest
 	{
+		private const float delta = 0.00001f;
+
 		[Test]
 		public void Sequence_Is_Correct_Length()
 		{
@@ -45,7 +47,7 @@ namespace NumericMath
 
 			for(int i = 0; i < input.Length; i++)
 			{
-				Assert.AreEqual(expected[i], actual[i], 0.00001f, i + ": " + expected[i] + " != " + actual[i]);
+				Assert.AreEqual(expected[i], actual[i], delta, i + ": " + expected[i] + " != " + actual[i]);
 			}
 		}
 
@@ -61,7 +63,7 @@ namespace NumericMath
 
 			for(int i = 0; i < input.Length; i++)
 			{
-				Assert.AreEqual(expected[i], actual[i], 0.00001f, i + ": " + expected[i] + " != " + actual[i]);
+				Assert.AreEqual(expected[i], actual[i], delta, i + ": " + expected[i] + " != " + actual[i]);
 			}
 		}
 
@@ -86,7 +88,7 @@ namespace NumericMath
 
 			for(int i = 0; i < input.Length; i++)
 			{
-				Assert.AreEqual(expected[i], actual[i], 0.00001f, i + ": " + expected[i] + " != " + actual[i]);
+				Assert.AreEqual(expected[i], actual[i], delta, i + ": " + expected[i] + " != " + actual[i]);
 			}
 		}
 
@@ -104,8 +106,21 @@ namespace NumericMath
 
 			for(int i = 0; i < input.Length; i++)
 			{
-				Assert.AreEqual(expected[i], actual[i], 0.00001f, i + ": " + expected[i] + " != " + actual[i]);
+				Assert.AreEqual(expected[i], actual[i], delta, i + ": " + expected[i] + " != " + actual[i]);
 			}
+		}
+
+		[Test]
+		public void Cosinus_Equals_Expected()
+		{
+			Assert.AreEqual(0f, 90f.Cos(), delta);
+		}
+
+		[Test]
+		public void Atan2_Equals_Expected()
+		{
+			Assert.AreEqual(0f, 0f.Atan2(10f), delta);
+			Assert.AreEqual(90f, 10f.Atan2(0f), delta);
 		}
 	}
 }
