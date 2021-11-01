@@ -11,6 +11,9 @@
 		public const float Zero = Byte.Zero;
 		public const float One = Byte.One;
 
-		public const float OneHalf = One / (One + One);
+		public const float OneHalf = (float)Decimal.OneHalf;
+
+		public const float Rad2Deg = (float)Decimal.Rad2Deg;
+		public const float Deg2Rad = (float)Decimal.Deg2Rad;
 	}
 }

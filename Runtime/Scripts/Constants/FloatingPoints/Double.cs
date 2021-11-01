@@ -11,6 +11,9 @@
 		public const double Zero = Byte.Zero;
 		public const double One = Byte.One;
 
-		public const double OneHalf = One / (One + One);
+		public const double OneHalf = (double)Decimal.OneHalf;
+
+		public const double Rad2Deg = (double)Decimal.Rad2Deg;
+		public const double Deg2Rad = (double)Decimal.Deg2Rad;
 	}
 }

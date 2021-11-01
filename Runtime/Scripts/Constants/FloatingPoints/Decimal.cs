@@ -12,5 +12,8 @@ namespace NumericMath
 		public const decimal One = Byte.One;
 
 		public const decimal OneHalf = One / (One + One);
+
+		public const decimal Rad2Deg = 180m / (decimal)Math.PI;
+		public const decimal Deg2Rad = One / Rad2Deg;
 	}
 }
