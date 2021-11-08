@@ -7,19 +7,19 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Asin(this double value, bool isDegrees = Angle.IsDegreesDefault)
+		public static double Asin(this double sin, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return Math.Asin(value.ToRadians(isDegrees));
+			return Math.Asin(sin.ToRadians(isDegrees));
 		}
 
-		public static double Sin(this double value, bool isDegrees = Angle.IsDegreesDefault)
+		public static double Sin(this double angle, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return Math.Sin(value.ToRadians(isDegrees));
+			return Math.Sin(angle.ToRadians(isDegrees));
 		}
 
-		public static double Sinh(this double value, bool isDegrees = Angle.IsDegreesDefault)
+		public static double Sinh(this double hyperbolicAngle)
 		{
-			return Math.Sinh(value.ToRadians(isDegrees));
+			return Math.Sinh(hyperbolicAngle);
 		}
 	}
 }

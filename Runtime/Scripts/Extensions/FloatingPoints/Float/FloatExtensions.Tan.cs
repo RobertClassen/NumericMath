@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Atan(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Atan(this float tan, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (float)Math.Atan(value.ToRadians(isDegrees));
+			return (float)Math.Atan(tan.ToRadians(isDegrees));
 		}
 
 		public static float Atan2(this float y, float x, bool isDegrees = Angle.IsDegreesDefault)
@@ -17,14 +17,14 @@ namespace NumericMath
 			return (float)Math.Atan2(y, x).ToDegrees(isDegrees);
 		}
 
-		public static float Tan(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Tan(this float angle, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (float)Math.Tan(value.ToRadians(isDegrees));
+			return (float)Math.Tan(angle.ToRadians(isDegrees));
 		}
 
-		public static float Tanh(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Tanh(this float hyperbolicAngle)
 		{
-			return (float)Math.Tanh(value.ToRadians(isDegrees));
+			return (float)Math.Tanh(hyperbolicAngle);
 		}
 	}
 }

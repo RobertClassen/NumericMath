@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Atan(this decimal value, bool isDegrees = Angle.IsDegreesDefault)
+		public static decimal Atan(this decimal tan, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (decimal)Math.Atan((double)value.ToRadians(isDegrees));
+			return (decimal)Math.Atan((double)tan.ToRadians(isDegrees));
 		}
 
 		public static decimal Atan2(this decimal y, decimal x, bool isDegrees = Angle.IsDegreesDefault)
@@ -17,14 +17,14 @@ namespace NumericMath
 			return (decimal)Math.Atan2((double)y, (double)x).ToDegrees(isDegrees);
 		}
 
-		public static decimal Tan(this decimal value, bool isDegrees = Angle.IsDegreesDefault)
+		public static decimal Tan(this decimal angle, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (decimal)Math.Tan((double)value.ToRadians(isDegrees));
+			return (decimal)Math.Tan((double)angle.ToRadians(isDegrees));
 		}
 
-		public static decimal Tanh(this decimal value, bool isDegrees = Angle.IsDegreesDefault)
+		public static decimal Tanh(this decimal hyperbolicAngle)
 		{
-			return (decimal)Math.Tanh((double)value.ToRadians(isDegrees));
+			return (decimal)Math.Tanh((double)hyperbolicAngle);
 		}
 	}
 }

@@ -7,19 +7,19 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Acos(this double value, bool isDegrees = Angle.IsDegreesDefault)
+		public static double Acos(this double cos, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return Math.Acos(value.ToRadians(isDegrees));
+			return Math.Acos(cos.ToRadians(isDegrees));
 		}
 
-		public static double Cos(this double value, bool isDegrees = Angle.IsDegreesDefault)
+		public static double Cos(this double angle, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return Math.Cos(value.ToRadians(isDegrees));
+			return Math.Cos(angle.ToRadians(isDegrees));
 		}
 
-		public static double Cosh(this double value, bool isDegrees = Angle.IsDegreesDefault)
+		public static double Cosh(this double hyperbolicAngle)
 		{
-			return Math.Cosh(value.ToRadians(isDegrees));
+			return Math.Cosh(hyperbolicAngle);
 		}
 	}
 }

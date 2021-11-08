@@ -7,19 +7,19 @@ namespace NumericMath
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Asin(this decimal value, bool isDegrees = Angle.IsDegreesDefault)
+		public static decimal Asin(this decimal sin, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (decimal)Math.Asin((double)value.ToRadians(isDegrees));
+			return (decimal)Math.Asin((double)sin.ToRadians(isDegrees));
 		}
 
-		public static decimal Sin(this decimal value, bool isDegrees = Angle.IsDegreesDefault)
+		public static decimal Sin(this decimal angle, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (decimal)Math.Sin((double)value.ToRadians(isDegrees));
+			return (decimal)Math.Sin((double)angle.ToRadians(isDegrees));
 		}
 
-		public static decimal Sinh(this decimal value, bool isDegrees = Angle.IsDegreesDefault)
+		public static decimal Sinh(this decimal hyperbolicAngle)
 		{
-			return (decimal)Math.Sinh((double)value.ToRadians(isDegrees));
+			return (decimal)Math.Sinh((double)hyperbolicAngle);
 		}
 	}
 }

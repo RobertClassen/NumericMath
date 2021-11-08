@@ -7,19 +7,19 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Asin(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Asin(this float sin, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (float)Math.Asin(value.ToRadians(isDegrees));
+			return (float)Math.Asin(sin).ToDegrees(isDegrees);
 		}
 
-		public static float Sin(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Sin(this float angle, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (float)Math.Sin(value.ToRadians(isDegrees));
+			return (float)Math.Sin(angle.ToRadians(isDegrees));
 		}
 
-		public static float Sinh(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Sinh(this float hyperbolicAngle)
 		{
-			return (float)Math.Sinh(value.ToRadians(isDegrees));
+			return (float)Math.Sinh(hyperbolicAngle);
 		}
 	}
 }

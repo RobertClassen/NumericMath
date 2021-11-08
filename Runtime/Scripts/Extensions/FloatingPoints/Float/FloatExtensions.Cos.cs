@@ -7,19 +7,19 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Acos(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Acos(this float cos, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (float)Math.Acos(value.ToRadians(isDegrees));
+			return (float)Math.Acos(cos.ToRadians(isDegrees));
 		}
 
-		public static float Cos(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Cos(this float angle, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (float)Math.Cos(value.ToRadians(isDegrees));
+			return (float)Math.Cos(angle.ToRadians(isDegrees));
 		}
 
-		public static float Cosh(this float value, bool isDegrees = Angle.IsDegreesDefault)
+		public static float Cosh(this float hyperbolicAngle)
 		{
-			return (float)Math.Cosh(value.ToRadians(isDegrees));
+			return (float)Math.Cosh(hyperbolicAngle);
 		}
 	}
 }
