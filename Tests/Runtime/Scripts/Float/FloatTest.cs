@@ -7,7 +7,7 @@ namespace NumericMath
 
 	public partial class FloatTest
 	{
-		private const float delta = 0.00001f;
+		private const float delta = 0.0001f;
 
 		private void AreEqual(float[] expected, float[] actual)
 		{
