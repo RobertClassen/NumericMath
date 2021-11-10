@@ -26,7 +26,6 @@ namespace NumericMath
 		/// int[] actual   = { -2, -1,  0, -2, -1, 0,  1,  2, 0,  1,  2 }; // Wrong for + % -
 		/// </code>
 		/// </example>
-		[Obsolete("Use the '%' operator directly instead.")]
 		public static int Remainder(this int dividend, int divisor)
 		{
 			if(divisor == Int.Zero)

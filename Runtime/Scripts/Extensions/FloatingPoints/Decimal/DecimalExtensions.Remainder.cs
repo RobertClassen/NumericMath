@@ -26,7 +26,6 @@ namespace NumericMath
 		/// decimal[] actual   = { -1.9M, -0.9M, -2.9M, -1.9M, -0.9M,  0.1M,  1.1M,  2.1M,  0.1M,  1.1M,  2.1; }; // Wrong for + % -
 		/// </code>
 		/// </example>
-		[Obsolete("Use the '%' operator directly instead.")]
 		public static decimal Remainder(this decimal dividend, decimal divisor)
 		{
 			if(divisor == Decimal.Zero)

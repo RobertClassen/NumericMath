@@ -26,7 +26,6 @@ namespace NumericMath
 		/// float[] actual   = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f,  0.1f,  1.1f,  2.1f,  0.1f,  1.1f,  2.1f }; // Wrong for + % -
 		/// </code>
 		/// </example>
-		[Obsolete("Use the '%' operator directly instead.")]
 		public static float Remainder(this float dividend, float divisor)
 		{
 			if(divisor == Float.Zero)

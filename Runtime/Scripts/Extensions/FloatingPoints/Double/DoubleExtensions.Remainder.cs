@@ -26,7 +26,6 @@ namespace NumericMath
 		/// double[] actual   = { -1.9d, -0.9d, -2.9d, -1.9d, -0.9d,  0.1d,  1.1d,  2.1d,  0.1d,  1.1d,  2.1d }; // Wrong for + % -
 		/// </code>
 		/// </example>
-		[Obsolete("Use the '%' operator directly instead.")]
 		public static double Remainder(this double dividend, double divisor)
 		{
 			if(divisor == Double.Zero)

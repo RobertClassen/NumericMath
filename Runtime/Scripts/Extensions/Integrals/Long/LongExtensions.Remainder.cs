@@ -26,7 +26,6 @@ namespace NumericMath
 		/// long[] actual   = { -1.9L, -0.9L, -2.9L, -1.9L, -0.9L,  0.1L,  1.1L,  2.1L,  0.1L,  1.1L,  2.1L }; // Wrong for + % -
 		/// </code>
 		/// </example>
-		[Obsolete("Use the '%' operator directly instead.")]
 		public static long Remainder(this long dividend, long divisor)
 		{
 			return dividend % divisor;
