@@ -16,5 +16,25 @@ namespace NumericMath
 		{
 			return value.IsClamped(Float.Zero, Float.One, isInclusive);
 		}
+
+		public static bool IsInfinity(this float value)
+		{
+			return float.IsInfinity(value);
+		}
+
+		public static bool IsNaN(this float value)
+		{
+			return float.IsNaN(value);
+		}
+
+		public static bool IsNegativeInfinity(this float value)
+		{
+			return float.IsNegativeInfinity(value);
+		}
+
+		public static bool IsPositiveInfinity(this float value)
+		{
+			return float.IsPositiveInfinity(value);
+		}
 	}
 }
