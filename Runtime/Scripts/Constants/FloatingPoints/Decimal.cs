@@ -13,7 +13,8 @@ namespace NumericMath
 
 		public const decimal OneHalf = One / (One + One);
 
-		public const decimal Rad2Deg = 180m / (decimal)Math.PI;
+		public const decimal FullCircleDegrees = 360m;
+		public const decimal Rad2Deg = FullCircleDegrees * OneHalf / (decimal)Math.PI;
 		public const decimal Deg2Rad = One / Rad2Deg;
 	}
 }

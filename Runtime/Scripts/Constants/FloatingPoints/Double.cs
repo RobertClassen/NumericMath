@@ -13,6 +13,7 @@
 
 		public const double OneHalf = (double)Decimal.OneHalf;
 
+		public const double FullCircleDegrees = (double)Decimal.FullCircleDegrees;
 		public const double Rad2Deg = (double)Decimal.Rad2Deg;
 		public const double Deg2Rad = (double)Decimal.Deg2Rad;
 	}
