@@ -9,7 +9,7 @@ namespace NumericMath
 	{
 		public static float Atan(this float tan, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (float)Math.Atan(tan.ToRadians(isDegrees));
+			return (float)Math.Atan(tan).ToDegrees(isDegrees);
 		}
 
 		public static float Atan2(this float y, float x, bool isDegrees = Angle.IsDegreesDefault)

@@ -9,7 +9,7 @@ namespace NumericMath
 	{
 		public static decimal Acos(this decimal cos, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (decimal)Math.Acos((double)cos.ToRadians(isDegrees));
+			return (decimal)Math.Acos((double)cos).ToDegrees(isDegrees);
 		}
 
 		public static decimal Cos(this decimal angle, bool isDegrees = Angle.IsDegreesDefault)

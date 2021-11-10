@@ -9,7 +9,7 @@ namespace NumericMath
 	{
 		public static decimal Asin(this decimal sin, bool isDegrees = Angle.IsDegreesDefault)
 		{
-			return (decimal)Math.Asin((double)sin.ToRadians(isDegrees));
+			return (decimal)Math.Asin((double)sin).ToDegrees(isDegrees);
 		}
 
 		public static decimal Sin(this decimal angle, bool isDegrees = Angle.IsDegreesDefault)
