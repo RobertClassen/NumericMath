@@ -6,12 +6,12 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Add(this double start, double increment)
+		public static double Add(this double value, double addend)
 		{
-			return start + increment;
+			return value + addend;
 		}
 
-		public static IEnumerable<double> Add(this double start, double increment, int count)
+		public static IEnumerable<double> Add(this double value, double addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -19,7 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start += increment;
+				yield return value += addend;
 			}
 		}
 	}

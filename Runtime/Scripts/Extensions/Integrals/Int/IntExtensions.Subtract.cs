@@ -6,12 +6,12 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static int Subtract(this int start, int increment)
+		public static int Subtract(this int value, int subtrahend)
 		{
-			return start - increment;
+			return value - subtrahend;
 		}
 
-		public static IEnumerable<int> Subtract(this int start, int increment, int count)
+		public static IEnumerable<int> Subtract(this int value, int subtrahend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -19,7 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start -= increment;
+				yield return value -= subtrahend;
 			}
 		}
 	}

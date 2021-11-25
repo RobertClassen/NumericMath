@@ -6,12 +6,12 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte Subtract(this byte start, byte increment)
+		public static byte Subtract(this byte value, byte subtrahend)
 		{
-			return (byte)(start - increment);
+			return (byte)(value - subtrahend);
 		}
 
-		public static IEnumerable<byte> Subtract(this byte start, byte increment, int count)
+		public static IEnumerable<byte> Subtract(this byte value, byte subtrahend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -19,7 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start -= increment;
+				yield return value -= subtrahend;
 			}
 		}
 	}

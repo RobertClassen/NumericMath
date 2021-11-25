@@ -6,12 +6,12 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short Add(this short start, short increment)
+		public static short Add(this short value, short addend)
 		{
-			return (short)(start + increment);
+			return (short)(value + addend);
 		}
 
-		public static IEnumerable<short> Add(this short start, short increment, int count)
+		public static IEnumerable<short> Add(this short value, short addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -19,7 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start += increment;
+				yield return value += addend;
 			}
 		}
 	}

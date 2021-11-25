@@ -6,12 +6,12 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Subtract(this float start, float increment)
+		public static float Subtract(this float value, float subtrahend)
 		{
-			return start - increment;
+			return value - subtrahend;
 		}
 
-		public static IEnumerable<float> Subtract(this float start, float increment, int count)
+		public static IEnumerable<float> Subtract(this float value, float subtrahend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -19,7 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start -= increment;
+				yield return value -= subtrahend;
 			}
 		}
 	}

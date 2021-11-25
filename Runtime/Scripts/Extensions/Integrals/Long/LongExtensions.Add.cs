@@ -6,12 +6,12 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static long Add(this long start, long increment)
+		public static long Add(this long value, long addend)
 		{
-			return start + increment;
+			return value + addend;
 		}
 
-		public static IEnumerable<long> Add(this long start, long increment, int count)
+		public static IEnumerable<long> Add(this long value, long addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -19,7 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start += increment;
+				yield return value += addend;
 			}
 		}
 	}

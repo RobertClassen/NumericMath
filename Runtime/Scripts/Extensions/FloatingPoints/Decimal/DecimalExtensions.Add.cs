@@ -6,12 +6,12 @@ namespace NumericMath
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Add(this decimal start, decimal increment)
+		public static decimal Add(this decimal value, decimal addend)
 		{
-			return start + increment;
+			return value + addend;
 		}
 
-		public static IEnumerable<decimal> Add(this decimal start, decimal increment, int count)
+		public static IEnumerable<decimal> Add(this decimal value, decimal addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -19,7 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start += increment;
+				yield return value += addend;
 			}
 		}
 	}
