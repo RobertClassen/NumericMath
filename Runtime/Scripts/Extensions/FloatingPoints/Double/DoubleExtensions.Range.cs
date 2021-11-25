@@ -10,7 +10,7 @@ namespace NumericMath
 		{
 			if(count < Int.Zero)
 			{
-				throw new ArgumentLessThanZeroException();
+				throw new ArgumentLessThanZeroException(nameof(count), count);
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
