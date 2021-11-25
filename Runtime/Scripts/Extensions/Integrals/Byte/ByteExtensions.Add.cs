@@ -19,8 +19,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return start;
-				start += increment;
+				yield return start += increment;
 			}
 		}
 	}
