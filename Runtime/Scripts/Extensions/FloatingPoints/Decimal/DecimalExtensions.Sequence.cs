@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class DecimalExtensions
 	{
-		public static IEnumerable<decimal> Sequence(this decimal increment, int count, decimal start = Decimal.Zero)
+		public static IEnumerable<decimal> Range(this decimal start, int count, decimal increment = Decimal.One)
 		{
 			if(count < Int.Zero)
 			{

@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static IEnumerable<byte> Sequence(this byte increment, int count, byte start = Byte.Zero)
+		public static IEnumerable<byte> Range(this byte start, int count, byte increment = Byte.One)
 		{
 			if(count < Int.Zero)
 			{

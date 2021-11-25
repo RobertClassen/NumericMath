@@ -12,7 +12,7 @@ namespace NumericMath
 		public void Cos_Equals_Expected()
 		{
 			float angle = 15f;
-			float[] input = angle.Sequence((int)(Float.FullCircleDegrees / angle) + 1).ToArray();
+			float[] input = 0f.Range((int)(Float.FullCircleDegrees / angle) + 1, angle).ToArray();
 			float[] expected = {
 				1f, 0.965926f, 0.866025f, 0.707107f, 0.5f, 0.258819f,
 				0f, -0.258819f, -0.5f, -0.707107f, -0.866025f, -0.965926f,
@@ -30,7 +30,7 @@ namespace NumericMath
 		public void Acos_Degrees_Equals_Expected()
 		{
 			float angle = 15f;
-			float[] input = angle.Sequence((int)(Float.FullCircleDegrees / angle) + 1).ToArray();
+			float[] input = 0f.Range((int)(Float.FullCircleDegrees / angle) + 1, angle).ToArray();
 			float[] expected = {
 				0f, 15f, 30f, 45f, 60f, 75f,
 				90f, 105f, 120f, 135f, 150f, 165f,
@@ -48,7 +48,7 @@ namespace NumericMath
 		public void Acos_Radians_Equals_Expected()
 		{
 			float angle = 15f;
-			float[] input = angle.Sequence((int)(Float.FullCircleDegrees / angle) + 1)
+			float[] input = 0f.Range((int)(Float.FullCircleDegrees / angle) + 1, angle)
 				.Select(value => value.ToRadians()).ToArray();
 			float[] expected = new [] {
 				0f, 15f, 30f, 45f, 60f, 75f,

@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static IEnumerable<float> Sequence(this float increment, int count, float start = Float.Zero)
+		public static IEnumerable<float> Range(this float start, int count, float increment = Float.One)
 		{
 			if(count < Int.Zero)
 			{

@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static IEnumerable<short> Sequence(this short increment, int count, short start = Short.Zero)
+		public static IEnumerable<short> Range(this short start, int count, short increment = Short.One)
 		{
 			if(count < Int.Zero)
 			{

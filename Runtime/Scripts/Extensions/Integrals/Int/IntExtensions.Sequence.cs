@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static IEnumerable<int> Sequence(this int increment, int count, int start = Int.Zero)
+		public static IEnumerable<int> Range(this int start, int count, int increment = Int.One)
 		{
 			if(count < Int.Zero)
 			{

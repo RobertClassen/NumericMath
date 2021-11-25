@@ -13,7 +13,7 @@ namespace NumericMath
 		{
 			const int count = 6;
 
-			int[] sequence = 1.Sequence(count, 0).ToArray();
+			int[] sequence = 0.Range(count).ToArray();
 
 			Assert.AreEqual(count, sequence.Length);
 		}
@@ -23,7 +23,7 @@ namespace NumericMath
 		{
 			const int count = -6;
 
-			Assert.Throws<ArgumentLessThanZeroException>(() => 1.Sequence(count).ToArray());
+			Assert.Throws<ArgumentLessThanZeroException>(() => 0.Range(count).ToArray());
 		}
 	}
 }
