@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static IEnumerable<int> Add(this int value, int increment, int count)
+		public static IEnumerable<int> Add(this int value, int addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value += increment;
+				yield return value += addend;
 			}
 		}
 	}
