@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short Add(this short value, short addend)
-		{
-			return (short)(value + addend);
-		}
-
 		public static IEnumerable<short> Add(this short value, short addend, int count)
 		{
 			if(count < Int.Zero)

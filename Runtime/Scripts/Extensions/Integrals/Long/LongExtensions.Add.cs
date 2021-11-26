@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static long Add(this long value, long addend)
-		{
-			return value + addend;
-		}
-
 		public static IEnumerable<long> Add(this long value, long addend, int count)
 		{
 			if(count < Int.Zero)

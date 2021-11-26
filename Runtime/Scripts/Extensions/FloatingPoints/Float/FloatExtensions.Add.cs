@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Add(this float value, float addend)
-		{
-			return value + addend;
-		}
-
 		public static IEnumerable<float> Add(this float value, float addend, int count)
 		{
 			if(count < Int.Zero)

@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static int Divide(this int value, int divisor)
-		{
-			return value / divisor;
-		}
-
 		public static IEnumerable<int> Divide(this int value, int divisor, int count)
 		{
 			if(count < Int.Zero)

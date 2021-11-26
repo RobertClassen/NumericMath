@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte Add(this byte value, byte addend)
-		{
-			return (byte)(value + addend);
-		}
-
 		public static IEnumerable<byte> Add(this byte value, byte addend, int count)
 		{
 			if(count < Int.Zero)

@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Subtract(this float value, float subtrahend)
-		{
-			return value - subtrahend;
-		}
-
 		public static IEnumerable<float> Subtract(this float value, float subtrahend, int count)
 		{
 			if(count < Int.Zero)

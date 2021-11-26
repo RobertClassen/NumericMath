@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Add(this decimal value, decimal addend)
-		{
-			return value + addend;
-		}
-
 		public static IEnumerable<decimal> Add(this decimal value, decimal addend, int count)
 		{
 			if(count < Int.Zero)

@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short Divide(this short value, short divisor)
-		{
-			return (short)(value / divisor);
-		}
-
 		public static IEnumerable<short> Divide(this short value, short divisor, int count)
 		{
 			if(count < Int.Zero)

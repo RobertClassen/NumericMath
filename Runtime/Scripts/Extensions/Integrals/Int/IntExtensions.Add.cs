@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static int Add(this int value, int increment)
-		{
-			return value + increment;
-		}
-
 		public static IEnumerable<int> Add(this int value, int increment, int count)
 		{
 			if(count < Int.Zero)

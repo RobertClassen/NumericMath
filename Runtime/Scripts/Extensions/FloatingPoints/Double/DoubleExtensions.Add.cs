@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Add(this double value, double addend)
-		{
-			return value + addend;
-		}
-
 		public static IEnumerable<double> Add(this double value, double addend, int count)
 		{
 			if(count < Int.Zero)

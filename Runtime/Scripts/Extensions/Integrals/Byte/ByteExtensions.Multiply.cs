@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte Multiply(this byte value, byte factor)
-		{
-			return (byte)(value * factor);
-		}
-
 		public static IEnumerable<byte> Multiply(this byte value, byte factor, int count)
 		{
 			if(count < Int.Zero)

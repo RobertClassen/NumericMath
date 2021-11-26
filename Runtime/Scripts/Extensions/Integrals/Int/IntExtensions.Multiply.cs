@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static int Multiply(this int value, int factor)
-		{
-			return value * factor;
-		}
-
 		public static IEnumerable<int> Multiply(this int value, int factor, int count)
 		{
 			if(count < Int.Zero)

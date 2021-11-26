@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static long Subtract(this long value, long subtrahend)
-		{
-			return value - subtrahend;
-		}
-
 		public static IEnumerable<long> Subtract(this long value, long subtrahend, int count)
 		{
 			if(count < Int.Zero)

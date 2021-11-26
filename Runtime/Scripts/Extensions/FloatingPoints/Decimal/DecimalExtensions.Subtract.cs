@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class DecimalExtensions
 	{
-		public static decimal Subtract(this decimal value, decimal subtrahend)
-		{
-			return value - subtrahend;
-		}
-
 		public static IEnumerable<decimal> Subtract(this decimal value, decimal subtrahend, int count)
 		{
 			if(count < Int.Zero)

@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short Subtract(this short value, short subtrahend)
-		{
-			return (short)(value - subtrahend);
-		}
-
 		public static IEnumerable<short> Subtract(this short value, short subtrahend, int count)
 		{
 			if(count < Int.Zero)

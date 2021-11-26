@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte Divide(this byte value, byte divisor)
-		{
-			return (byte)(value / divisor);
-		}
-
 		public static IEnumerable<byte> Divide(this byte value, byte divisor, int count)
 		{
 			if(count < Int.Zero)

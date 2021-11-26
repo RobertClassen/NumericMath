@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Divide(this float value, float divisor)
-		{
-			return value / divisor;
-		}
-
 		public static IEnumerable<float> Divide(this float value, float divisor, int count)
 		{
 			if(count < Int.Zero)

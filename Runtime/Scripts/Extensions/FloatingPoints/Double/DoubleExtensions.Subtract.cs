@@ -6,11 +6,6 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Subtract(this double value, double subtrahend)
-		{
-			return value - subtrahend;
-		}
-
 		public static IEnumerable<double> Subtract(this double value, double subtrahend, int count)
 		{
 			if(count < Int.Zero)
