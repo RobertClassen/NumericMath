@@ -51,11 +51,14 @@ using NumericMath;
 
 
 ### Arithmetic
-<details><summary>Expand</summary>
+
+
+---
+
 
 #### Basic
+<details><summary>Expand</summary>
 
-<details><summary>Expand</summary>  
 ##### Add `+` `F,I`
 Returns a sequence of numbers (**excluding** the initial value), adding the specified `addend` a specified number of times.
 
@@ -225,8 +228,6 @@ Returns the square root of the number.
  4f.Sqrt(); // returns '2f'
 16f.Sqrt(); // returns '4f'
 ```
-
-</details>
 
 </details>
 
