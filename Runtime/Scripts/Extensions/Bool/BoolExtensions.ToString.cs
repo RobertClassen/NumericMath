@@ -9,7 +9,7 @@ namespace NumericMath
 	{
 		public static string ToBinaryString(this bool value)
 		{
-			return value.ToInt().ToString();
+			return value.ToByte().ToString();
 		}
 
 		public static string ToInvariantString(this bool value)
