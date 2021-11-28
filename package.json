@@ -5,7 +5,7 @@
   "description": "Extension methods for built-in numeric value-types.",
   "author": {
     "name": "Robert Classen",
-    "email": "Robert.Classen.dev@gmail.com",
+    "email": "Robert.Classen.dev+NumericMath@gmail.com",
     "url": "https://github.com/RobertClassen"
   },
   "type": "library"
