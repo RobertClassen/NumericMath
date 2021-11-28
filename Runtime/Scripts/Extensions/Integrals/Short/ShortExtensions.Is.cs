@@ -12,6 +12,11 @@ namespace NumericMath
 			return isInclusive ? min <= value && value <= max : min < value && value < max;
 		}
 
+		public static bool IsClamped01(this short value, bool isInclusive = Numeric.IsClampedInclusiveDefault)
+		{
+			return value.IsClamped(Short.Zero, Short.One, isInclusive);
+		}
+
 		public static bool IsEven(this short value)
 		{
 			return value % (short)Numeric.Base.Binary == Int.Zero;

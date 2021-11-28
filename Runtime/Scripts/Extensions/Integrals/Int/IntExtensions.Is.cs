@@ -17,6 +17,11 @@ namespace NumericMath
 			return value.IsClamped(Int.Zero, iCollection.Count - Int.One);
 		}
 
+		public static bool IsClamped01(this int value, bool isInclusive = Numeric.IsClampedInclusiveDefault)
+		{
+			return value.IsClamped(Int.Zero, Int.One, isInclusive);
+		}
+
 		public static bool IsEven(this int value)
 		{
 			return value % (int)Numeric.Base.Binary == Int.Zero;
