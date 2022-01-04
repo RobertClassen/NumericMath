@@ -403,7 +403,7 @@ Returns the number which is clamped to the inclusive range of `min` and `max`.
 (-10).Clamp(-5, 5); // returns '-5'
 ```
 #### IsClamped[/01] `+` `F,I`
-Checks whether the number is clamped to the inclusive range of `min` and `max`, inclusively by default.
+Checks whether the number is clamped to the range of `min` and `max`, inclusively by default.
 ```csharp
   (10).IsClamped(-5, 5);        // returns 'false'
    (5).IsClamped(-5, 5);        // returns 'true'
