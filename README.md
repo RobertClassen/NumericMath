@@ -240,12 +240,12 @@ Returns the square root of the number.
 #### Lerp `+` `F`
 Linearly interpolates between two numbers by a percent value.
 ```csharp
-(0f).Lerp(10f, 0f);         // returns '0f'
-(0f).Lerp(10f, 0.5f);       // returns '5f'
-(0f).Lerp(10f, 1f);         // returns '10f'
+  (0f).Lerp(0f, 10f);       // returns '0f'
+(0.5f).Lerp(0f, 10f);       // returns '5f'
+  (1f).Lerp(0f, 10f);       // returns '10f'
 
-(0f).Lerp(10f, 1.1f);       // returns '11f'
-(0f).Lerp(10f, 1.1f, true); // returns '10f'
+(1.1f).Lerp(0f, 10f);       // returns '11f'
+(1.1f).Lerp(0f, 10f, true); // returns '10f'
 ```
 
 #### InverseLerp `+` `F`
