@@ -14,6 +14,7 @@
 		public const float OneHalf = (float)Decimal.OneHalf;
 
 		public const float FullCircleDegrees = (float)Decimal.FullCircleDegrees;
+		public const float HalfCircleDegrees = (float)Decimal.HalfCircleDegrees;
 		public const float Rad2Deg = (float)Decimal.Rad2Deg;
 		public const float Deg2Rad = (float)Decimal.Deg2Rad;
 	}
