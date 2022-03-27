@@ -312,7 +312,7 @@ Returns a string representation of the number, formatted as binary/hexadecimal.
 (5).ToHexString();    // returns "05"
 ```
 
-#### To[Byte/Short/Int/Long/Float/Double/Decimal] `+` `B`
+#### To[Byte/Short/Int/Long/Float/Double] `+` `B`
 Returns a value representing the bool as `zero` or `one`.
 ```csharp
 false.ToInt();   // returns '0'
