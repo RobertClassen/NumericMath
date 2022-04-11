@@ -10,7 +10,7 @@ namespace NumericMath
 		public static float Remap(this float value, float fromA, float fromB, float toA, float toB, 
 			bool isClamped = Numeric.IsLerpClampedDefault)
 		{
-			return toA.Lerp(toB, value.InverseLerp(fromA, fromB, isClamped), isClamped);
+			return value.InverseLerp(fromA, fromB, isClamped).Lerp(toA, toB, isClamped);
 		}
 	}
 }
