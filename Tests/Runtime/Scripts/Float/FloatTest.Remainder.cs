@@ -9,7 +9,7 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void Remainder_Positive_Equals_Expected()
+		public void Remainder_Positive()
 		{
 			// Equal to IntTest but with 0.1f added
 			float[] input = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 3.1f, 4.1f, 5.1f };
@@ -27,7 +27,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Remainder_Negative_Equals_Expected()
+		public void Remainder_Negative()
 		{
 			// Equal to IntTest but with 0.1f added
 			float[] input = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 3.1f, 4.1f, 5.1f };

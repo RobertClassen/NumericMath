@@ -16,7 +16,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Equals_Expected()
+		public void Modulo_Positive()
 		{
 			int[] input = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
 			int modulo = 3;
@@ -28,7 +28,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Negative_Equals_Expected()
+		public void Modulo_Negative()
 		{
 			int[] input = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
 			int modulo = -3;

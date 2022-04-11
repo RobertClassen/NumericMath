@@ -9,7 +9,7 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void Lerp_Equals_Expected()
+		public void Lerp()
 		{
 			Assert.AreEqual(0f, 0f.Lerp(10f, 0f), delta);
 			Assert.AreEqual(5f, 0f.Lerp(10f, 0.5f), delta);

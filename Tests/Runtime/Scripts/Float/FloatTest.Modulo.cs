@@ -16,7 +16,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Equals_Expected()
+		public void Modulo_Positive()
 		{
 			// Equal to IntTest but with 0.1f added
 			float[] input = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 3.1f, 4.1f, 5.1f };
@@ -32,7 +32,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Negative_Equals_Expected()
+		public void Modulo_Negative()
 		{
 			// Equal to IntTest but with 0.1f added
 			float[] input = { -4.9f, -3.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 3.1f, 4.1f, 5.1f };

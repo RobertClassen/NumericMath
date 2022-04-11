@@ -8,7 +8,7 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void InverseLerp_Equals_Expected()
+		public void InverseLerp()
 		{
 			Assert.AreEqual(0f, 0f.InverseLerp(0f, 10f), delta);
 			Assert.AreEqual(0.5f, 5f.InverseLerp(0f, 10f), delta);

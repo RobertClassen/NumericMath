@@ -9,7 +9,7 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void Sin_Equals_Expected()
+		public void Sin()
 		{
 			float angle = 15f;
 			float[] input = 0f.Range((int)(Float.FullCircleDegrees / angle) + 1, angle).ToArray();
@@ -27,7 +27,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Asin_Degrees_Equals_Expected()
+		public void Asin_Degrees()
 		{
 			float angle = 15f;
 			float[] input = 0f.Range((int)(Float.FullCircleDegrees / angle) + 1, angle).ToArray();
@@ -45,7 +45,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Asin_Radians_Equals_Expected()
+		public void Asin_Radians()
 		{
 			float angle = 15f;
 			float[] input = 0f.Range((int)(Float.FullCircleDegrees / angle) + 1, angle)
