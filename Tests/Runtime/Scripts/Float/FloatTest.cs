@@ -9,9 +9,10 @@ namespace NumericMath
 	{
 		private const float delta = 0.0001f;
 
-		private void AreEqual(float[] expected, float[] actual)
+		private void AreEqual(IList<float> expected, IList<float> actual)
 		{
-			for(int i = 0; i < expected.Length; i++)
+			Assert.AreEqual(expected.Count, actual.Count);
+			for(int i = 0; i < expected.Count; i++)
 			{
 				Assert.AreEqual(expected[i], actual[i], delta, "Values differ at index [" + i + "]");
 			}
