@@ -9,7 +9,7 @@
 	{
 		public static string ToBinaryString(this byte value, int minLength = Byte.BinaryLength)
 		{
-			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
+			return Convert.ToString(value, Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
 		}
 
 		public static string ToHexString(this byte value, int minLength = Byte.HexLength)

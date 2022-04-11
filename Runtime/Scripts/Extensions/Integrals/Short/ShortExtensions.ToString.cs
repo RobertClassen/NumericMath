@@ -9,7 +9,7 @@ namespace NumericMath
 	{
 		public static string ToBinaryString(this short value, int minLength = Short.BinaryLength)
 		{
-			return Convert.ToString(value, (int)Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
+			return Convert.ToString(value, Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
 		}
 
 		public static string ToHexString(this short value, int minLength = Short.HexLength)

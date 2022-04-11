@@ -6,12 +6,12 @@
 
 	public static class Numeric
 	{
-		public enum Base : byte
+		public static class Base
 		{
-			Binary = 2,
-			Octal = 8,
-			Decimal = 10,
-			Hex = 16,
+			public const byte Binary = 2;
+			public const byte Octal = 8;
+			public const byte Decimal = 10;
+			public const byte Hex = 16;
 		}
 
 		public const bool IsClampEnabledDefault = true;
