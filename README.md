@@ -7,7 +7,7 @@ Extension methods for built-in numeric value-types.
 
 ### Compatibility
 
-Should work with Unity 2018.3+, except when using Scripting Runtime Version ".NET 3.5 Equivalent (Deprecated)".
+Should work with Unity 2018.3 or newer.
 
 ### Installation via Git URL (recommended)
 See [here](https://docs.unity3d.com/Manual/upm-ui-giturl.html) for how to install packages via Git URL by using the Unity Package Manager.  
