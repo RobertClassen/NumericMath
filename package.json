@@ -1,6 +1,6 @@
 {
   "name": "com.robert_classen.numericmath",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "displayName": "NumericMath",
   "description": "Extension methods for built-in numeric value-types.",
   "author": {
