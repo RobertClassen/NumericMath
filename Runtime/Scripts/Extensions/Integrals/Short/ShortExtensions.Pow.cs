@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short Pow(this short value, short exponent)
+		public static short Pow(this short value, double exponent)
 		{
 			return (short)Math.Pow(value, exponent);
 		}

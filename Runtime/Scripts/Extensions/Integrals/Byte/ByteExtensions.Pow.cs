@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte Pow(this byte value, byte exponent)
+		public static byte Pow(this byte value, double exponent)
 		{
 			return (byte)Math.Pow(value, exponent);
 		}

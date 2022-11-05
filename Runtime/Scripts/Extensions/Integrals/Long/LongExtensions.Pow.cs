@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static long Pow(this long value, long exponent)
+		public static long Pow(this long value, double exponent)
 		{
 			return (long)Math.Pow(value, exponent);
 		}

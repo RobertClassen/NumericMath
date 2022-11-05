@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Pow(this float value, float exponent)
+		public static float Pow(this float value, double exponent)
 		{
 			return (float)Math.Pow(value, exponent);
 		}
