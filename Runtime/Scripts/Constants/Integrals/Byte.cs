@@ -6,7 +6,14 @@
 
 	public static class Byte
 	{
-		public const byte BinaryLength = sizeof(byte) * 8;
+		/// <summary>
+		/// The number of <c>byte</c>s.
+		/// </summary>
+		public const byte Length = sizeof(byte);
+		/// <summary>
+		/// The number of <c>bit</c>s.
+		/// </summary>
+		public const byte BinaryLength = Length * 8;
 		public const byte HexLength = BinaryLength >> (One + One);
 
 		public const byte Zero = One - One;

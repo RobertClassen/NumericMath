@@ -6,7 +6,14 @@
 
 	public static class Long
 	{
-		public const byte BinaryLength = sizeof(long) * Byte.BinaryLength;
+		/// <summary>
+		/// The number of <c>byte</c>s.
+		/// </summary>
+		public const byte Length = sizeof(long);
+		/// <summary>
+		/// The number of <c>bit</c>s.
+		/// </summary>
+		public const byte BinaryLength = Length * Byte.BinaryLength;
 		public const byte HexLength = BinaryLength >> (int)(One + One);
 
 		public const long Zero = Byte.Zero;

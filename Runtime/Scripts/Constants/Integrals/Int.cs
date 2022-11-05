@@ -6,7 +6,14 @@
 
 	public static class Int
 	{
-		public const byte BinaryLength = sizeof(int) * Byte.BinaryLength;
+		/// <summary>
+		/// The number of <c>byte</c>s.
+		/// </summary>
+		public const byte Length = sizeof(int);
+		/// <summary>
+		/// The number of <c>bit</c>s.
+		/// </summary>
+		public const byte BinaryLength = Length * Byte.BinaryLength;
 		public const byte HexLength = BinaryLength >> (One + One);
 
 		public const int Zero = Byte.Zero;
