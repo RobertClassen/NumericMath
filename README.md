@@ -279,9 +279,9 @@ Calculates the percentage of the number between two starting numbers via `Invers
 #### ToBool `+` `F,I`
 Returns `true` if the number is not `zero`.
 ```csharp
- (5).ToBool(); // returns 'false'
- (0).ToBool(); // returns 'true'
-(-5).ToBool(); // returns 'false'
+ (5).ToBool(); // returns 'true'
+ (0).ToBool(); // returns 'False'
+(-5).ToBool(); // returns 'true'
 ```
 
 #### To[Degrees/Radians] `+` `F`
@@ -301,8 +301,8 @@ Returns a string representation of the number, using the [invariant Culture](htt
 #### ToPercentString `+` `F`
 Returns a string representation of the number, formatted as percent.
 ```csharp
-(0.5f).ToInvariantString();  // returns "50.00 %"
-(0.5f).ToInvariantString(0); // returns "50 %"
+(0.5f).ToPercentString();  // returns "50.00 %"
+(0.5f).ToPercentString(0); // returns "50 %"
 ```
 
 #### To[Binary/Hex]String `+` `I`
@@ -396,11 +396,12 @@ Checks if the value is (negative/positive) infinity / `Not a Number`
 ### Limits
 <details><summary>Expand</summary>
 
-#### Clamp `+` `F,I`
+#### Clamp[/01] `+` `F,I`
 Returns the number which is clamped to the inclusive range of `min` and `max`.
 ```csharp
- (10).Clamp(-5, 5); // returns  '5'
-(-10).Clamp(-5, 5); // returns '-5'
+  (10).Clamp(-5, 5); // returns  '5'
+ (-10).Clamp(-5, 5); // returns '-5'
+(1.1f).Clamp01();    // returns '1f'
 ```
 #### IsClamped[/01] `+` `F,I`
 Checks whether the number is clamped to the range of `min` and `max`, inclusively by default.
