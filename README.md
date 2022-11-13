@@ -221,11 +221,18 @@ Returns the number raised to a power.
 (10f).Pow(-3f); // returns '0.001'
 ```
 
-##### Sqrt [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt) `F,I`
+##### Sqrt[/F] [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt) `F,I`
 Returns the square root of the number.
 ```csharp
- (4f).Sqrt(); // returns '2f'
-(16f).Sqrt(); // returns '4f'
+(4f).Sqrt();  // returns '2d'
+(16).SqrtF(); // returns '4f'
+```
+
+##### Root[/F] `+` `F,I`
+Returns the specified root of the number.
+```csharp
+(4f).Root(2d);  // returns '2d'
+(27).RootF(3d); // returns '3f'
 ```
 
 </details>
