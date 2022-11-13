@@ -10,5 +10,10 @@ namespace NumericMath
 		{
 			return Math.Sqrt(value);
 		}
+
+		public static float SqrtF(this byte value)
+		{
+			return (float)Math.Sqrt(value);
+		}
 	}
 }
