@@ -6,9 +6,9 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static float Sqrt(this byte value)
+		public static double Sqrt(this byte value)
 		{
-			return (float)Math.Sqrt(value);
+			return Math.Sqrt(value);
 		}
 	}
 }

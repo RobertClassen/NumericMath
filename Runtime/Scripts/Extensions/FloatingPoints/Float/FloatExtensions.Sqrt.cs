@@ -6,9 +6,9 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Sqrt(this float value)
+		public static double Sqrt(this float value)
 		{
-			return (float)Math.Sqrt(value);
+			return Math.Sqrt(value);
 		}
 	}
 }

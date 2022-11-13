@@ -6,9 +6,9 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static float Sqrt(this long value)
+		public static double Sqrt(this long value)
 		{
-			return (float)Math.Sqrt(value);
+			return Math.Sqrt(value);
 		}
 	}
 }
