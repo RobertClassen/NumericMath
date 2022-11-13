@@ -221,7 +221,7 @@ Returns the number raised to a power.
 (10f).Pow(-3f); // returns '0.001'
 ```
 
-##### Sqrt [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt) `F`
+##### Sqrt [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt) `F,I`
 Returns the square root of the number.
 ```csharp
  (4f).Sqrt(); // returns '2f'
