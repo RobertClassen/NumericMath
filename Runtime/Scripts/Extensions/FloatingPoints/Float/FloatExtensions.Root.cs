@@ -6,7 +6,12 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Root(this float value, double root)
+		public static double Root(this float value, double root)
+		{
+			return Math.Pow(value, Double.One / root);
+		}
+
+		public static float RootF(this float value, double root)
 		{
 			return (float)Math.Pow(value, Double.One / root);
 		}

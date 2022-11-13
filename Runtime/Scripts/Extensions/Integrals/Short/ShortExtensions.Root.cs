@@ -6,9 +6,14 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short Root(this short value, double root)
+		public static double Root(this short value, double root)
 		{
-			return (short)Math.Pow(value, Double.One / root);
+			return Math.Pow(value, Double.One / root);
+		}
+
+		public static float RootF(this short value, double root)
+		{
+			return (float)Math.Pow(value, Double.One / root);
 		}
 	}
 }

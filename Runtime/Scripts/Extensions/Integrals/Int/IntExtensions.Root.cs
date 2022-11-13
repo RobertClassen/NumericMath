@@ -6,9 +6,14 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static int Root(this int value, double root)
+		public static double Root(this int value, double root)
 		{
-			return (int)Math.Pow(value, Double.One / root);
+			return Math.Pow(value, Double.One / root);
+		}
+
+		public static float RootF(this int value, double root)
+		{
+			return (float)Math.Pow(value, Double.One / root);
 		}
 	}
 }

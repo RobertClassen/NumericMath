@@ -6,9 +6,14 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static long Root(this long value, double root)
+		public static double Root(this long value, double root)
 		{
-			return (long)Math.Pow(value, Double.One / root);
+			return Math.Pow(value, Double.One / root);
+		}
+
+		public static float RootF(this long value, double root)
+		{
+			return (float)Math.Pow(value, Double.One / root);
 		}
 	}
 }

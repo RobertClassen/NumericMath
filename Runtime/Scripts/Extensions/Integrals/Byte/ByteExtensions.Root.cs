@@ -6,9 +6,14 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte Root(this byte value, double root)
+		public static double Root(this byte value, double root)
 		{
-			return (byte)Math.Pow(value, Double.One / root);
+			return Math.Pow(value, Double.One / root);
+		}
+
+		public static float RootF(this byte value, double root)
+		{
+			return (float)Math.Pow(value, Double.One / root);
 		}
 	}
 }
