@@ -12,11 +12,6 @@ namespace NumericMath
 			return double.IsInfinity(value);
 		}
 
-		public static bool IsNaN(this double value)
-		{
-			return double.IsNaN(value);
-		}
-
 		public static bool IsNegativeInfinity(this double value)
 		{
 			return double.IsNegativeInfinity(value);
