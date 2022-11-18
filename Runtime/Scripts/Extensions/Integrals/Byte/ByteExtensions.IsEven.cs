@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static bool IsOdd(this byte value)
+		public static bool IsEven(this byte value)
 		{
-			return value % (byte)Numeric.Base.Binary != Byte.Zero;
+			return value % (byte)Numeric.Base.Binary == Byte.Zero;
 		}
 	}
 }

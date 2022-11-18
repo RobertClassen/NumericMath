@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static bool IsOdd(this short value)
+		public static bool IsEven(this short value)
 		{
-			return value % (short)Numeric.Base.Binary != Int.Zero;
+			return value % (short)Numeric.Base.Binary == Int.Zero;
 		}
 	}
 }

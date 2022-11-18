@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static bool IsOdd(this int value)
+		public static bool IsEven(this int value)
 		{
-			return value % (int)Numeric.Base.Binary != Int.Zero;
+			return value % (int)Numeric.Base.Binary == Int.Zero;
 		}
 	}
 }

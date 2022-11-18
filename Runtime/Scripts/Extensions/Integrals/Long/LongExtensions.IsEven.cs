@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static bool IsOdd(this long value)
+		public static bool IsEven(this long value)
 		{
-			return value % (long)Numeric.Base.Binary != Long.Zero;
+			return value % (long)Numeric.Base.Binary == Long.Zero;
 		}
 	}
 }
