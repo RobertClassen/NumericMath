@@ -15,8 +15,8 @@ namespace NumericMath
 		/// the one which was found first is returned.
 		/// 
 		/// <code>
-		/// 0.Nearest(new []{ 10, 5, 20, -5 }; // returns '5'
-		/// 0.Nearest(new []{ 10, -5, 20, 5 }; // returns '-5'
+		/// 0.Nearest(new []{ 10, 5, 20, -5 }); // returns '5'
+		/// 0.Nearest(new []{ 10, -5, 20, 5 }); // returns '-5'
 		/// </code>
 		/// </remarks>
 		public static long Nearest(this long value, IList<long> values)
@@ -55,8 +55,8 @@ namespace NumericMath
 		/// the one which was found first is returned.
 		/// 
 		/// <code>
-		/// 0.Nearest(new []{ 10, 5, 20, -5 }; // returns '5'
-		/// 0.Nearest(new []{ 10, -5, 20, 5 }; // returns '-5'
+		/// 0.Nearest(new []{ 10, 5, 20, -5 }); // returns '5'
+		/// 0.Nearest(new []{ 10, -5, 20, 5 }); // returns '-5'
 		/// </code>
 		/// </remarks>
 		public static long Nearest(this long value, params long[] values)
@@ -95,8 +95,8 @@ namespace NumericMath
 		/// the one which was found first is returned.
 		/// 
 		/// <code>
-		/// 0.Nearest(new []{ 10, 5, 20, -5 }; // returns '5'
-		/// 0.Nearest(new []{ 10, -5, 20, 5 }; // returns '-5'
+		/// 0.Nearest(new []{ 10, 5, 20, -5 }); // returns '5'
+		/// 0.Nearest(new []{ 10, -5, 20, 5 }); // returns '-5'
 		/// </code>
 		/// </remarks>
 		public static long Nearest(this long value, IEnumerable<long> values)
