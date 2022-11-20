@@ -15,10 +15,5 @@ namespace NumericMath
 		{
 			return (long)Math.Round(value);
 		}
-
-		public static double RoundToMid(this double value)
-		{
-			return Math.Round(value) + Double.OneHalf;
-		}
 	}
 }
