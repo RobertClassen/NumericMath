@@ -48,12 +48,12 @@ namespace NumericMath
 			}
 
 			float nearest = values[Int.Zero];
-			float minDelta = Math.Abs(nearest - value);
-			for(int i = Int.Zero; i < values.Count; i++)
+			float minDelta = value.RangeMagnitude(nearest);
+			for(int i = Int.One; i < values.Count; i++)
 			{
 				float current = values[i];
 
-				float delta = Math.Abs(current - value);
+				float delta = value.RangeMagnitude(current);
 				if(delta < minDelta)
 				{
 					minDelta = delta;
@@ -88,12 +88,12 @@ namespace NumericMath
 			}
 
 			float nearest = values[Int.Zero];
-			float minDelta = Math.Abs(nearest - value);
-			for(int i = Int.Zero; i < values.Length; i++)
+			float minDelta = value.RangeMagnitude(nearest);
+			for(int i = Int.One; i < values.Length; i++)
 			{
 				float current = values[i];
 
-				float delta = Math.Abs(current - value);
+				float delta = value.RangeMagnitude(current);
 				if(delta < minDelta)
 				{
 					minDelta = delta;
@@ -131,12 +131,12 @@ namespace NumericMath
 				}
 
 				float nearest = enumerator.Current;
-				float minDelta = Math.Abs(nearest - value);
+				float minDelta = value.RangeMagnitude(nearest);
 				while(enumerator.MoveNext())
 				{
 					float current = enumerator.Current;
 
-					float delta = Math.Abs(current - value);
+					float delta = value.RangeMagnitude(current);
 					if(delta < minDelta)
 					{
 						minDelta = delta;

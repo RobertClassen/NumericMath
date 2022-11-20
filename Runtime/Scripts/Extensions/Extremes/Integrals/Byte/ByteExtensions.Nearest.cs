@@ -48,12 +48,12 @@ namespace NumericMath
 			}
 
 			byte nearest = values[Int.Zero];
-			byte minDelta = (byte)(nearest.Max(value) - nearest.Min(value));
-			for(int i = Int.Zero; i < values.Count; i++)
+			byte minDelta = value.RangeMagnitude(nearest);
+			for(int i = Int.One; i < values.Count; i++)
 			{
 				byte current = values[i];
 
-				byte delta = (byte)(current.Max(value) - current.Min(value));
+				byte delta = value.RangeMagnitude(current);
 				if(delta < minDelta)
 				{
 					minDelta = delta;
@@ -88,12 +88,12 @@ namespace NumericMath
 			}
 
 			byte nearest = values[Int.Zero];
-			byte minDelta = (byte)(nearest.Max(value) - nearest.Min(value));
-			for(int i = Int.Zero; i < values.Length; i++)
+			byte minDelta = value.RangeMagnitude(nearest);
+			for(int i = Int.One; i < values.Length; i++)
 			{
 				byte current = values[i];
 
-				byte delta = (byte)(current.Max(value) - current.Min(value));
+				byte delta = value.RangeMagnitude(current);
 				if(delta < minDelta)
 				{
 					minDelta = delta;
@@ -131,12 +131,12 @@ namespace NumericMath
 				}
 
 				byte nearest = enumerator.Current;
-				byte minDelta = (byte)(nearest.Max(value) - nearest.Min(value));
+				byte minDelta = value.RangeMagnitude(nearest);
 				while(enumerator.MoveNext())
 				{
 					byte current = enumerator.Current;
 
-					byte delta = (byte)(current.Max(value) - current.Min(value));
+					byte delta = value.RangeMagnitude(current);
 					if(delta < minDelta)
 					{
 						minDelta = delta;
