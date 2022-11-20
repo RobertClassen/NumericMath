@@ -7,7 +7,7 @@ namespace NumericMath
 	public static partial class ByteExtensions
 	{
 		/// <summary>
-		/// Returns the difference between the largest and smallest value.
+		/// Returns the absolute difference between the largest and smallest value.
 		/// </summary>
 		public static byte RangeMagnitude(this byte value, byte other)
 		{

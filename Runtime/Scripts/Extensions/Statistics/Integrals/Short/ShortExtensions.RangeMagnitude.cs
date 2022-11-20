@@ -7,7 +7,7 @@ namespace NumericMath
 	public static partial class ShortExtensions
 	{
 		/// <summary>
-		/// Returns the difference between the largest and smallest value.
+		/// Returns the absolute difference between the largest and smallest value.
 		/// </summary>
 		public static short RangeMagnitude(this short value, short other)
 		{
