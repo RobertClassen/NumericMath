@@ -10,6 +10,23 @@ namespace NumericMath
 		/// Returns the number with the closest value.
 		/// </summary>
 		/// <remarks>
+		/// If both values are the same distance away but in opposite directions, 
+		/// the first one is returned.
+		/// 
+		/// <code>
+		/// 0.Nearest(5, -5); // returns '5'
+		/// 0.Nearest(-5, 5); // returns '-5'
+		/// </code>
+		/// </remarks>
+		public static double Nearest(this double value, double a, double b)
+		{
+			return value.RangeMagnitude(a) <= value.RangeMagnitude(b) ? a : b;
+		}
+
+		/// <summary>
+		/// Returns the number with the closest value.
+		/// </summary>
+		/// <remarks>
 		/// If <c>values</c> contains another number 
 		/// which is the same distance away but in the opposite direction, 
 		/// the one which was found first is returned.
