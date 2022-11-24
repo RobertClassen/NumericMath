@@ -6,6 +6,9 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
+		/// <summary>
+		/// Returns the absolute value of the number.
+		/// </summary>
 		public static short Abs(this short value)
 		{
 			return Math.Abs(value);
