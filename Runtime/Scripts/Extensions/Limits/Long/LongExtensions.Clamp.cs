@@ -16,5 +16,15 @@ namespace NumericMath
 		{
 			return isEnabled ? value.Clamp(Long.Zero, Long.One) : value;
 		}
+
+		public static long ClampMax(this long value, long max, bool isEnabled = Numeric.IsClampEnabledDefault)
+		{
+			return isEnabled && max < value ? max : value;
+		}
+
+		public static long ClampMin(this long value, long min, bool isEnabled = Numeric.IsClampEnabledDefault)
+		{
+			return isEnabled && value < min ? min : value;
+		}
 	}
 }
