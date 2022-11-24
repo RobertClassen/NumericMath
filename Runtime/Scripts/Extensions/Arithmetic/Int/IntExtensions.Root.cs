@@ -10,10 +10,5 @@ namespace NumericMath
 		{
 			return Math.Pow(value, Double.One / root);
 		}
-
-		public static float RootF(this int value, double root)
-		{
-			return (float)Math.Pow(value, Double.One / root);
-		}
 	}
 }
