@@ -15,7 +15,7 @@ namespace NumericMath
 		/// <seealso cref="Min"/>
 		public static byte Max(this byte value, byte other)
 		{
-			return Math.Max(value, other);
+			return value >= other ? value : other;
 		}
 	}
 }

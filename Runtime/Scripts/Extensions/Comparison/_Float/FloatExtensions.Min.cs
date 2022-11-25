@@ -15,7 +15,7 @@ namespace NumericMath
 		/// <seealso cref="Max"/>
 		public static float Min(this float value, float other)
 		{
-			return Math.Min(value, other);
+			return value <= other ? value : other;
 		}
 	}
 }
