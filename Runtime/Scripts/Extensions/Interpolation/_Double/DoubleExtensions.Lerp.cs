@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Lerp(this double t, double a, double b, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static double Lerp(this double t, double a, double b, bool clamp = Numeric.IsLerpClampedDefault)
 		{
-			return a + (b - a) * t.Clamp01(isClamped);
+			return a + (b - a) * t.Clamp01(clamp);
 		}
 	}
 }

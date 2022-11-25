@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float InverseLerp(this float value, float a, float b, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static float InverseLerp(this float value, float a, float b, bool clamp = Numeric.IsLerpClampedDefault)
 		{
-			return Math.Abs(a - b) > float.Epsilon ? ((value - a) / (b - a)).Clamp01(isClamped) : Float.Zero;
+			return Math.Abs(a - b) > float.Epsilon ? ((value - a) / (b - a)).Clamp01(clamp) : Float.Zero;
 		}
 	}
 }

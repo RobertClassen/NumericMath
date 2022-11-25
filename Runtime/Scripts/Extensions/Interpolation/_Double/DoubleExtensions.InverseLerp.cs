@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double InverseLerp(this double value, double a, double b, bool isClamped = Numeric.IsLerpClampedDefault)
+		public static double InverseLerp(this double value, double a, double b, bool clamp = Numeric.IsLerpClampedDefault)
 		{
-			return Math.Abs(a - b) > double.Epsilon ? ((value - a) / (b - a)).Clamp01(isClamped) : Double.Zero;
+			return Math.Abs(a - b) > double.Epsilon ? ((value - a) / (b - a)).Clamp01(clamp) : Double.Zero;
 		}
 	}
 }

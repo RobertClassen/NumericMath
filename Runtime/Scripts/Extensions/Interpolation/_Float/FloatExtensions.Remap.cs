@@ -8,9 +8,9 @@ namespace NumericMath
 	public static partial class FloatExtensions
 	{
 		public static float Remap(this float value, float fromA, float fromB, float toA, float toB, 
-			bool isClamped = Numeric.IsLerpClampedDefault)
+			bool clamp = Numeric.IsLerpClampedDefault)
 		{
-			return value.InverseLerp(fromA, fromB, isClamped).Lerp(toA, toB, isClamped);
+			return value.InverseLerp(fromA, fromB, clamp).Lerp(toA, toB, clamp);
 		}
 	}
 }
