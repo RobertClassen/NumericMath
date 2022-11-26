@@ -1,4 +1,4 @@
-# Verification
+# Validation
 
 ## Is[Negative/Positive/]Infinity
 [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.single.isnegativeinfinity) [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.single.ispositiveinfinity) [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.single.isinfinity) `F`
