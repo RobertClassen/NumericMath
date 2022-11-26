@@ -9,7 +9,7 @@ namespace NumericMath
 	public partial class IntTest
 	{
 		/// <remarks>
-		/// See https://en.wikipedia.org/wiki/Mean#Arithmetic_mean_(AM)
+		/// @see https://en.wikipedia.org/wiki/Mean#Arithmetic_mean_(AM)
 		/// </remarks>
 		[Test]
 		public void ArithmeticMean()
@@ -24,7 +24,7 @@ namespace NumericMath
 		}
 
 		/// <remarks>
-		/// See https://en.wikipedia.org/wiki/Mean#Geometric_mean_(GM)
+		/// @see https://en.wikipedia.org/wiki/Mean#Geometric_mean_(GM)
 		/// </remarks>
 		[Test]
 		public void GeometricMean()
@@ -39,7 +39,7 @@ namespace NumericMath
 		}
 
 		/// <remarks>
-		/// See https://en.wikipedia.org/wiki/Mean#Harmonic_mean_(HM)
+		/// @see https://en.wikipedia.org/wiki/Mean#Harmonic_mean_(HM)
 		/// </remarks>
 		[Test]
 		public void HarmonicMean()

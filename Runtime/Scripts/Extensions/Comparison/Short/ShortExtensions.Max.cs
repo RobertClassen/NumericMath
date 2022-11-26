@@ -10,7 +10,7 @@ namespace NumericMath
 		/// Returns the larger of two specified numbers.
 		/// </summary>
 		/// <remarks>
-		/// See https://docs.microsoft.com/dotnet/api/system.math.max
+		/// @see https://docs.microsoft.com/dotnet/api/system.math.max
 		/// </remarks>
 		/// <seealso cref="Min"/>
 		public static short Max(this short value, short other)
