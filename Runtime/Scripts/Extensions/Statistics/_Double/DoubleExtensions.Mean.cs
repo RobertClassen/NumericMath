@@ -6,40 +6,19 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double ArithmeticMean(this IEnumerable<double> values)
+		public static double Mean(this IEnumerable<double> values, Mean mean)
 		{
-			double sum = Double.Zero;
-			int count = Int.Zero;
-			foreach(double value in values)
+			switch(mean)
 			{
-				sum += value;
-				count++;
+				case NumericMath.Mean.Arithmetic:
+					return values.ArithmeticMean();
+				case NumericMath.Mean.Geometric:
+					return values.GeometricMean();
+				case NumericMath.Mean.Harmonic:
+					return values.HarmonicMean();
+				default:
+					throw new NotImplementedException(mean.ToString());
 			}
-			return sum / (double)count;
-		}
-
-		public static double GeometricMean(this IEnumerable<double> values)
-		{
-			double sum = Double.One;
-			int count = Int.Zero;
-			foreach(double value in values)
-			{
-				sum *= value;
-				count++;
-			}
-			return sum.Root(count);
-		}
-
-		public static double HarmonicMean(this IEnumerable<double> values)
-		{
-			double sum = Double.Zero;
-			int count = Int.Zero;
-			foreach(double value in values)
-			{
-				sum += Double.One / value;
-				count++;
-			}
-			return count / sum;
 		}
 	}
 }

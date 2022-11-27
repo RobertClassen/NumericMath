@@ -6,40 +6,19 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float ArithmeticMean(this IEnumerable<float> values)
+		public static float Mean(this IEnumerable<float> values, Mean mean)
 		{
-			double sum = Double.Zero;
-			int count = Int.Zero;
-			foreach(float value in values)
+			switch(mean)
 			{
-				sum += value;
-				count++;
+				case NumericMath.Mean.Arithmetic:
+					return values.ArithmeticMean();
+				case NumericMath.Mean.Geometric:
+					return values.GeometricMean();
+				case NumericMath.Mean.Harmonic:
+					return values.HarmonicMean();
+				default:
+					throw new NotImplementedException(mean.ToString());
 			}
-			return (float)(sum / (double)count);
-		}
-
-		public static float GeometricMean(this IEnumerable<float> values)
-		{
-			double sum = Double.One;
-			int count = Int.Zero;
-			foreach(float value in values)
-			{
-				sum *= value;
-				count++;
-			}
-			return (float)sum.Root(count);
-		}
-
-		public static float HarmonicMean(this IEnumerable<float> values)
-		{
-			double sum = Double.Zero;
-			int count = Int.Zero;
-			foreach(float value in values)
-			{
-				sum += Double.One / (double)value;
-				count++;
-			}
-			return (float)(count / sum);
 		}
 	}
 }

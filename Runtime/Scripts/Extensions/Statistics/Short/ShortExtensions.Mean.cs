@@ -6,40 +6,19 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short ArithmeticMean(this IEnumerable<short> values)
+		public static short Mean(this IEnumerable<short> values, Mean mean)
 		{
-			double sum = Double.Zero;
-			int count = Int.Zero;
-			foreach(short value in values)
+			switch(mean)
 			{
-				sum += value;
-				count++;
+				case NumericMath.Mean.Arithmetic:
+					return values.ArithmeticMean();
+				case NumericMath.Mean.Geometric:
+					return values.GeometricMean();
+				case NumericMath.Mean.Harmonic:
+					return values.HarmonicMean();
+				default:
+					throw new NotImplementedException(mean.ToString());
 			}
-			return (short)(sum / (double)count);
-		}
-
-		public static short GeometricMean(this IEnumerable<short> values)
-		{
-			double sum = Double.One;
-			int count = Int.Zero;
-			foreach(short value in values)
-			{
-				sum *= value;
-				count++;
-			}
-			return (short)sum.Root(count);
-		}
-
-		public static short HarmonicMean(this IEnumerable<short> values)
-		{
-			double sum = Double.Zero;
-			int count = Int.Zero;
-			foreach(short value in values)
-			{
-				sum += Double.One / (double)value;
-				count++;
-			}
-			return (short)(count / sum);
 		}
 	}
 }
