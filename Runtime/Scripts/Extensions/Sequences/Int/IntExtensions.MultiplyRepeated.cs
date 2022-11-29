@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class ShortExtensions
+	public static partial class IntExtensions
 	{
-		public static IEnumerable<short> Add(this short value, short addend, int count)
+		public static IEnumerable<int> MultiplyRepeated(this int value, int factor, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value += addend;
+				yield return value *= factor;
 			}
 		}
 	}

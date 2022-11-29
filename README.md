@@ -58,7 +58,7 @@ Note:
 | [Statistics] | [`[Arithmetic/Geometric/Harmonic]Mean`][Statistics.Mean] [`MidRange`][Statistics.MidRange] [`RangeMagnitude`][Statistics.RangeMagnitude] |
 | [Trigonometry] | [`Sin/Asin / Sinh`][Trigonometry.Sin] [`Cos/Acos / Cosh`][Trigonometry.Cos] [`Tan/Atan[/2] / Tanh`][Trigonometry.Tan] |
 | [Conversion] | [`To[Degrees/Radians]`][Conversion.ToDegreesRadians] [`ToInvariantString`][Conversion.ToInvariantString] [`ToPercentString`][Conversion.ToPercentString] [`To[Binary/Hex]String`][Conversion.ToBinaryHexString] [`ToBool`][Conversion.ToBool] [`To[Byte/Short/Int/Long/Float/Double]`][Conversion.To01] |
-| [Sequences] | [`Range`][Sequences.Range] [`Add`][Sequences.Add] [`Subtract`][Sequences.Subtract] [`Multiply`][Sequences.Multiply] [`Divide`][Sequences.Divide] |
+| [Sequences] | [`Range`][Sequences.Range] [`AddRepeated`][Sequences.Add] [`SubtractRepeated`][Sequences.Subtract] [`MultiplyRepeated`][Sequences.Multiply] [`DivideRepeated`][Sequences.Divide] |
 | [Arithmetic] | [`Exp`][Arithmetic.Exp] [`Log`][Arithmetic.Log] [`Pow`][Arithmetic.Pow] [`Sqrt`][Arithmetic.Sqrt] [`Root`][Arithmetic.Root] [`BigMul`][Arithmetic.BigMul] [`DivRem`][Arithmetic.DivRem] |
 | [Signum] | [`Abs`][Signum.Abs] [`Sign`][Signum.Sign] [`Extreme`][Signum.Extreme] |
 | [Validation] | [`Is[Negative/Positive/]Infinity`][Validation.IsInfinity] [`IsNaN`][Validation.IsNaN] |
@@ -109,10 +109,10 @@ Note:
 
 [Sequences]: Runtime/Scripts/Extensions/Sequences/README.md
 [Sequences.Range]: Runtime/Scripts/Extensions/Sequences/README.md#Range
-[Sequences.Add]: Runtime/Scripts/Extensions/Sequences/README.md#Add
-[Sequences.Subtract]: Runtime/Scripts/Extensions/Sequences/README.md#Subtract
-[Sequences.Multiply]: Runtime/Scripts/Extensions/Sequences/README.md#Multiply
-[Sequences.Divide]: Runtime/Scripts/Extensions/Sequences/README.md#Divide
+[Sequences.Add]: Runtime/Scripts/Extensions/Sequences/README.md#AddRepeated
+[Sequences.Subtract]: Runtime/Scripts/Extensions/Sequences/README.md#SubtractRepeated
+[Sequences.Multiply]: Runtime/Scripts/Extensions/Sequences/README.md#MultiplyRepeated
+[Sequences.Divide]: Runtime/Scripts/Extensions/Sequences/README.md#DivideRepeated
 
 [Arithmetic]: Runtime/Scripts/Extensions/Arithmetic/README.md
 [Arithmetic.Exp]: Runtime/Scripts/Extensions/Arithmetic/README.md#Exp

@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class ByteExtensions
+	public static partial class DoubleExtensions
 	{
-		public static IEnumerable<byte> Add(this byte value, byte addend, int count)
+		public static IEnumerable<double> AddRepeated(this double value, double addend, int count)
 		{
 			if(count < Int.Zero)
 			{

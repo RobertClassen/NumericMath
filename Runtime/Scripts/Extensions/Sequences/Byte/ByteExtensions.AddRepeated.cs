@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class LongExtensions
+	public static partial class ByteExtensions
 	{
-		public static IEnumerable<long> Multiply(this long value, long factor, int count)
+		public static IEnumerable<byte> AddRepeated(this byte value, byte addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value *= factor;
+				yield return value += addend;
 			}
 		}
 	}

@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class ShortExtensions
+	public static partial class ByteExtensions
 	{
-		public static IEnumerable<short> Divide(this short value, short divisor, int count)
+		public static IEnumerable<byte> DivideRepeated(this byte value, byte divisor, int count)
 		{
 			if(count < Int.Zero)
 			{

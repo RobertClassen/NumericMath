@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static IEnumerable<long> Subtract(this long value, long subtrahend, int count)
+		public static IEnumerable<long> SubtractRepeated(this long value, long subtrahend, int count)
 		{
 			if(count < Int.Zero)
 			{

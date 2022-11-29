@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class FloatExtensions
+	public static partial class DoubleExtensions
 	{
-		public static IEnumerable<float> Add(this float value, float addend, int count)
+		public static IEnumerable<double> DivideRepeated(this double value, double divisor, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value += addend;
+				yield return value /= divisor;
 			}
 		}
 	}

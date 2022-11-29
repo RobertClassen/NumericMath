@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class ByteExtensions
+	public static partial class IntExtensions
 	{
-		public static IEnumerable<byte> Multiply(this byte value, byte factor, int count)
+		public static IEnumerable<int> DivideRepeated(this int value, int divisor, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value *= factor;
+				yield return value /= divisor;
 			}
 		}
 	}

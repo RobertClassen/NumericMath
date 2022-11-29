@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static IEnumerable<short> Multiply(this short value, short factor, int count)
+		public static IEnumerable<short> AddRepeated(this short value, short addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value *= factor;
+				yield return value += addend;
 			}
 		}
 	}

@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class IntExtensions
+	public static partial class FloatExtensions
 	{
-		public static IEnumerable<int> Subtract(this int value, int subtrahend, int count)
+		public static IEnumerable<float> AddRepeated(this float value, float addend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value -= subtrahend;
+				yield return value += addend;
 			}
 		}
 	}

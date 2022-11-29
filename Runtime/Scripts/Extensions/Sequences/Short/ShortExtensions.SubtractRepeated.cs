@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class DoubleExtensions
+	public static partial class ShortExtensions
 	{
-		public static IEnumerable<double> Multiply(this double value, double factor, int count)
+		public static IEnumerable<short> SubtractRepeated(this short value, short subtrahend, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value *= factor;
+				yield return value -= subtrahend;
 			}
 		}
 	}

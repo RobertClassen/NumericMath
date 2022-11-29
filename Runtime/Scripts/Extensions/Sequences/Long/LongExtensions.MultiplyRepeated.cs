@@ -4,9 +4,9 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 
-	public static partial class FloatExtensions
+	public static partial class LongExtensions
 	{
-		public static IEnumerable<float> Multiply(this float value, float factor, int count)
+		public static IEnumerable<long> MultiplyRepeated(this long value, long factor, int count)
 		{
 			if(count < Int.Zero)
 			{

@@ -6,7 +6,7 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static IEnumerable<double> Divide(this double value, double divisor, int count)
+		public static IEnumerable<double> MultiplyRepeated(this double value, double factor, int count)
 		{
 			if(count < Int.Zero)
 			{
@@ -14,7 +14,7 @@ namespace NumericMath
 			}
 			for(int i = Int.Zero; i < count; i++)
 			{
-				yield return value /= divisor;
+				yield return value *= factor;
 			}
 		}
 	}
