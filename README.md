@@ -59,7 +59,7 @@ Note:
 | [Trigonometry] | [`Sin/Asin / Sinh`][Trigonometry.Sin] [`Cos/Acos / Cosh`][Trigonometry.Cos] [`Tan/Atan[/2] / Tanh`][Trigonometry.Tan] |
 | [Conversion] | [`To[Degrees/Radians]`][Conversion.ToDegreesRadians] [`ToInvariantString`][Conversion.ToInvariantString] [`ToPercentString`][Conversion.ToPercentString] [`To[Binary/Hex]String`][Conversion.ToBinaryHexString] [`ToBool`][Conversion.ToBool] [`To[Byte/Short/Int/Long/Float/Double]`][Conversion.To01] |
 | [Sequences] | [`Range`][Sequences.Range] [`AddRepeated`][Sequences.Add] [`SubtractRepeated`][Sequences.Subtract] [`MultiplyRepeated`][Sequences.Multiply] [`DivideRepeated`][Sequences.Divide] |
-| [Arithmetic] | [`Exp`][Arithmetic.Exp] [`Log`][Arithmetic.Log] [`Pow`][Arithmetic.Pow] [`Sqrt`][Arithmetic.Sqrt] [`Root`][Arithmetic.Root] [`BigMul`][Arithmetic.BigMul] [`DivRem`][Arithmetic.DivRem] |
+| [Arithmetic] | [`Add`][Arithmetic.Add] [`Subtract`][Arithmetic.Subtract] [`Multiply`][Arithmetic.Multiply] [`Divide`][Arithmetic.Divide] [`Pow`][Arithmetic.Pow] [`Sqrt`][Arithmetic.Sqrt] [`Root`][Arithmetic.Root]  [`Exp`][Arithmetic.Exp] [`Log`][Arithmetic.Log] [`BigMul`][Arithmetic.BigMul] [`DivRem`][Arithmetic.DivRem] |
 | [Signum] | [`Abs`][Signum.Abs] [`Sign`][Signum.Sign] [`Extreme`][Signum.Extreme] |
 | [Validation] | [`Is[Negative/Positive/]Infinity`][Validation.IsInfinity] [`IsNaN`][Validation.IsNaN] |
 | [Parity] | [`Is[Even/Odd]`][Parity.IsEvenOdd] |
@@ -115,11 +115,15 @@ Note:
 [Sequences.Divide]: Runtime/Scripts/Extensions/Sequences/README.md#DivideRepeated
 
 [Arithmetic]: Runtime/Scripts/Extensions/Arithmetic/README.md
-[Arithmetic.Exp]: Runtime/Scripts/Extensions/Arithmetic/README.md#Exp
-[Arithmetic.Log]: Runtime/Scripts/Extensions/Arithmetic/README.md#Log
+[Arithmetic.Add]: Runtime/Scripts/Extensions/Arithmetic/README.md#Add
+[Arithmetic.Subtract]: Runtime/Scripts/Extensions/Arithmetic/README.md#Subtract
+[Arithmetic.Multiply]: Runtime/Scripts/Extensions/Arithmetic/README.md#Multiply
+[Arithmetic.Divide]: Runtime/Scripts/Extensions/Arithmetic/README.md#Divide
 [Arithmetic.Pow]: Runtime/Scripts/Extensions/Arithmetic/README.md#Pow
 [Arithmetic.Sqrt]: Runtime/Scripts/Extensions/Arithmetic/README.md#Sqrt
 [Arithmetic.Root]: Runtime/Scripts/Extensions/Arithmetic/README.md#Root
+[Arithmetic.Exp]: Runtime/Scripts/Extensions/Arithmetic/README.md#Exp
+[Arithmetic.Log]: Runtime/Scripts/Extensions/Arithmetic/README.md#Log
 [Arithmetic.BigMul]: Runtime/Scripts/Extensions/Arithmetic/README.md#BigMul
 [Arithmetic.DivRem]: Runtime/Scripts/Extensions/Arithmetic/README.md#DivRem
 
