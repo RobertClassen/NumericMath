@@ -1,3 +1,3 @@
 @echo off
-( type Doxyfile & type Settings.txt ) | doxygen.exe -
+( type Doxyfile.doxygen & type Settings.txt ) | doxygen.exe -
 ::PAUSE

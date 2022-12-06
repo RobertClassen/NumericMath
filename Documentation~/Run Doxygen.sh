@@ -1,3 +1,3 @@
 #!/bin/bash
-( cat Doxyfile; cat Settings.txt ) | doxygen -
+( cat Doxyfile.doxygen; cat Settings.txt ) | doxygen -
 #$SHELL
