@@ -78,29 +78,7 @@ namespace NumericMath
 		/// </remarks>
 		public static float Nearest(this float value, params float[] values)
 		{
-			if(values == null)
-			{
-				throw new ArgumentNullException(nameof(values));
-			}
-			if(values.Length == Int.Zero)
-			{
-				throw new EmptySequenceException(nameof(values));
-			}
-
-			float nearest = values[Int.Zero];
-			float minDelta = value.RangeMagnitude(nearest);
-			for(int i = Int.One; i < values.Length; i++)
-			{
-				float current = values[i];
-
-				float delta = value.RangeMagnitude(current);
-				if(delta < minDelta)
-				{
-					minDelta = delta;
-					nearest = current;
-				}
-			}
-			return nearest;
+			return value.Nearest((IList<float>)values);
 		}
 
 		/// <summary>

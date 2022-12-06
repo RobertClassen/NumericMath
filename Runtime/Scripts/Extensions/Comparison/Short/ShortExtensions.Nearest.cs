@@ -78,29 +78,7 @@ namespace NumericMath
 		/// </remarks>
 		public static short Nearest(this short value, params short[] values)
 		{
-			if(values == null)
-			{
-				throw new ArgumentNullException(nameof(values));
-			}
-			if(values.Length == Int.Zero)
-			{
-				throw new EmptySequenceException(nameof(values));
-			}
-
-			short nearest = values[Int.Zero];
-			short minDelta = value.RangeMagnitude(nearest);
-			for(int i = Int.One; i < values.Length; i++)
-			{
-				short current = values[i];
-
-				short delta = value.RangeMagnitude(current);
-				if(delta < minDelta)
-				{
-					minDelta = delta;
-					nearest = current;
-				}
-			}
-			return nearest;
+			return value.Nearest((IList<short>)values);
 		}
 
 		/// <summary>

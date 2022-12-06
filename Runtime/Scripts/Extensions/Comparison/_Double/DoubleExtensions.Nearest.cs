@@ -78,29 +78,7 @@ namespace NumericMath
 		/// </remarks>
 		public static double Nearest(this double value, params double[] values)
 		{
-			if(values == null)
-			{
-				throw new ArgumentNullException(nameof(values));
-			}
-			if(values.Length == Int.Zero)
-			{
-				throw new EmptySequenceException(nameof(values));
-			}
-
-			double nearest = values[Int.Zero];
-			double minDelta = value.RangeMagnitude(nearest);
-			for(int i = Int.One; i < values.Length; i++)
-			{
-				double current = values[i];
-
-				double delta = value.RangeMagnitude(current);
-				if(delta < minDelta)
-				{
-					minDelta = delta;
-					nearest = current;
-				}
-			}
-			return nearest;
+			return value.Nearest((IList<double>)values);
 		}
 
 		/// <summary>

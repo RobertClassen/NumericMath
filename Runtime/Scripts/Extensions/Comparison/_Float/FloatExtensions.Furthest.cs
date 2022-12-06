@@ -78,29 +78,7 @@ namespace NumericMath
 		/// </remarks>
 		public static float Furthest(this float value, params float[] values)
 		{
-			if(values == null)
-			{
-				throw new ArgumentNullException(nameof(values));
-			}
-			if(values.Length == Int.Zero)
-			{
-				throw new EmptySequenceException(nameof(values));
-			}
-
-			float furthest = values[Int.Zero];
-			float maxDelta = value.RangeMagnitude(furthest);
-			for(int i = Int.One; i < values.Length; i++)
-			{
-				float current = values[i];
-
-				float delta = value.RangeMagnitude(current);
-				if(delta > maxDelta)
-				{
-					maxDelta = delta;
-					furthest = current;
-				}
-			}
-			return furthest;
+			return value.Furthest((IList<float>)values);
 		}
 
 		/// <summary>

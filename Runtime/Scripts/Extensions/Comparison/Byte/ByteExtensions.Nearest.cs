@@ -78,29 +78,7 @@ namespace NumericMath
 		/// </remarks>
 		public static byte Nearest(this byte value, params byte[] values)
 		{
-			if(values == null)
-			{
-				throw new ArgumentNullException(nameof(values));
-			}
-			if(values.Length == Int.Zero)
-			{
-				throw new EmptySequenceException(nameof(values));
-			}
-
-			byte nearest = values[Int.Zero];
-			byte minDelta = value.RangeMagnitude(nearest);
-			for(int i = Int.One; i < values.Length; i++)
-			{
-				byte current = values[i];
-
-				byte delta = value.RangeMagnitude(current);
-				if(delta < minDelta)
-				{
-					minDelta = delta;
-					nearest = current;
-				}
-			}
-			return nearest;
+			return value.Nearest((IList<byte>)values);
 		}
 
 		/// <summary>

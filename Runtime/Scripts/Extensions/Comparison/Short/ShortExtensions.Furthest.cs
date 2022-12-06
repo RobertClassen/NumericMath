@@ -78,29 +78,7 @@ namespace NumericMath
 		/// </remarks>
 		public static short Furthest(this short value, params short[] values)
 		{
-			if(values == null)
-			{
-				throw new ArgumentNullException(nameof(values));
-			}
-			if(values.Length == Int.Zero)
-			{
-				throw new EmptySequenceException(nameof(values));
-			}
-
-			short furthest = values[Int.Zero];
-			short maxDelta = value.RangeMagnitude(furthest);
-			for(int i = Int.One; i < values.Length; i++)
-			{
-				short current = values[i];
-
-				short delta = value.RangeMagnitude(current);
-				if(delta > maxDelta)
-				{
-					maxDelta = delta;
-					furthest = current;
-				}
-			}
-			return furthest;
+			return value.Furthest((IList<short>)values);
 		}
 
 		/// <summary>
