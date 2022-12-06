@@ -11,7 +11,7 @@ namespace NumericMath
 		/// </summary>
 		public static byte Extreme(this byte value)
 		{
-			return value < Byte.Zero ? byte.MinValue : byte.MaxValue;
+			return byte.MaxValue;
 		}
 	}
 }
