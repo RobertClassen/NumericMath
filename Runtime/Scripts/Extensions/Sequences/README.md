@@ -11,6 +11,17 @@ Returns a sequence of numbers (**including** the initial value) with a specified
 (-5).Range(3, -10); // returns '[-5, -15, -25]'
 ```
 
+## Repeat
+`+` `F,I`
+Returns a sequence of repeated numbers or sequence values.
+```csharp
+(0).Repeat(5);                      // returns '0, 0, 0, 0, 0'
+
+var range = (0).Range(5).ToArray(); // returns '[0, 1, 2, 3, 4]'
+range.Repeat(3);                    // returns '0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 0, 1, 2, 3, 4'
+range.Repeat(3, true);              // returns '0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4'
+```
+
 ## AddRepeated
 `+` `F,I`
 Returns a sequence of numbers (**excluding** the initial value), adding the specified `addend` a specified number of times.

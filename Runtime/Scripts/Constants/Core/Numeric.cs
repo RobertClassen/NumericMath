@@ -17,6 +17,7 @@
 		public const bool IsClampEnabledDefault = true;
 		public const bool IsClampedInclusiveDefault = true;
 		public const bool IsLerpClampedDefault = false;
+		public const bool RepeatByIndexDefault = false;
 
 		public const char Zero = '0';
 	}
