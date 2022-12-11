@@ -5,7 +5,7 @@ namespace NumericMath
 	using System.Collections.Generic;
 	using Core;
 
-	public static partial class floatExtensions
+	public static partial class FloatExtensions
 	{
 		/// <summary>
 		/// Returns a sequence where each <c>addend</c> is individually added to the first number, 

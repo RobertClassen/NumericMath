@@ -5,7 +5,7 @@ namespace NumericMath
 	using System.Collections.Generic;
 	using Core;
 
-	public static partial class byteExtensions
+	public static partial class ByteExtensions
 	{
 		/// <summary>
 		/// Returns a sequence where each <c>divisor</c> is individually dividing the first number, 

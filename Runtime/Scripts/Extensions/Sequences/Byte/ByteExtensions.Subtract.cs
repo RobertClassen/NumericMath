@@ -5,7 +5,7 @@ namespace NumericMath
 	using System.Collections.Generic;
 	using Core;
 
-	public static partial class byteExtensions
+	public static partial class ByteExtensions
 	{
 		/// <summary>
 		/// Returns a sequence where each <c>subtrahend</c> is individually subtracted from the first number, 

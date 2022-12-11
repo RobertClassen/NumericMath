@@ -5,7 +5,7 @@ namespace NumericMath
 	using System.Collections.Generic;
 	using Core;
 
-	public static partial class doubleExtensions
+	public static partial class DoubleExtensions
 	{
 		/// <summary>
 		/// Returns a sequence where each <c>multiplicand</c> is individually multiplied by the first number, 
