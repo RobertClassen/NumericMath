@@ -6,6 +6,12 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
+		/// <summary>
+		/// Returns a sequence of numbers (<b>including</b> the initial value) with a specified length.
+		/// </summary>
+		/// <param name="start">The first value to be returned.</param>
+		/// <param name="count">The number of values to be returned.</param>
+		/// <param name="increment">The step size between the returned values.</param>
 		public static IEnumerable<double> Range(this double start, int count, double increment = Double.One)
 		{
 			if(count < Int.Zero)
