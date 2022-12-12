@@ -5,7 +5,7 @@
 Returns `true` if the number is not `zero`.
 ```csharp
  (5).ToBool(); // returns 'true'
- (0).ToBool(); // returns 'False'
+ (0).ToBool(); // returns 'false'
 (-5).ToBool(); // returns 'true'
 ```
 

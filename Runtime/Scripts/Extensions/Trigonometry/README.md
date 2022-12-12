@@ -3,10 +3,10 @@
 **Note:** 
 Methods for trigonometric functions use `degrees` by default.
 
-## Sin/Asin / Sinh
-**Sin[/h]** [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sin) [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sinh) `F`  
+## Sin[/h] / Asin
+**Sin[/h]** [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sin) [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sinh) `F`
 Returns the (hyperbolic) sine of the angle.  
-**Asin** [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.asin) `F`  
+**Asin** [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.asin) `F`
 Returns the angle whose sine is the number.
 ```csharp
  (0f).Sin();  // returns '0f'
@@ -17,10 +17,10 @@ Returns the angle whose sine is the number.
 (90f).Sinh(); // returns '2.301299f'
 ```
 
-## Cos/Acos / Cosh
-**Cos[/h]** [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.cos) [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.cosh) `F`  
+## Cos[/h] / Acos
+**Cos[/h]** [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.cos) [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.cosh) `F`
 Returns the (hyperbolic) cosine of the angle.  
-**Acos** [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.acos) `F`  
+**Acos** [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.acos) `F`
 Returns the angle whose cosine is the number.
 ```csharp
  (0f).Cos();  // returns '1f'
@@ -31,10 +31,10 @@ Returns the angle whose cosine is the number.
 (90f).Cosh(); // returns '2.509179f'
 ```
 
-## Tan/Atan[/2] / Tanh
-**Tan[/h]** [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.tan) [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.tanh) `F`  
+## Tan[/h] / Atan[/2]
+**Tan[/h]** [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.tan) [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.tanh) `F`
 Returns the (hyperbolic) tangent of the angle.  
-**Atan[/2]** [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.atan) [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.atan2) `F`  
+**Atan[/2]** [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.atan) [`→`](https://docs.microsoft.com/en-us/dotnet/api/system.math.atan2) `F`
 Returns the angle whose tangent is the number / `y/x`.
 ```csharp
 (45f).Tan();     // returns '1f'
