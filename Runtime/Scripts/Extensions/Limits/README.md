@@ -22,16 +22,16 @@ Checks whether the number is clamped to the range of `min` and `max`, inclusivel
 `+` `F,I`
 Repeats the sequence from `zero` to `divisor` (exclusively), with the direction and `sign` based on the `sign` of the `divisor`.
 ```csharp
-var range = (-3).Range(7);      // returns '[-3, -2, -1,  0,  1,  2,  3]'
-range.Select(i => i.Modulo(3);  // returns '[ 0,  1,  2,  0,  1,  2,  0]'
-range.Select(i => i.Modulo(-3); // returns '[ 0, -2, -1,  0, -2, -1,  0]'
+var range = (-3).Range(7);      // returns '-3, -2, -1,  0,  1,  2,  3'
+range.Select(i => i.Modulo(3);  // returns ' 0,  1,  2,  0,  1,  2,  0'
+range.Select(i => i.Modulo(-3); // returns ' 0, -2, -1,  0, -2, -1,  0'
 ```
 
 ## Remainder
 [`►`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#remainder-operator-) `F,I`
 Repeats the sequence from `zero` to `divisor` (exclusively), with the direction and `sign` based on the `sign` of the `dividend`.
 ```csharp
-var range = (-3).Range(7);         // returns '[-3, -2, -1,  0,  1,  2,  3]'
-range.Select(i => i.Remainder(3);  // returns '[ 0, -2, -1,  0,  1,  2,  0]'
-range.Select(i => i.Remainder(-3); // returns '[ 0, -2, -1,  0,  1,  2,  0]'
+var range = (-3).Range(7);         // returns '-3, -2, -1,  0,  1,  2,  3'
+range.Select(i => i.Remainder(3);  // returns ' 0, -2, -1,  0,  1,  2,  0'
+range.Select(i => i.Remainder(-3); // returns ' 0, -2, -1,  0,  1,  2,  0'
 ```
