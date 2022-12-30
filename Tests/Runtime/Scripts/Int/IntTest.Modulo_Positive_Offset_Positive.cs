@@ -17,7 +17,7 @@ namespace NumericMath
 
 			int modulo = 3;
 			int offset = 0;
-			int[] expected = { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2 };
+			int[] expected = { 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 };
 			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
