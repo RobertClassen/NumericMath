@@ -26,7 +26,7 @@ namespace NumericMath
 		/// int[] actual   = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
 		/// </code>
 		/// </example>
-		public static byte Modulo(this byte dividend, byte divisor)
+		public static byte Modulo(this byte dividend, byte divisor, byte offset = Byte.Zero)
 		{
 			if(divisor == Byte.Zero)
 			{
@@ -34,14 +34,16 @@ namespace NumericMath
 			}
 
 			// Puts the dividend in the [-divisor+1, divisor-1] range
-			byte remainder = (byte)(dividend % divisor);
+			byte remainder = (byte)((dividend - offset) % divisor);
 
 			// If the remainder is less than zero and the divisor is greater than zero, 
 			// then adding the divisor puts it in the [0, divisor-1] range.
 			// If the divisor is less than zero and the remainder is greater than zero, 
 			// then adding the divisor puts it in the [divisor-1, 0] range.
-			return (byte)(Byte.Zero.IsClamped(remainder, divisor, false) || Byte.Zero.IsClamped(divisor, remainder, false) ? 
-				remainder + divisor : remainder);
+			return Byte.Zero.IsClamped(remainder, divisor, false)
+			|| Byte.Zero.IsClamped(divisor, remainder, false) 
+				? (byte)(remainder + offset + divisor) 
+				: (byte)(remainder + offset);
 		}
 	}
 }

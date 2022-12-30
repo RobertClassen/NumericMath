@@ -26,7 +26,7 @@ namespace NumericMath
 		/// short[] actual   = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
 		/// </code>
 		/// </example>
-		public static short Modulo(this short dividend, short divisor)
+		public static short Modulo(this short dividend, short divisor, short offset = Short.Zero)
 		{
 			if(divisor == Short.Zero)
 			{
@@ -34,14 +34,16 @@ namespace NumericMath
 			}
 
 			// Puts the dividend in the [-divisor+1, divisor-1] range
-			short remainder = (short)(dividend % divisor);
+			short remainder = (short)((dividend - offset) % divisor);
 
 			// If the remainder is less than zero and the divisor is greater than zero, 
 			// then adding the divisor puts it in the [0, divisor-1] range.
 			// If the divisor is less than zero and the remainder is greater than zero, 
 			// then adding the divisor puts it in the [divisor-1, 0] range.
-			return (short)(Short.Zero.IsClamped(remainder, divisor, false) || Short.Zero.IsClamped(divisor, remainder, false) ? 
-				remainder + divisor : remainder);
+			return Short.Zero.IsClamped(remainder, divisor, false)
+			|| Short.Zero.IsClamped(divisor, remainder, false) 
+				? (short)(remainder + offset + divisor) 
+				: (short)(remainder + offset);
 		}
 	}
 }

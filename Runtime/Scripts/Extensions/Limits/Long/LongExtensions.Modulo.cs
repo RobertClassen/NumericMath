@@ -26,7 +26,7 @@ namespace NumericMath
 		/// long[] actual   = { -1.9L, -0.9L, -2.9L, -1.9L, -0.9L, -2.9L, -1.9L, -0.9L, -2.9L, -1.9L, -0.9L };
 		/// </code>
 		/// </example>
-		public static long Modulo(this long dividend, long divisor)
+		public static long Modulo(this long dividend, long divisor, long offset = Long.Zero)
 		{
 			if(divisor == Long.Zero)
 			{
@@ -34,14 +34,16 @@ namespace NumericMath
 			}
 
 			// Puts the dividend in the [-divisor+1, divisor-1] range
-			long remainder = dividend % divisor;
+			long remainder = (dividend - offset) % divisor;
 
 			// If the remainder is less than zero and the divisor is greater than zero, 
 			// then adding the divisor puts it in the [0, divisor-1] range.
 			// If the divisor is less than zero and the remainder is greater than zero, 
 			// then adding the divisor puts it in the [divisor-1, 0] range.
-			return Long.Zero.IsClamped(remainder, divisor, false) || Long.Zero.IsClamped(divisor, remainder, false) ? 
-				remainder + divisor : remainder;
+			return Long.Zero.IsClamped(remainder, divisor, false)
+			|| Long.Zero.IsClamped(divisor, remainder, false) 
+				? remainder + offset + divisor 
+				: remainder + offset;
 		}
 	}
 }

@@ -26,7 +26,7 @@ namespace NumericMath
 		/// int[] actual   = { -2, -1,  0, -2, -1, 0, -2, -1, 0, -2, -1 };
 		/// </code>
 		/// </example>
-		public static int Modulo(this int dividend, int divisor)
+		public static int Modulo(this int dividend, int divisor, int offset = Int.Zero)
 		{
 			if(divisor == Int.Zero)
 			{
@@ -34,14 +34,16 @@ namespace NumericMath
 			}
 
 			// Puts the dividend in the [-divisor+1, divisor-1] range
-			int remainder = dividend % divisor;
+			int remainder = (dividend - offset) % divisor;
 
 			// If the remainder is less than zero and the divisor is greater than zero, 
 			// then adding the divisor puts it in the [0, divisor-1] range.
 			// If the divisor is less than zero and the remainder is greater than zero, 
 			// then adding the divisor puts it in the [divisor-1, 0] range.
-			return Int.Zero.IsClamped(remainder, divisor, false) || Int.Zero.IsClamped(divisor, remainder, false) ? 
-				remainder + divisor : remainder;
+			return Int.Zero.IsClamped(remainder, divisor, false)
+			|| Int.Zero.IsClamped(divisor, remainder, false) 
+				? remainder + offset + divisor 
+				: remainder + offset;
 		}
 	}
 }
