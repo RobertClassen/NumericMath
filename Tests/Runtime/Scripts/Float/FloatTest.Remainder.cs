@@ -20,9 +20,7 @@ namespace NumericMath
 			float[] expected = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 0.1f, 1.1f, 2.1f };
 			Debug.Log(expected);
 
-			#pragma warning disable 618
 			float[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
-			#pragma warning restore 618
 			Debug.Log(actual);
 
 			for(int i = 0; i < input.Length; i++)
@@ -43,9 +41,7 @@ namespace NumericMath
 			float[] expected = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, 0.1f, 1.1f, 2.1f, 0.1f, 1.1f, 2.1f };
 			Debug.Log(expected);
 
-			#pragma warning disable 618
 			float[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
-			#pragma warning restore 618
 			Debug.Log(actual);
 
 			for(int i = 0; i < input.Length; i++)

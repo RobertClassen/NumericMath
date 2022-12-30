@@ -19,9 +19,7 @@ namespace NumericMath
 			int[] expected = { -2, -1, 0, -2, -1, 0, 1, 2, 0, 1, 2 };
 			Debug.Log(expected);
 
-			#pragma warning disable 618
 			int[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
-			#pragma warning restore 618
 			Debug.Log(actual);
 
 			Assert.AreEqual(expected, actual);
@@ -38,9 +36,7 @@ namespace NumericMath
 			int[] expected = { -2, -1, 0, -2, -1, 0, 1, 2, 0, 1, 2 };
 			Debug.Log(expected);
 
-			#pragma warning disable 618
 			int[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
-			#pragma warning restore 618
 			Debug.Log(actual);
 
 			Assert.AreEqual(expected, actual);
