@@ -11,29 +11,39 @@ namespace NumericMath
 		[Test]
 		public void Remainder_Positive()
 		{
-			int[] input = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+			int range = 5;
+			int[] input = (-range).Range(range * 2 + 1).ToArray();
+			Debug.Log(input);
+
 			int modulo = 3;
 			int[] expected = { -2, -1, 0, -2, -1, 0, 1, 2, 0, 1, 2 };
+			Debug.Log(expected);
 
 			#pragma warning disable 618
 			int[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
 			#pragma warning restore 618
+			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual, string.Join(" ", expected) + "\n" + string.Join(" ", actual));
+			Assert.AreEqual(expected, actual);
 		}
 
 		[Test]
 		public void Remainder_Negative()
 		{
-			int[] input = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+			int range = 5;
+			int[] input = (-range).Range(range * 2 + 1).ToArray();
+			Debug.Log(input);
+
 			int modulo = -3;
 			int[] expected = { -2, -1, 0, -2, -1, 0, 1, 2, 0, 1, 2 };
+			Debug.Log(expected);
 
 			#pragma warning disable 618
 			int[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
 			#pragma warning restore 618
+			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual, string.Join(" ", expected) + "\n" + string.Join(" ", actual));
+			Assert.AreEqual(expected, actual);
 		}
 	}
 }

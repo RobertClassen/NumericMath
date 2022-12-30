@@ -18,25 +18,35 @@ namespace NumericMath
 		[Test]
 		public void Modulo_Positive()
 		{
-			int[] input = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+			int range = 5;
+			int[] input = (-range).Range(range * 2 + 1).ToArray();
+			Debug.Log(input);
+
 			int modulo = 3;
 			int[] expected = { 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 };
+			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo)).ToArray();
+			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual, string.Join(" ", expected) + "\n" + string.Join(" ", actual));
+			Assert.AreEqual(expected, actual);
 		}
 
 		[Test]
 		public void Modulo_Negative()
 		{
-			int[] input = { -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5 };
+			int range = 5;
+			int[] input = (-range).Range(range * 2 + 1).ToArray();
+			Debug.Log(input);
+
 			int modulo = -3;
 			int[] expected = { -2, -1, 0, -2, -1, 0, -2, -1, 0, -2, -1 };
+			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo)).ToArray();
+			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual, string.Join(" ", expected) + "\n" + string.Join(" ", actual));
+			Assert.AreEqual(expected, actual);
 		}
 
 		[Test]
