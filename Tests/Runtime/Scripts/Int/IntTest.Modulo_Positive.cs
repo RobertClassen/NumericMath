@@ -9,24 +9,7 @@ namespace NumericMath
 	public partial class IntTest
 	{
 		[Test]
-		public void Modulo_Positive_Offset0()
-		{
-			int range = 5;
-			int[] input = (-range).Range(range * 2 + 1).ToArray();
-			Debug.Log(input);
-
-			int modulo = 3;
-			int[] expected = { 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 };
-			Debug.Log(expected);
-
-			int[] actual = input.Select(value => value.Modulo(modulo)).ToArray();
-			Debug.Log(actual);
-
-			Assert.AreEqual(expected, actual);
-		}
-
-		[Test]
-		public void Modulo_Positive_Offset1()
+		public void Modulo_Positive_Offset_Positive1()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
@@ -44,7 +27,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Offset2()
+		public void Modulo_Positive_Offset_Positive2()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
@@ -62,7 +45,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Offset3()
+		public void Modulo_Positive_Offset_Positive3()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
@@ -80,7 +63,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Offset4()
+		public void Modulo_Positive_Offset_Positive4()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();

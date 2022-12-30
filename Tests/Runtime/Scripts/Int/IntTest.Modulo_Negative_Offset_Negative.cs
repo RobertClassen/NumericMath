@@ -9,14 +9,14 @@ namespace NumericMath
 	public partial class IntTest
 	{
 		[Test]
-		public void Modulo_Negative_Offset_Positive1()
+		public void Modulo_Negative_Offset_Negative1()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input);
 
 			int modulo = -3;
-			int offset = 1;
+			int offset = -1;
 			int[] expected = { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2 };
 			Debug.Log(expected);
 
@@ -27,14 +27,14 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Negative_Offset_Positive2()
+		public void Modulo_Negative_Offset_Negative2()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input);
 
 			int modulo = -3;
-			int offset = 2;
+			int offset = -2;
 			int[] expected = { 4, 2, 3, 4, 2, 3, 4, 2, 3, 4, 2 };
 			Debug.Log(expected);
 
@@ -45,14 +45,14 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Negative_Offset_Positive3()
+		public void Modulo_Negative_Offset_Negative3()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input);
 
 			int modulo = -3;
-			int offset = 3;
+			int offset = -3;
 			int[] expected = { 4, 5, 3, 4, 5, 3, 4, 5, 3, 4, 5 };
 			Debug.Log(expected);
 
@@ -63,14 +63,14 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Negative_Offset_Positive4()
+		public void Modulo_Negative_Offset_Negative4()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input);
 
 			int modulo = -3;
-			int offset = 4;
+			int offset = -4;
 			int[] expected = { 4, 5, 6, 4, 5, 6, 4, 5, 6, 4, 5 };
 			Debug.Log(expected);
 
