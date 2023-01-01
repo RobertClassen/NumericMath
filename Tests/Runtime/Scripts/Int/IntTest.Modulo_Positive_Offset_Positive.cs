@@ -18,12 +18,10 @@ namespace NumericMath
 			int modulo = 3;
 			int offset = 0;
 			int[] expected = { 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 };
-			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
-			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual);
+			AreEqual(expected, actual);
 		}
 
 		[Test]
@@ -36,12 +34,10 @@ namespace NumericMath
 			int modulo = 3;
 			int offset = 1;
 			int[] expected = { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2 };
-			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
-			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual);
+			AreEqual(expected, actual);
 		}
 
 		[Test]
@@ -54,12 +50,10 @@ namespace NumericMath
 			int modulo = 3;
 			int offset = 2;
 			int[] expected = { 4, 2, 3, 4, 2, 3, 4, 2, 3, 4, 2 };
-			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
-			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual);
+			AreEqual(expected, actual);
 		}
 
 		[Test]
@@ -72,12 +66,10 @@ namespace NumericMath
 			int modulo = 3;
 			int offset = 3;
 			int[] expected = { 4, 5, 3, 4, 5, 3, 4, 5, 3, 4, 5 };
-			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
-			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual);
+			AreEqual(expected, actual);
 		}
 
 		[Test]
@@ -90,12 +82,10 @@ namespace NumericMath
 			int modulo = 3;
 			int offset = 4;
 			int[] expected = { 4, 5, 6, 4, 5, 6, 4, 5, 6, 4, 5 };
-			Debug.Log(expected);
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
-			Debug.Log(actual);
 
-			Assert.AreEqual(expected, actual);
+			AreEqual(expected, actual);
 		}
 	}
 }

@@ -18,15 +18,10 @@ namespace NumericMath
 
 			float modulo = -3f;
 			float[] expected = { -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f, -2.9f, -1.9f, -0.9f };
-			Debug.Log(expected);
 
 			float[] actual = input.Select(value => value.Modulo(modulo)).ToArray();
-			Debug.Log(actual);
 
-			for(int i = 0; i < input.Length; i++)
-			{
-				Assert.AreEqual(expected[i], actual[i], delta, i + ": " + expected[i] + " != " + actual[i]);
-			}
+			AreEqual(expected, actual, delta);
 		}
 	}
 }
