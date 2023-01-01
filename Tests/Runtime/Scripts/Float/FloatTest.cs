@@ -5,7 +5,7 @@ namespace NumericMath
 	using System.Collections.Generic;
 	using NUnit.Framework;
 
-	public partial class FloatTest
+	public partial class FloatTest : NumericTest
 	{
 		private const float delta = 0.0001f;
 
