@@ -8,6 +8,11 @@ namespace NumericMath
 	{
 		private const string SeparatorDefault = ", ";
 
+		public static void Log<T>(T value)
+		{
+			UnityEngine.Debug.Log(value.ToString());
+		}
+
 		public static void Log<T>(IEnumerable<T> iEnumerable, string separator = SeparatorDefault)
 		{
 			UnityEngine.Debug.Log(string.Join(separator, iEnumerable));
