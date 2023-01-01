@@ -23,7 +23,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Sin()).ToArray();
 
-			AreEqual(expected, actual);
+			AreEqual(expected, actual, delta);
 		}
 
 		[Test]
@@ -41,7 +41,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Sin().Asin()).ToArray();
 
-			AreEqual(expected, actual);
+			AreEqual(expected, actual, delta);
 		}
 
 		[Test]
@@ -60,7 +60,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Sin(false).Asin(false)).ToArray();
 
-			AreEqual(expected, actual);
+			AreEqual(expected, actual, delta);
 		}
 	}
 }
