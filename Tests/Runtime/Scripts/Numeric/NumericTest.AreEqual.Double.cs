@@ -10,8 +10,8 @@ namespace NumericMath
 	{
 		public static void AreEqual(IList<double> expected, IList<double> actual, double delta)
 		{
-			Debug.Log(expected);
-			Debug.Log(actual);
+			Debug.Log(expected, "Expected");
+			Debug.Log(actual, "Actual");
 			Assert.AreEqual(expected.Count, actual.Count, "Count");
 
 			for(int i = Int.Zero; i < expected.Count; i++)
