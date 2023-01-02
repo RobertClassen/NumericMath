@@ -11,7 +11,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>divisor</c> is individually dividing the first number, 
 		/// or the previous quotient, respectively.
 		/// </summary>
-		public static IEnumerable<int> Divide(this int value, IList<int> divisors, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<int> Divide(this int value, IList<int> divisors, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{
@@ -41,7 +42,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>divisor</c> is individually dividing the first number, 
 		/// or the previous quotient, respectively.
 		/// </summary>
-		public static IEnumerable<int> Divide(this int value, IEnumerable<int> divisors, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<int> Divide(this int value, IEnumerable<int> divisors, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{

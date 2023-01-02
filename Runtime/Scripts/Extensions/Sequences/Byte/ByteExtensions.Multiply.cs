@@ -11,7 +11,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>multiplicand</c> is individually multiplied by the first number, 
 		/// or the previous product, respectively.
 		/// </summary>
-		public static IEnumerable<byte> Multiply(this byte value, IList<byte> multiplicands, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<byte> Multiply(this byte value, IList<byte> multiplicands, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{
@@ -41,7 +42,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>multiplicand</c> is individually multiplied by the first number, 
 		/// or the previous product, respectively.
 		/// </summary>
-		public static IEnumerable<byte> Multiply(this byte value, IEnumerable<byte> multiplicands, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<byte> Multiply(this byte value, IEnumerable<byte> multiplicands, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{

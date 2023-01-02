@@ -11,7 +11,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>addend</c> is individually added to the first number, 
 		/// or the previous sum, respectively.
 		/// </summary>
-		public static IEnumerable<double> Add(this double value, IList<double> addends, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<double> Add(this double value, IList<double> addends, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{
@@ -41,7 +42,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>addend</c> is individually added to the first number, 
 		/// or the previous sum, respectively.
 		/// </summary>
-		public static IEnumerable<double> Add(this double value, IEnumerable<double> addends, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<double> Add(this double value, IEnumerable<double> addends, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{

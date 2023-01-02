@@ -11,7 +11,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>subtrahend</c> is individually subtracted from the first number, 
 		/// or the previous difference, respectively.
 		/// </summary>
-		public static IEnumerable<float> Subtract(this float value, IList<float> subtrahends, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<float> Subtract(this float value, IList<float> subtrahends, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{
@@ -41,7 +42,8 @@ namespace NumericMath
 		/// Returns a sequence where each <c>subtrahend</c> is individually subtracted from the first number, 
 		/// or the previous difference, respectively.
 		/// </summary>
-		public static IEnumerable<float> Subtract(this float value, IEnumerable<float> subtrahends, bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
+		public static IEnumerable<float> Subtract(this float value, IEnumerable<float> subtrahends, 
+			bool iterateOnPrevious = Numeric.IterateOnPreviousDefault)
 		{
 			if(iterateOnPrevious)
 			{
