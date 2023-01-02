@@ -21,7 +21,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -37,7 +37,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Remainder(modulo)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 	}
 }

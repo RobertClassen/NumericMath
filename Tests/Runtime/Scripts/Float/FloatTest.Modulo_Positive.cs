@@ -21,7 +21,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Modulo(modulo)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 	}
 }

@@ -23,7 +23,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Cos()).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -41,7 +41,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Cos().Acos()).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -60,7 +60,7 @@ namespace NumericMath
 
 			float[] actual = input.Select(value => value.Cos(false).Acos(false)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 	}
 }

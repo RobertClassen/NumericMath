@@ -33,7 +33,7 @@ namespace NumericMath
 			float[] expected = { };
 			float[] actual = StepSizes.Multiply(scaleFactor).Select(stepSize => value.RoundToNearest(stepSize)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -47,7 +47,7 @@ namespace NumericMath
 			float[] expected = { };
 			float[] actual = StepSizes.Multiply(scaleFactor).Select(stepSize => value.RoundToNearest(stepSize)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -60,7 +60,7 @@ namespace NumericMath
 			float[] expected = { 1234.6f, 1234.6f, 1234.666f, 1234.5f, 1234.5f };
 			float[] actual = StepSizes.Multiply(scaleFactor).Select(stepSize => value.RoundToNearest(stepSize)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -73,7 +73,7 @@ namespace NumericMath
 			float[] expected = { 1235, 1234, 1235, 1233, 1235 };
 			float[] actual = StepSizes.Multiply(scaleFactor).Select(stepSize => value.RoundToNearest(stepSize)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -86,7 +86,7 @@ namespace NumericMath
 			float[] expected = { 1230, 1240, 1225, 1233, 1250 };
 			float[] actual = StepSizes.Multiply(scaleFactor).Select(stepSize => value.RoundToNearest(stepSize)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -99,7 +99,7 @@ namespace NumericMath
 			float[] expected = { 1200, 1200, 1250, 1333, 1000 };
 			float[] actual = StepSizes.Multiply(scaleFactor).Select(stepSize => value.RoundToNearest(stepSize)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 
 		[Test]
@@ -112,7 +112,7 @@ namespace NumericMath
 			float[] expected = { 1000, 2000, 0, 0, 0 };
 			float[] actual = StepSizes.Multiply(scaleFactor).Select(stepSize => value.RoundToNearest(stepSize)).ToArray();
 
-			AreEqual(expected, actual, delta);
+			AreEqual(expected, actual, Delta);
 		}
 	}
 }

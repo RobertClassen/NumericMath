@@ -11,12 +11,12 @@ namespace NumericMath
 		[Test]
 		public void Lerp()
 		{
-			Assert.AreEqual(0f, 0f.Lerp(0f, 10f), delta);
-			Assert.AreEqual(5f, 0.5f.Lerp(0f, 10f), delta);
-			Assert.AreEqual(10f, 1f.Lerp(0f, 10f), delta);
+			Assert.AreEqual(0f, 0f.Lerp(0f, 10f), Delta);
+			Assert.AreEqual(5f, 0.5f.Lerp(0f, 10f), Delta);
+			Assert.AreEqual(10f, 1f.Lerp(0f, 10f), Delta);
 
-			Assert.AreEqual(11f, 1.1f.Lerp(0f, 10f), delta);
-			Assert.AreEqual(10f, 1.1f.Lerp(0f, 10f, true), delta);
+			Assert.AreEqual(11f, 1.1f.Lerp(0f, 10f), Delta);
+			Assert.AreEqual(10f, 1.1f.Lerp(0f, 10f, true), Delta);
 		}
 	}
 }
