@@ -3,6 +3,7 @@ namespace NumericMath
 	using System;
 	using System.Collections;
 	using System.Collections.Generic;
+	using System.Linq;
 
 	public static class Debug
 	{
@@ -25,6 +26,16 @@ namespace NumericMath
 		public static void Log<T>(IEnumerable<T> iEnumerable, string name = null)
 		{
 			Log(string.Join(SeparatorDefault, iEnumerable), name);
+		}
+
+		public static void Log(float value, string name = null)
+		{
+			Log(value.ToInvariantString(), name);
+		}
+
+		public static void Log(IEnumerable<float> floats, string name = null)
+		{
+			Log(floats.Select(value => value.ToInvariantString()), name);
 		}
 	}
 }
