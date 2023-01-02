@@ -17,7 +17,7 @@ namespace NumericMath
 			for(int i = Int.Zero; i < expected.Count; i++)
 			{
 				Assert.AreEqual(expected[i], actual[i], delta, 
-					string.Format("Index {0}: {1} != {2}", i, expected[i], actual[i]));
+					string.Format("Index {0}: {1} != {2}", i, expected[i].ToInvariantString(), actual[i].ToInvariantString()));
 			}
 		}
 
