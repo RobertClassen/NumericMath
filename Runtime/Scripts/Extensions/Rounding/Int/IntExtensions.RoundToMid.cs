@@ -7,7 +7,8 @@ namespace NumericMath
 
 	public static partial class IntExtensions
 	{
-		public static int RoundToMid(this int value, double stepSize, MidpointRounding mode = MidpointRounding.ToEven)
+		public static int RoundToMid(this int value, double stepSize, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			if(stepSize <= Int.Zero)
 			{

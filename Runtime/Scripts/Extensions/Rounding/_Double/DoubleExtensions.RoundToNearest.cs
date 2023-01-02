@@ -7,7 +7,8 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double RoundToNearest(this double value, double stepSize, MidpointRounding mode = MidpointRounding.ToEven)
+		public static double RoundToNearest(this double value, double stepSize, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			if(stepSize <= Int.Zero)
 			{

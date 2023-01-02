@@ -7,7 +7,8 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte RoundToFurthest(this byte value, double stepSize, MidpointRounding mode = MidpointRounding.ToEven)
+		public static byte RoundToFurthest(this byte value, double stepSize, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			if(stepSize <= Int.Zero)
 			{

@@ -6,7 +6,8 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Round(this double value, int digits = Int.Zero, MidpointRounding mode = MidpointRounding.ToEven)
+		public static double Round(this double value, int digits = Int.Zero, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			return Math.Round(value, digits, mode);
 		}

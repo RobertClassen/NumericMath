@@ -7,7 +7,8 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short RoundToMid(this short value, double stepSize, MidpointRounding mode = MidpointRounding.ToEven)
+		public static short RoundToMid(this short value, double stepSize, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			if(stepSize <= Int.Zero)
 			{

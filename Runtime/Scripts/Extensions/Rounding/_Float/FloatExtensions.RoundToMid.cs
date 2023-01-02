@@ -7,7 +7,8 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float RoundToMid(this float value, double stepSize, MidpointRounding mode = MidpointRounding.ToEven)
+		public static float RoundToMid(this float value, double stepSize, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			if(stepSize <= Int.Zero)
 			{

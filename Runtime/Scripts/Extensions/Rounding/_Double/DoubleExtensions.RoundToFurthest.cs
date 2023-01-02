@@ -7,7 +7,8 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double RoundToFurthest(this double value, double stepSize, MidpointRounding mode = MidpointRounding.ToEven)
+		public static double RoundToFurthest(this double value, double stepSize, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			if(stepSize <= Int.Zero)
 			{

@@ -7,7 +7,8 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static long RoundToFurthest(this long value, double stepSize, MidpointRounding mode = MidpointRounding.ToEven)
+		public static long RoundToFurthest(this long value, double stepSize, 
+			MidpointRounding mode = MidpointRounding.ToEven)
 		{
 			if(stepSize <= Int.Zero)
 			{
