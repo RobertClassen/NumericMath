@@ -7,15 +7,14 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float RoundToMid(this float value, double stepSize, 
-			MidpointRounding mode = MidpointRounding.ToEven)
+		public static float RoundToMid(this float value, double stepSize)
 		{
 			if(stepSize <= Int.Zero)
 			{
 				throw new ArgumentLessEqualsZeroException(nameof(stepSize));
 			}
 			double fraction = value / stepSize;
-			return (float)Math.Round(Double.OneHalf.Lerp(Math.Floor(fraction), Math.Ceiling(fraction)) * stepSize, mode);
+			return (float)(Double.OneHalf.Lerp(Math.Floor(fraction), Math.Ceiling(fraction)) * stepSize);
 		}
 	}
 }

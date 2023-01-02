@@ -7,15 +7,14 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double RoundToNearest(this double value, double stepSize, 
-			MidpointRounding mode = MidpointRounding.ToEven)
+		public static double RoundToNearest(this double value, double stepSize)
 		{
 			if(stepSize <= Int.Zero)
 			{
 				throw new ArgumentLessEqualsZeroException(nameof(stepSize));
 			}
 			double fraction = value / stepSize;
-			return Math.Round(fraction.Nearest(Math.Floor(fraction), Math.Ceiling(fraction)) * stepSize, mode);
+			return fraction.Nearest(Math.Floor(fraction), Math.Ceiling(fraction)) * stepSize;
 		}
 	}
 }
