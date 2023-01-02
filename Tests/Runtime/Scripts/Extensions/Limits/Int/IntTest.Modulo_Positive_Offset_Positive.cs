@@ -9,14 +9,16 @@ namespace NumericMath
 	public partial class IntTest
 	{
 		[Test]
-		public void Modulo_Positive_Offset_Positive0()
+		public void Modulo_Positive_PositiveOffset0()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
-			Debug.Log(input);
+			Debug.Log(input, "Input");
 
-			int modulo = 3;
-			int offset = 0;
+			const int modulo = 3;
+			Debug.Log(modulo, "Modulo");
+			const int offset = 0;
+			Debug.Log(offset, "Offset");
 			int[] expected = { 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2 };
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
@@ -25,14 +27,16 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Offset_Positive1()
+		public void Modulo_Positive_PositiveOffset1()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
-			Debug.Log(input);
+			Debug.Log(input, "Input");
 
-			int modulo = 3;
-			int offset = 1;
+			const int modulo = 3;
+			Debug.Log(modulo, "Modulo");
+			const int offset = 1;
+			Debug.Log(offset, "Offset");
 			int[] expected = { 1, 2, 3, 1, 2, 3, 1, 2, 3, 1, 2 };
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
@@ -41,14 +45,16 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Offset_Positive2()
+		public void Modulo_Positive_PositiveOffset2()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
-			Debug.Log(input);
+			Debug.Log(input, "Input");
 
-			int modulo = 3;
-			int offset = 2;
+			const int modulo = 3;
+			Debug.Log(modulo, "Modulo");
+			const int offset = 2;
+			Debug.Log(offset, "Offset");
 			int[] expected = { 4, 2, 3, 4, 2, 3, 4, 2, 3, 4, 2 };
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
@@ -57,14 +63,16 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Offset_Positive3()
+		public void Modulo_Positive_PositiveOffset3()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
-			Debug.Log(input);
+			Debug.Log(input, "Input");
 
-			int modulo = 3;
-			int offset = 3;
+			const int modulo = 3;
+			Debug.Log(modulo, "Modulo");
+			const int offset = 3;
+			Debug.Log(offset, "Offset");
 			int[] expected = { 4, 5, 3, 4, 5, 3, 4, 5, 3, 4, 5 };
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
@@ -73,14 +81,16 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Modulo_Positive_Offset_Positive4()
+		public void Modulo_Positive_PositiveOffset4()
 		{
 			int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
-			Debug.Log(input);
+			Debug.Log(input, "Input");
 
-			int modulo = 3;
-			int offset = 4;
+			const int modulo = 3;
+			Debug.Log(modulo, "Modulo");
+			const int offset = 4;
+			Debug.Log(offset, "Offset");
 			int[] expected = { 4, 5, 6, 4, 5, 6, 4, 5, 6, 4, 5 };
 
 			int[] actual = input.Select(value => value.Modulo(modulo, offset)).ToArray();
