@@ -11,7 +11,7 @@ namespace NumericMath
 		[Test]
 		public void Modulo_Negative_PositiveOffset0()
 		{
-			int range = 5;
+			const int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input, "Input");
 
@@ -29,7 +29,7 @@ namespace NumericMath
 		[Test]
 		public void Modulo_Negative_PositiveOffset1()
 		{
-			int range = 5;
+			const int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input, "Input");
 
@@ -47,7 +47,7 @@ namespace NumericMath
 		[Test]
 		public void Modulo_Negative_PositiveOffset2()
 		{
-			int range = 5;
+			const int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input, "Input");
 
@@ -65,7 +65,7 @@ namespace NumericMath
 		[Test]
 		public void Modulo_Negative_PositiveOffset3()
 		{
-			int range = 5;
+			const int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input, "Input");
 
@@ -83,7 +83,7 @@ namespace NumericMath
 		[Test]
 		public void Modulo_Negative_PositiveOffset4()
 		{
-			int range = 5;
+			const int range = 5;
 			int[] input = (-range).Range(range * 2 + 1).ToArray();
 			Debug.Log(input, "Input");
 
