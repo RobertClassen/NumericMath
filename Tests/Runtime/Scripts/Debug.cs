@@ -22,11 +22,6 @@ namespace NumericMath
 			Log(value.ToString(), name);
 		}
 
-		public static void Log<T>(IList<T> iList, string name = null)
-		{
-			Log(string.Join(SeparatorDefault, iList), name);
-		}
-
 		public static void Log<T>(IEnumerable<T> iEnumerable, string name = null)
 		{
 			Log(string.Join(SeparatorDefault, iEnumerable), name);
