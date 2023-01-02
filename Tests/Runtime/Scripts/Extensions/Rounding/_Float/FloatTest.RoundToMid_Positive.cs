@@ -16,7 +16,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void RoundToMid_PositiveValue_ZeroStepSize_Throws()
+		public void RoundToMid_PositiveValue_StepSize0_Throws()
 		{
 			const float value = 1234.5678f;
 			Assert.Throws<ArgumentLessEqualsZeroException>(() => value.RoundToMid(0));

@@ -9,7 +9,7 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void Modulo_Throws_When_Divisor_Is_Zero()
+		public void Modulo_Divisor0_Throws()
 		{
 			Assert.Throws<DivideByZeroException>(() => 5f.Modulo(0f));
 			Assert.Throws<DivideByZeroException>(() => (-5f).Modulo(0f));

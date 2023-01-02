@@ -16,7 +16,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void RoundToNearest_PositiveValue_ZeroStepSize_Throws()
+		public void RoundToNearest_PositiveValue_StepSize0_Throws()
 		{
 			const float value = 1234.5678f;
 			Assert.Throws<ArgumentLessEqualsZeroException>(() => value.RoundToNearest(0));

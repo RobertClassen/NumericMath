@@ -8,7 +8,7 @@ namespace NumericMath
 	public partial class IntTest
 	{
 		[Test]
-		public void Numbers_Are_Even()
+		public void IsEven()
 		{
 			Assert.IsTrue((-4).IsEven());
 			Assert.IsTrue((-2).IsEven());
@@ -18,7 +18,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Numbers_Are_Odd()
+		public void IsOdd()
 		{
 			Assert.IsTrue((-3).IsOdd());
 			Assert.IsTrue((-1).IsOdd());

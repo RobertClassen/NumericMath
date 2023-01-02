@@ -9,7 +9,7 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void Range_Is_Correct_Length()
+		public void Range_IsCorrectLength()
 		{
 			const int count = 6;
 
@@ -19,7 +19,7 @@ namespace NumericMath
 		}
 
 		[Test]
-		public void Range_Throws_When_Negative_Length()
+		public void Range_NegativeCount_Throws()
 		{
 			const int count = -6;
 
