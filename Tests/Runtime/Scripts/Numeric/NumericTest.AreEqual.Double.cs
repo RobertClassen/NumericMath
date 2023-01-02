@@ -12,7 +12,7 @@ namespace NumericMath
 		{
 			Debug.Log(expected);
 			Debug.Log(actual);
-			Assert.AreEqual(expected.Count, actual.Count);
+			Assert.AreEqual(expected.Count, actual.Count, "Count");
 
 			for(int i = Int.Zero; i < expected.Count; i++)
 			{
