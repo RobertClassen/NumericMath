@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class BoolExtensions
 	{
-		public static string ToBinaryString(this bool value)
+		public static string ToInvariantString(this bool value)
 		{
-			return value.ToByte().ToString();
+			return value.ToString(Culture.Invariant);
 		}
 	}
 }

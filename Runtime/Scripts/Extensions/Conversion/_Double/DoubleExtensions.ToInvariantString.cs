@@ -8,9 +8,9 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static string ToPercentString(this double value, int decimals = 2, CultureInfo cultureInfo = null)
+		public static string ToInvariantString(this double value, string format = null)
 		{
-			return value.ToString(Format.Percent + decimals, cultureInfo ?? Culture.Invariant);
+			return value.ToString(format, Culture.Invariant);
 		}
 	}
 }

@@ -11,15 +11,5 @@
 		{
 			return Convert.ToString(value, Numeric.Base.Binary).PadLeft(minLength, Numeric.Zero);
 		}
-
-		public static string ToHexString(this byte value, int minLength = Byte.HexLength)
-		{
-			return value.ToString(Format.Hexadecmimal + minLength);
-		}
-
-		public static string ToInvariantString(this byte value, string format = null)
-		{
-			return value.ToString(format, Culture.Invariant);
-		}
 	}
 }
