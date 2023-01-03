@@ -10,10 +10,5 @@ namespace NumericMath
 		{
 			return Math.Floor(value);
 		}
-
-		public static long FloorToInt(this double value)
-		{
-			return (long)value.Floor();
-		}
 	}
 }

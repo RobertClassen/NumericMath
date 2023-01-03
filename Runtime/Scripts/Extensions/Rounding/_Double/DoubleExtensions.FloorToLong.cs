@@ -6,9 +6,9 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Ceil(this double value)
+		public static long FloorToLong(this double value)
 		{
-			return Math.Ceiling(value);
+			return (long)value.Floor();
 		}
 	}
 }
