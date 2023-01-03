@@ -11,11 +11,5 @@ namespace NumericMath
 		{
 			return Math.Round(value, digits, mode);
 		}
-
-		public static long RoundToLong(this double value, 
-			MidpointRounding mode = MidpointRounding.ToEven)
-		{
-			return (long)Math.Round(value, mode);
-		}
 	}
 }

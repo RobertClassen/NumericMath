@@ -11,11 +11,5 @@ namespace NumericMath
 		{
 			return (float)Math.Round(value, digits, mode);
 		}
-
-		public static int RoundToInt(this float value, 
-			MidpointRounding mode = MidpointRounding.ToEven)
-		{
-			return (int)Math.Round(value, mode);
-		}
 	}
 }
