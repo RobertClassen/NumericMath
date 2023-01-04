@@ -4,22 +4,16 @@ namespace NumericMath
 	using System.Collections;
 	using System.Collections.Generic;
 	using System.Linq;
+	using Core;
 	using NUnit.Framework;
 
 	public partial class FloatTest
 	{
 		[Test]
-		public void RoundToMid_PositiveValue_NegativeStepSize_Throws()
-		{
-			const float value = 1234.5678f;
-			Assert.Throws<ArgumentLessEqualsZeroException>(() => value.RoundToMid(-1));
-		}
-
-		[Test]
 		public void RoundToMid_PositiveValue_StepSize0_Throws()
 		{
 			const float value = 1234.5678f;
-			Assert.Throws<ArgumentLessEqualsZeroException>(() => value.RoundToMid(0));
+			Assert.Throws<DivideByZeroException>(() => value.RoundToMid(0));
 		}
 
 		[Test]

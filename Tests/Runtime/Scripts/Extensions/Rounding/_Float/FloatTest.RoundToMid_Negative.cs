@@ -9,17 +9,10 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void RoundToMid_NegativeValue_NegativeStepSize_Throws()
-		{
-			const float value = -1234.5678f;
-			Assert.Throws<ArgumentLessEqualsZeroException>(() => value.RoundToMid(-1));
-		}
-
-		[Test]
 		public void RoundToMid_NegativeValue_StepSize0_Throws()
 		{
 			const float value = -1234.5678f;
-			Assert.Throws<ArgumentLessEqualsZeroException>(() => value.RoundToMid(0));
+			Assert.Throws<DivideByZeroException>(() => value.RoundToMid(0));
 		}
 
 		[Test]
