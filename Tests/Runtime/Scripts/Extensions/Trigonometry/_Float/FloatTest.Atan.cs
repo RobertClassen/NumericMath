@@ -8,9 +8,9 @@ namespace NumericMath
 	public partial class FloatTest
 	{
 		[Test]
-		public void Tan()
+		public void Atan()
 		{
-			Assert.AreEqual(5f.Sin() / 5f.Cos(), 5f.Tan(), Delta);
+			Assert.AreEqual(5f, 5f.Tan().Atan(), Delta);
 		}
 	}
 }
