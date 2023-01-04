@@ -10,12 +10,7 @@ namespace NumericMath
 		public static long RoundToMid(this long value, double stepSize, 
 			MidpointRounding mode = MidpointRounding.ToEven)
 		{
-			if(stepSize <= Int.Zero)
-			{
-				throw new ArgumentLessEqualsZeroException(nameof(stepSize));
-			}
-			double fraction = value / stepSize;
-			return (long)Math.Round(Double.OneHalf.Lerp(Math.Floor(fraction), Math.Ceiling(fraction)) * stepSize, mode);
+			return (long)Math.Round(((double)value).RoundBetweenMinToMax(stepSize, Double.OneHalf), mode);
 		}
 	}
 }

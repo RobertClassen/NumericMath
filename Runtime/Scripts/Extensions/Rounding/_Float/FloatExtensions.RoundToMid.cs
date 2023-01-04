@@ -9,12 +9,7 @@ namespace NumericMath
 	{
 		public static float RoundToMid(this float value, double stepSize)
 		{
-			if(stepSize <= Int.Zero)
-			{
-				throw new ArgumentLessEqualsZeroException(nameof(stepSize));
-			}
-			double fraction = value / stepSize;
-			return (float)(Double.OneHalf.Lerp(Math.Floor(fraction), Math.Ceiling(fraction)) * stepSize);
+			return (float)((double)value).RoundBetweenMinToMax(stepSize, Double.OneHalf);
 		}
 	}
 }
