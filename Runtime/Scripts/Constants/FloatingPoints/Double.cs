@@ -24,5 +24,7 @@
 		public const double HalfCircleDegrees = FullCircleDegrees * OneHalf;
 		public const double Rad2Deg = HalfCircleDegrees / Math.PI;
 		public const double Deg2Rad = One / Rad2Deg;
+
+		public const double Epsilon = 1E-15;
 	}
 }

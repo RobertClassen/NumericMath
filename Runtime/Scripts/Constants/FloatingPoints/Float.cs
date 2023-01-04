@@ -24,5 +24,7 @@
 		public const float HalfCircleDegrees = (float)Double.HalfCircleDegrees;
 		public const float Rad2Deg = (float)Double.Rad2Deg;
 		public const float Deg2Rad = (float)Double.Deg2Rad;
+
+		public const float Epsilon = (float)1E-7;
 	}
 }
