@@ -6,9 +6,9 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static int CeilToInt(this float value)
+		public static int CeilToInt(this float value, double stepSize = Double.One)
 		{
-			return (int)value.Ceil();
+			return (int)value.Ceil(stepSize);
 		}
 	}
 }

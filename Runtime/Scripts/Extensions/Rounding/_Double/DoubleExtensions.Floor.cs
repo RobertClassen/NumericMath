@@ -6,9 +6,13 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Floor(this double value)
+		public static double Floor(this double value, double stepSize = Double.One)
 		{
-			return Math.Floor(value);
+			if(stepSize.IsZero())
+			{
+				throw new DivideByZeroException(nameof(stepSize));
+			}
+			return Math.Floor(value / stepSize) * stepSize;
 		}
 	}
 }

@@ -6,9 +6,9 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static int FloorToInt(this float value)
+		public static int FloorToInt(this float value, double stepSize = Double.One)
 		{
-			return (int)value.Floor();
+			return (int)value.Floor(stepSize);
 		}
 	}
 }

@@ -6,9 +6,13 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Floor(this float value)
+		public static float Floor(this float value, double stepSize = Double.One)
 		{
-			return (float)Math.Floor(value);
+			if(stepSize.IsZero())
+			{
+				throw new DivideByZeroException(nameof(stepSize));
+			}
+			return (float)(Math.Floor(value / stepSize) * stepSize);
 		}
 	}
 }

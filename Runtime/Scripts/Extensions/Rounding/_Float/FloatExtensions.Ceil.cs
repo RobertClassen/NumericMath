@@ -6,9 +6,13 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Ceil(this float value)
+		public static float Ceil(this float value, double stepSize = Double.One)
 		{
-			return (float)Math.Ceiling(value);
+			if(stepSize.IsZero())
+			{
+				throw new DivideByZeroException(nameof(stepSize));
+			}
+			return (float)(Math.Ceiling(value / stepSize) * stepSize);
 		}
 	}
 }
