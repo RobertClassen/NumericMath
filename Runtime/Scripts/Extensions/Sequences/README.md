@@ -49,7 +49,7 @@ Returns a sequence of numbers (**excluding** the initial value), multiplying by 
 
 ```csharp
 (-5).Multiply(-2, -3, 1));           // returns '10, 15, -5'
- (2).Multiply((2).Range(5, 2));        // returns ' 4,  8, 12, 16, 20'
+ (2).Multiply((2).Range(5, 2));      // returns ' 4,  8, 12, 16, 20'
  (1).Multiply((-2).Repeat(4), true); // returns '-2,  4, -8, 16'
 ```
 
