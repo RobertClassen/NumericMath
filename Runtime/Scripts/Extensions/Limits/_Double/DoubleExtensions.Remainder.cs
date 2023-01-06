@@ -28,7 +28,7 @@ namespace NumericMath
 		/// </example>
 		public static double Remainder(this double dividend, double divisor)
 		{
-			if(divisor == Double.Zero)
+			if(divisor.IsZero())
 			{
 				throw new DivideByZeroException(nameof(Remainder) + "(0) is undefined.");
 			}

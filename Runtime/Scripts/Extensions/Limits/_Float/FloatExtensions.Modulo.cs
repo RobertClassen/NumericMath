@@ -28,7 +28,7 @@ namespace NumericMath
 		/// </example>
 		public static float Modulo(this float dividend, float divisor, float offset = Float.Zero)
 		{
-			if(divisor == Float.Zero)
+			if(divisor.IsZero())
 			{
 				throw new DivideByZeroException(nameof(Modulo) + "(0) is undefined.");
 			}

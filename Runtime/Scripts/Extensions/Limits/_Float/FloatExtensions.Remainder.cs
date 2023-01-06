@@ -28,7 +28,7 @@ namespace NumericMath
 		/// </example>
 		public static float Remainder(this float dividend, float divisor)
 		{
-			if(divisor == Float.Zero)
+			if(divisor.IsZero())
 			{
 				throw new DivideByZeroException(nameof(Remainder) + "(0) is undefined.");
 			}
