@@ -28,9 +28,9 @@ range.Repeat(3, true);    // returns '0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 
 Returns a sequence of numbers (**excluding** the initial value), adding the specified `addend` a specified number of times.
 
 ```csharp
-(-5).Add(1, 2, -3);          // returns '-4, -3, -8'
- (0).Add(2.Range(5, 2));     // returns ' 2,  4,  6,  8, 10'
- (5).Add(5.Repeat(4), true); // returns '10, 15, 20, 25'
+(-5).Add(1, 2, -3);            // returns '-4, -3, -8'
+ (0).Add((2).Range(5, 2));     // returns ' 2,  4,  6,  8, 10'
+ (5).Add((5).Repeat(4), true); // returns '10, 15, 20, 25'
 ```
 
 ## Subtract
@@ -39,7 +39,7 @@ Returns a sequence of numbers (**excluding** the initial value), subtracting the
 
 ```csharp
 (-5).Subtract(1, 2, -3);             // returns '-6, -7, -2'
-(10).Subtract(2.Range(5, 2));        // returns ' 8,  6,  4,  2,  0'
+(10).Subtract((2).Range(5, 2));      // returns ' 8,  6,  4,  2,  0'
  (1).Subtract((-2).Repeat(4), true); // returns ' 3,  5,  7,  9'
 ```
 
@@ -49,7 +49,7 @@ Returns a sequence of numbers (**excluding** the initial value), multiplying by 
 
 ```csharp
 (-5).Multiply(-2, -3, 1));           // returns '10, 15, -5'
- (2).Multiply(2.Range(5, 2));        // returns ' 4,  8, 12, 16, 20'
+ (2).Multiply((2).Range(5, 2));        // returns ' 4,  8, 12, 16, 20'
  (1).Multiply((-2).Repeat(4), true); // returns '-2,  4, -8, 16'
 ```
 
@@ -59,6 +59,6 @@ Returns a sequence of numbers (**excluding** the initial value), dividing by the
 
 ```csharp
  (5f).Divide(0.5f, 0.5f, 5f));      // returns ' 10f,  20f,   4f'
-(12f).Divide(12f.Range(5, -2f));    // returns '1.0f, 1.2f, 1.5f, 2.0f, 3.0f'
+(12f).Divide((12f).Range(5, -2f));  // returns '1.0f, 1.2f, 1.5f, 2.0f, 3.0f'
 (100).Divide((-2).Repeat(4), true); // returns ' -50,   25,  -12,    6'
 ```
