@@ -56,7 +56,7 @@ Note:
 | [Comparison] | [`Min/Max`][Comparison.MinMax] [`Nearest/Furthest`][Comparison.NearestFurthest] |
 | [Rounding] | [`Ceil[/ToInt]`][Rounding.Ceil] [`Floor[/ToInt]`][Rounding.Floor] [`Round[/ToInt]`][Rounding.Round] [`RoundTo[Nearest/Furthest/Mid]`][Rounding.RoundTo] [`Truncate`][Rounding.Truncate] |
 | [Statistics] | [`[Arithmetic/Geometric/Harmonic]Mean`][Statistics.Mean] [`MidRange`][Statistics.MidRange] [`RangeMagnitude`][Statistics.RangeMagnitude] |
-| [Trigonometry] | [`Sin[/h] / Asin`][Trigonometry.Sin] [`Cos[/h] / Acos`][Trigonometry.Cos] [`Tan[h] / Atan[/2]`][Trigonometry.Tan] ||
+| [Trigonometry] | [`Sin[/h] / Asin`][Trigonometry.Sin] [`Cos[/h] / Acos`][Trigonometry.Cos] [`Tan[h] / Atan[/2]`][Trigonometry.Tan] |
 | [Conversion] | [`To[Degrees/Radians]`][Conversion.ToDegreesRadians] [`ToInvariantString`][Conversion.ToInvariantString] [`ToPercentString`][Conversion.ToPercentString] [`To[Binary/Hex]String`][Conversion.ToBinaryHexString] [`ToBool`][Conversion.ToBool] [`To[Byte/Short/Int/Long/Float/Double]`][Conversion.To01] |
 | [Sequences] | [`Range`][Sequences.Range] [`AddRepeated`][Sequences.Add] [`SubtractRepeated`][Sequences.Subtract] [`MultiplyRepeated`][Sequences.Multiply] [`DivideRepeated`][Sequences.Divide] |
 | [Arithmetic] | [`Add`][Arithmetic.Add] [`Subtract`][Arithmetic.Subtract] [`Multiply`][Arithmetic.Multiply] [`Divide`][Arithmetic.Divide] [`Pow`][Arithmetic.Pow] [`Sqrt`][Arithmetic.Sqrt] [`Root`][Arithmetic.Root]  [`Exp`][Arithmetic.Exp] [`Log`][Arithmetic.Log] [`BigMul`][Arithmetic.BigMul] [`DivRem`][Arithmetic.DivRem] |
