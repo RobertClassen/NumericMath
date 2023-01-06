@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class LongExtensions
 	{
-		public static long Clamp(this long value, long min, long max)
+		public static long ClampMax(this long value, long max, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return value <= min ? min : value >= max ? max : value;
+			return isEnabled && max < value ? max : value;
 		}
 	}
 }

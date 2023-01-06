@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class ByteExtensions
 	{
-		public static byte Clamp(this byte value, byte min, byte max)
+		public static byte ClampMin(this byte value, byte min, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return value <= min ? min : value >= max ? max : value;
+			return isEnabled && value < min ? min : value;
 		}
 	}
 }

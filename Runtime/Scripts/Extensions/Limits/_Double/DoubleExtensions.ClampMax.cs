@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class DoubleExtensions
 	{
-		public static double Clamp(this double value, double min, double max)
+		public static double ClampMax(this double value, double max, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return value <= min ? min : value >= max ? max : value;
+			return isEnabled && max < value ? max : value;
 		}
 	}
 }

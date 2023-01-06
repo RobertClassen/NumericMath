@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class FloatExtensions
 	{
-		public static float Clamp(this float value, float min, float max)
+		public static float Clamp01(this float value, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return value <= min ? min : value >= max ? max : value;
+			return isEnabled ? value.Clamp(Float.Zero, Float.One) : value;
 		}
 	}
 }

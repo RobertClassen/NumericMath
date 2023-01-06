@@ -7,9 +7,9 @@ namespace NumericMath
 
 	public static partial class ShortExtensions
 	{
-		public static short Clamp(this short value, short min, short max)
+		public static short Clamp01(this short value, bool isEnabled = Numeric.IsClampEnabledDefault)
 		{
-			return value <= min ? min : value >= max ? max : value;
+			return isEnabled ? value.Clamp(Short.Zero, Short.One) : value;
 		}
 	}
 }
