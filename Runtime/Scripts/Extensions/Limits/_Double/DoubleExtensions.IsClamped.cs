@@ -11,10 +11,5 @@ namespace NumericMath
 		{
 			return isInclusive ? min <= value && value <= max : min < value && value < max;
 		}
-
-		public static bool IsClamped01(this double value, bool isInclusive = Numeric.IsClampedInclusiveDefault)
-		{
-			return value.IsClamped(Double.Zero, Double.One, isInclusive);
-		}
 	}
 }
