@@ -14,7 +14,7 @@ Returns a sequence of numbers (**including** the initial value) with a specified
 
 ## Repeat
 `+` `F,I`
-Returns a sequence of repeated numbers or sequence values.
+Returns a sequence of numbers or sequence values (**including** the initial value) the specified number of times, linearly by default.
 ```csharp
 (0).Repeat(5);            // returns '0, 0, 0, 0, 0'
 
