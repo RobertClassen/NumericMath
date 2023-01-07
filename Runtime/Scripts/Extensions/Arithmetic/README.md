@@ -44,14 +44,14 @@ Returns the number raised to a power.
 [`►`](https://docs.microsoft.com/en-us/dotnet/api/system.math.sqrt) `F,I`
 Returns the square root of the number.
 ```csharp
-(4f).Sqrt();  // returns '2d'
+(4f).Sqrt(); // returns '2d'
 ```
 
 ## Root
 `+` `F,I`
 Returns the specified root of the number.
 ```csharp
-(4f).Root(2d);  // returns '2d'
+(4f).Root(2d); // returns '2d'
 ```
 
 ## Exp
@@ -82,8 +82,8 @@ Returns the full product of two numbers as the next-bigger value-type to avoid o
 Returns the quotient of two numbers and also returns the remainder in an output parameter.
 ```csharp
 int remainder;
- (5).DivRem(3, out remainder);   // returns '1', remainder == '2'
- (5).DivRem(-3, out remainder);  // returns '-1', remainder == '2'
-(-5).DivRem(3, out remainder);   // returns '-1', remainder == '-2'
-(-5).DivRem(-3, out remainder);  // returns '1', remainder == '-2'
+ (5).DivRem(3, out remainder);  // returns '1', remainder == '2'
+ (5).DivRem(-3, out remainder); // returns '-1', remainder == '2'
+(-5).DivRem(3, out remainder);  // returns '-1', remainder == '-2'
+(-5).DivRem(-3, out remainder); // returns '1', remainder == '-2'
 ```
