@@ -26,5 +26,6 @@
 		public const float Deg2Rad = (float)Double.Deg2Rad;
 
 		public const float Epsilon = (float)1E-7;
+		public const float Pi = (float)Double.Pi;
 	}
 }

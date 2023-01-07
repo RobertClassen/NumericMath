@@ -26,5 +26,6 @@
 		public const double Deg2Rad = One / Rad2Deg;
 
 		public const double Epsilon = 1E-15;
+		public const double Pi = Math.PI;
 	}
 }
